@@ -1,0 +1,169 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-15T14:49:24-08:00
+
+====== Class Imbalance Problem ======
+Created Thursday 15 December 2016
+
+Kaggle Solutions:
+http://www.chioka.in/kaggle-competition-solutions/
+
+AV's 17 Practices:
+https://www.analyticsvidhya.com/blog/2016/10/17-ultimate-data-science-projects-to-boost-your-knowledge-and-skills/
+
+Black Friday: https://datahack.analyticsvidhya.com/contest/black-friday/#activity_id
+
+
+******************************************************************************************************************************************
+**Census Income:** 
+
+Guide:
+https://www.analyticsvidhya.com/blog/2016/09/this-machine-learning-project-on-imbalanced-data-can-add-value-to-your-resume/
+
+Data
+http://archive.ics.uci.edu/ml/machine-learning-databases/census-income-mld/
+
+Imbalanced Data:
+https://www.analyticsvidhya.com/blog/2016/03/practical-guide-deal-imbalanced-classification-problems/
+
+Resources to Learn before starting:
+https://www.datacamp.com/community/open-courses/introduction-to-python-machine-learning-with-analytics-vidhya-hackathons#gs.9sF9c7U
+https://www.analyticsvidhya.com/blog/2016/01/guide-data-exploration/
+https://www.analyticsvidhya.com/blog/2016/07/practical-guide-data-preprocessing-python-scikit-learn/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+
+Dataset Description & Problem Statement:
+http://archive.ics.uci.edu/ml/machine-learning-databases/census-income-mld/census-income.names
+
+Imbalanced-Learn Python Package:
+	https://github.com/scikit-learn-contrib/imbalanced-learn
+	
+**Reasons which leads to reduction in accuracy of ML algorithms on imbalanced data sets:**
+	ML algorithms struggle with accuracy because of the unequal distribution in dependent variable.
+This causes the performance of existing classifiers to get biased towards majority class.
+The algorithms are accuracy driven i.e. they aim to minimize the overall error to which the minority class contributes very little.
+ML algorithms assume that the data set has balanced class distributions.
+They also assume that errors obtained from different classes have same cost.
+
+
+Missing values:
+none in numerical data
+
+categorical:
+	training: migration_msa
+				, migration_reg, migration_within_reg, migration_sunbelt
+				
+	test:         hispanic_origin, state_of_previous_residence
+				  ,migration_reg, migration_within_reg, migration_sunbelt
+
+What's the num field "num_person_Worked_employer"?
+
+**Type of Classifiers:**
+	Discrete Classifiers: only putputs a class label
+		Decision Tree
+	Probabilistic Classifiers: outputs a numeric value that represents the degree to which an instance is a member of a class
+		Naive Bayes, Neural Network, Logistic Regression
+
+
+Does training data need to be balanced?
+	Different machine learning algorithms will respond differently to an imbalanced training set. Rather than applying a hard & fast rule, it’s best to carry out experiments with your training data and a range of algorithms, and identify the most effective combination for the problem you are trying to solve.
+	
+	Focusing on the problem you want to solve is important. The success of a machine learning model can be measured in several ways, and some measures will be more relevant to the problem you want to solve.
+
+	The authors of the original SMOTE paper found they had the best results by both over-sampling the minority class and under-sampling the majority class, when using a Ripper or a Naive Bayes algorithm.
+	
+Caveat: 
+	Not every problem will get better results with SMOTE, really depdending on the data; you need to try it out
+	
+
+How to use SMOTE?
+1. R
+	b. DMwR, Caret
+ 
+2. Python with Imbalanced-Learn:
+	http://contrib.scikit-learn.org/imbalanced-learn/api.html
+	https://github.com/scikit-learn-contrib/imbalanced-learn
+3. In Scikit learn there are some imbalance correction techniques, which vary according with which learning algorithm are you using.
+	 Some one of them, like SVM or Logistic Regression, have the class_weight parameter. 
+
+Metrics:
+	Sensitivity: TPR = TP/(TP+FN)
+	Miss-rate: FNR = FN/(TP+FN)
+	
+	Specificity: TNR = TN/(TN+FP)
+	Fall-out: FPR = FP/(TN+FP)
+	
+	ROC curve: 
+		Receiver Operating Characteristics curve
+		TPR vs. FPR (Sensitivity vs. 1 - Specificity)
+		
+	AUC: Area under ROC
+			  Probability that the classifier wil rank anrandomly chosen positive instance higher than a randomly chosen negative instance
+			Not affected by the choice of any particular cut-off threshold
+		   insensitive to changes in class distribution (if the ratio of positive to negatie instances changes in a test set, the ROC curves will not change)
+			**Consistent with Accuracy? Read Paper**
+			
+	Precision: TP / (TP + FP)
+	Recall:  TP / (TP+FN)
+		F-score: 2/(1/Precision + 1/Recall)
+		PR curve
+		**Precision-Recall cares only about one class (good when identifying one class (POSITIVE) is more important than the other)**
+	
+	Accuracy: (TP + TN) / (P + N)
+
+**For class imbalance problems, you have to find the "True Rate" for both classes, that's why we need TPR-TNR (or TPR-FPR)**
+
+**Fraud Detection:**
+For Fraud detection (if it can be treated as a class imbalance problem):
+	You want high TPR and low FPR (confirm by Sebastian and Neal Oman)
+	You may also want to reduce **"False Alarm Rate"**, the **Precision** of the Rare (Positive) class
+											**"Ratio of Frauds to False Positives"** (FP/TP) is another related term, maybe **"FRP" ("False Positive Ratio")**
+											There is always a trade-off between FRP (FP/TP) and Fraud Captured (Positive Recall)
+	
+	If you reduce the FP by 50%, there will be tiny change in the FPR, but possible big improvement in the Precisions of Positives
+		100 FP, 50 TP, 10 FN, 9840 TN → 45 FP, 50 TP, 10 FN, 9895 TN
+
+	Geolocation Tracking, distance from home, mobile device location
+	Customer habit of spending
+	Challenge of real-time data streaming in large volume
+	
+**Anomaly Detection**                              
+Let's call it a Classifier (majority vs. anomaly/outlier) 
+                                                                                                                 
+	Issues (to ask //Domain Expert// and //Software Engineer //before starting):
+	1. specify how the values of multiple attributes are used to determine whether an object is an anomaly (important when dim is high)
+	2. local vs. global (unique globally but not very special in its neighborhood)
+	3. degree of anomaly | anomaly score ( some outliers is more extreme than others)
+	4. in model-based approach, Masking & Swamping Effects
+	5. Efficiency of the algorithm
+	6. Effectiveness of the Classifier
+	
+	Result:
+		create a score for each data point
+		decide a threshold
+			If supervised, tune **Precision & Recall** of Anomalies
+
+	Approaches:
+		Supervised (when lable on both normal and abnormal data are available)
+			Binary Classification: class imbalance problem
+	1. Don't use Accuracy, but TPR, FPR, Precision, Recall
+	2. Cost-Sensitive Learning (weights differ in the cost function)
+	3. Sampling-Based Approach: Informed oversampling of the minority class with random under-sampling of the majority class
+		
+		Unsupervised:
+			Statistical 
+	1. Create a model for the data, evaluate each object to see how well it fits the model
+	2. Normal, MVN, Mixed; Not good at High-dimenional data
+			Proximity
+	1. Average distance to the first K-nearest neighbors: sensitive to K
+	2. can't handle datasets with regions of widely differing densities, O(m^2)
+			 
+			Density
+	1. density of x with respect to KNN / average density of it's KNN
+	2. O(m^2), sensitive to parameter K
+			 
+			Clustering
+	1. Cluster all bojects and then assess the degree to which an object belongs to any cluster
+	2. e.g. measure: relative distance to the centroid / average distance of other points in the same cluster
+	3. Clustering algorithms highly depends on the type of the data, need to choose carefully
+                                                                                                                                                                                                                
+

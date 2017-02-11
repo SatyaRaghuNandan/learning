@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-15T21:45:24+00:00
+
+====== Projects ======
+Created Sunday 15 January 2017
+
+
+4. ROSE:  class imbalance problem (metrics, cost-sensitive, sampling-based)
+5. Spark: big data 
+6. Sentiment Analysis: textext analysis
+
+Slackbot: data engineering
+	pyzillow: https://github.com/hanneshapke/pyzillow
+	  Apt-Finder slackbot: http://www.dataquest.io/blog/apartment-finding-slackbot/
+

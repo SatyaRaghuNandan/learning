@@ -1,0 +1,37 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-08T11:41:54-08:00
+
+====== Sebastian ======
+Created Thursday 08 December 2016
+
+Chap3: tour of classifiers
+1. plot_decision_regions function (coloring)
+2. fit, transform using Numpy objects
+3. plot the combined X_train, X_test, y_train, y_test using np.vstack() and np.hstack()
+4. Linear Logistic Ression and SVM (Taiwan): https://www.csie.ntu.edu.tw/~cjlin/liblinear/, https://www.csie.ntu.edu.tw/~cjlin/libsvm/, 
+5. Classification Error is an Impurity Measure that's useful for pruning but not recommended for growing a decision tree
+
+
+
+
+
+
+General Tips:
+1. documentation of a function: help(Perceptron)
+2. number of missing values per column: df.isnull().sum()
+3. Which model is the best?
+
+	both logistic regression and SVMs work great for linear problems, logistic regression may be preferable for very noisy data
+
+	naive Bayes may work better than logistic regression for small training set sizes; the former is also pretty fast, e.g., if you have a large multi-class problem, you’d only have to train one classifier whereas you’d have to use One-vs-Rest or One-vs-One with in SVMs or logistic regression (alternatively, you could implement multinomial/softmax regression though); another point is that you don’t have to worry so much about hyperparameter optimization – if you are estimating the class priors from the training set, there are actually no hyperparameters
+
+	kernel SVM/logistic regression is preferable for nonlinear data vs. the linear models
+
+	k-nearest neighbor can also work quite well in practice for datasets with large number of samples and relatively low dimensionality
+
+	Random Forests & Extremely Randomized trees are very robust and work well across a whole range of problems – linear and/or nonlinear problems
+
+	Personally, I tend to prefer a multi-layer neural network in most cases, given that my dataset is sufficiently large. In my experience, the generalization performance was almost always superior to one of the other approaches I listed above. But again, it really depends on the given dataset.
+
+4. 

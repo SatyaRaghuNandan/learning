@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-23T10:42:19+00:00
+
+====== 1-2 Asymptotic Analysis ======
+Created Monday 23 January 2017
+
+AA is the language used to describe the high-level performance of computer algorithms.
+	supress constant factors (system/architecture dependent) and lower-order terms (irrelevant for  large inputs)
+			e.g. 6N * (log N + 1) is just N*logN, written as O(N*logN)
+			**Question: why exactly can we drop the Constant Factor 6 here?** 
+	
+	Further work: improve the Leading Constant Factor or the Lower-Order Terms also
+
+
+Definition:
+	T(n) : Run time given input size of n
+	T(n) = O [ f(n) ] if eventually (for all sufficiently large n), T(n) is bounded above by a constant multiples of f(n)
+
+

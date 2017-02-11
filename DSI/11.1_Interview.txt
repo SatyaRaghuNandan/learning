@@ -1,0 +1,72 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-12T08:55:20-08:00
+
+====== 11.1 Interview ======
+Created Monday 12 December 2016
+
+Class:
+Interview Tips: https://bradzzz.gitbooks.io/ga-seattle-dsi/content/dsi/dsi_11_advanced_topics/3.1-lesson/readme.html
+White-boarding: https://github.com/ga-students/dsi-sea-week11-3.2
+
+What to do after bootcamp:
+https://www.linkedin.com/pulse/5-key-learnings-from-post-bootcamp-job-search-felix-feng?trk=hp-feed-article-title-share
+
+Who does What in DS industry:
+https://www.datacamp.com/community/tutorials/data-science-industry-infographic#gs.1wEsOI4
+
+Interview Tips:
+https://www.linkedin.com/pulse/20140605161554-142757631-nailing-the-data-science-interview
+http://ucanalytics.com/blogs/data-science-job-interview-types-sample-questions-preparation-strategies/
+http://www.datasciencecentral.com/profiles/blogs/66-job-interview-questions-for-data-scientists
+https://www.dezyre.com/article/100-data-science-interview-questions-and-answers-general-for-2016/184
+https://www.linkedin.com/pulse/5-key-learnings-from-post-bootcamp-job-search-felix-feng?trk=hp-feed-article-title-share
+http://www.datasciencecentral.com/profiles/blog/show?id=6448529%3ABlogPost%3A371610
+
+https://www.youtube.com/watch?v=0HmAEWPfMnM
+
+"Data Scientist" jobs VARIES a lot!!!
+
+Gate Keeper (1st, HR)
+
+Phone Interview (2nd, hiring manager):
+1. confirm you are what's shown on your resume and linkedin
+2. do you fit our culture?
+3. can you communicate well?
+
+On-site Interview (3 or 4th, technical focused, check whether the team likes you):
+1. low-end (analyst) jobs: SQL (a query to solve a real question; high-level knowledge-check like inner vs. outer; not your proficiency on SSIS, SSRS etc.), how would you gather data, how to present to non-tech background clients?
+2. high-end (data science) jobs: Python & Your Portfolio, Statistical Anlaysis (Bayesian methodolgy, Regressions, ML vs. AI?, Apply ML to business standards?)
+3. less-technical teams (they know they need Data Scientists but not much else.....) tend to ask high-level, vague, cultural questions
+4. data architect: Hive, Scala, R
+5. data scientist: modeling, viz tools
+
+Technical Interview Tips:
+1. They are not looking for correct answers, but your thought process, how to logical digest a complex problem, how to communicate and defend your opinion
+2. Don't be afraid to reiterate the questions to interviewers for confirmation (they are curious to hear a different way and not seeing that you didn't hear the question correctly)
+3. Be Honest
+4. Engage the interviewer in your thought process, allow a two-way conversation, showcase your ability to work collaborately
+5. Even you can't solve it completely, show them what you can do and ask for more information/help
+6. Educate them that we learned XXX at GA but only for ONE DAY! Don't set your expectation too high!
+7. 4 areas they tend to ask:
+	a. explain:
+	b. defend: your GitHub, Portfolio
+	c. changes: solve it in another way? refine this section of code?
+	d. impact: what business impact does your solution have?
+8. GA Alumni Tips:
+	a. organize your Portfolio (GitHub) and make it presentable
+	b. actively code and push to GitHub (codeboard: https://codeboard.io/)
+	c. organize your job search process with Trello
+9. Fei's experience:
+	a. Sounds confident, even if you are not sure about the details
+	b. Questions to ask
+		1. What project are you working on? What tools are you using? How many people are involved?
+		2. Can you give me some feedback about my answers?
+
+To Check:
+1. https://github.com/Mithers/Portfolio
+2. http://partiallyderivative.com/
+3. https://www.datacamp.com/community/tutorials/data-science-industry-infographic#gs.uRk=VAc
+
+
+

@@ -1,0 +1,52 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-29T13:12:28-08:00
+
+====== 9.2 LDA ======
+Created Tuesday 29 November 2016
+
+
+Lab:
+https://github.com/ga-students/dsi-sea-week08-3.4
+
+LDA is similar to Gaussian Naive Bayes?
+
+LDA does Dimensionality Reduction by looking at X and y! using Eigen Vectors & Bayes
+It maximizes the difference between different classes.
+
+Especially good for Multi-Class Classification
+Binomial Class Classification: logistic regression is good enough often
+
+
+
+Main Class:
+http://courses.cs.tamu.edu/rgutier/cs790_w02/l6.pdf (technical, bad UX design)
+
+Supporting Materials:
+http://scikit-learn.org/stable/auto_examples/decomposition/plot_pca_vs_lda.html
+http://localhost:8888/files/lab/8_9th_week/dsi-sea-week08-3.4/lesson/Linear%20Discriminant%20Analysis.pdf (GA version, shallow)
+MVN: https://en.wikipedia.org/wiki/Multivariate_normal_distribution
+MVN test:
+http://www.biosoft.hacettepe.edu.tr/MVN/
+https://cran.r-project.org/web/packages/MVN/vignettes/MVN.pdf
+LDA explanation:
+http://www.saedsayad.com/flash/LDA_flash.html
+http://www.saedsayad.com/flash/DiscriminantAnalysis.pdf (pretty, short, confusing)
+More math:
+http://web.engr.oregonstate.edu/~xfern/classes/cs534/notes/LDA.pdf
+
+Also to use LDA we need to test that Feature Covariance Matrix calculated using data from each class is the same.
+http://stats.stackexchange.com/questions/90615/estimating-the-covariance-matrix-in-linear-discriminant-analysis
+
+
+Qingqing's finding:
+http://web.engr.oregonstate.edu/~xfern/classes/cs534/notes/LDA.pdf
+Parameters Estimation
+Decision Boundary
+
+Badwritten class:
+https://bradzzz.gitbooks.io/ga-seattle-dsi/content/dsi/dsi_08_bayesian_inference/3.3-lesson/readme.html
+
+Demo:
+http://localhost:8888/notebooks/lab/8_9th_week/dsi-sea-week08-3.4/lesson/LDA%20Examples.ipynb
+

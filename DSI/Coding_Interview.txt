@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-21T21:34:15+00:00
+
+====== Coding Interview ======
+Created Saturday 21 January 2017
+
+Resources:
+	https://www.diycode.cc/topics/220
+	https://www.evernote.com/shard/s576/sh/7e58b450-1abe-43a8-bf82-fbf07f1db13c/049802174415b418a2e65f75b744ab72
+	
+Practice Site:
+	https://leetcode.com/problemset/algorithms/
+	https://projecteuler.net/
+	
+
+

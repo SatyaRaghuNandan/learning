@@ -1,0 +1,33 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-12T09:32:27-08:00
+
+====== 11.1 Recommendation System ======
+Created Monday 12 December 2016
+
+A ranking or prediction is produced to proivde personalized recommendations to users
+
+1. type of data
+	User Log: access logs, session lengths (sessions are separated by 30 min inactivity), click/non-clicks, time spent on a page, purhase history, product description
+	Review: ratings, upvotes, weighted scale, grades, relevance feedback
+	etc.
+	
+2. implicit vs. explicit
+	a. wifi logs at Target (implicit)
+	b. amazon reviews (explicit)
+	c. user engagement metrics (implicit)  e.g. page view per user
+
+3. LCA (legal compliance agreement?)
+4. Example: Netflix movie recommendation, Matrix Factorization (user matrix - N*d, item matrix - l*M, relationship matrix - d*l between user and item features, final product is a matrix of N*d * d*l * l*M = N*M)
+
+6. Content-based filtering (based on the contents you viewed in the past; e.g. Amazon books recom for YOU, Netflix move recommendation)
+7. Difficulties for Content-Based Filtering (must map items into a feature space, recoms are limited in scope (need freshness factor), hard to do cross-content recomm)
+8. Collaborative Filtering (past ⇒ future, other people's preference ⇒ your recomms;  e.g. Amazon's **other customers** who bought this item also purchased ...)
+ 9. Cold Start Problem (new to a user, no previous ratings data from her; have to rely on Implicit data)
+
+
+Packages:
+	crab: https://muricoca.github.io/crab/
+	Light FM: https://github.com/lyst/lightfm/blob/master/examples/quickstart/quickstart.ipynb
+	
+

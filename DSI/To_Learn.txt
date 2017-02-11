@@ -1,0 +1,83 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-24T22:29:15-08:00
+
+====== Home ======
+Created Thursday 24 November 2016
+
+Free Tree House: 
+	Learn Word Press:
+		https://teamtreehouse.com/tracks/learn-wordpress
+	Learn JavaScript:
+		[[https://teamtreehouse.com/tracks/full-stack-javascript|https://teamtr]][[eehouse.com/tracks/full-stack-javascript]]
+	Django:
+		https://teamtreehouse.com/tracks/learn-django
+
+GitHub:
+	https://services.github.com/on-demand/github-cli/
+	
+Hadoop & MapReduce:
+	https://www.youtube.com/watch?v=Fyxi0qlyTaQ&list=PLAwxTw4SYaPkXJ6LAV96gH8yxIfGaN3H-&index=2
+	
+AI:
+	Perceptron with Go: https://appliedgo.net/perceptron/
+	Turing Paper: http://www.loebner.net/Prizef/TuringArticle.html
+
+Unix:
+	Bash Scripting proficiency:
+		http://www.tldp.org/LDP/abs/html/
+		http://www.grymoire.com/Unix/Awk.html
+
+Udemy Courses:
+	Python for Data Science (Big Data Setup), R, Tableau, ...
+	
+AWS:
+	https://aws.amazon.com/articles/3998
+
+Linux:
+	EDX: https://courses.edx.org/courses/course-v1:LinuxFoundationX+LFS101x+1T2016/info	
+	Programming in Linux: https://linuxprograms.wordpress.com/
+	
+SQL:
+	http://stackoverflow.com/questions/24949676/difference-between-partition-key-composite-key-and-clustering-key-in-cassandra
+
+Business Analytics:
+	https://www.analyticsvidhya.com/blog/author/sunil-ray/
+	
+Data Preprocessing:
+	https://www.analyticsvidhya.com/blog/2016/07/practical-guide-data-preprocessing-python-scikit-learn/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
+	
+XGBoost:
+	http://xgboost.readthedocs.io/en/latest/model.html
+	http://xgboost.readthedocs.io/en/latest/R-package/xgboostPresentation.html
+	
+AV on Regression:
+	https://www.analyticsvidhya.com/blog/2016/12/45-questions-to-test-a-data-scientist-on-regression-skill-test-regression-solution/
+
+Neural Network:
+	https://keras.io/
+	http://blocks.readthedocs.io/en/latest/
+	http://lasagne.readthedocs.io/en/latest/
+	http://tflearn.org/
+
+Pandas 100 puzzles:
+	https://github.com/ajcr/100-pandas-puzzles
+
+Beautiful Soup Cheatsheet:
+	http://youkilljohnny.blogspot.com/2014/03/beautifulsoup-cheat-sheet-parse-html-by.html
+	
+Regression 45 quizzes:
+	https://www.analyticsvidhya.com/blog/2016/12/45-questions-to-test-a-data-scientist-on-regression-skill-test-regression-solution/
+	
+Other topics:
+	General-purpose coding & algorithms
+	Cloud: AWS, Azure, Google Cloud Platform 
+	Statistics: R/SAS 
+	Scripting: Python 
+	Interactive visualization and BI platforms (Tableau, Spotfire, etc.) 
+	Hand-on experience with RESTful API’s 
+	JavaScript visualization languages (D3, Highcharts, etc.), web-application frameworks (angularJS, Ruby on Rails, etc.), and web design skills (HTML, CSS) 
+	Business: Business Foundations Specialization by Wharton School, Coursera 
+
+
+

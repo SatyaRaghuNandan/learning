@@ -1,0 +1,36 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-02-08T17:30:30+00:00
+
+====== 6 2-8 Regression ======
+Created Wednesday 08 February 2017
+
+Intercept can sometimes be of no meaning, when x = 0 is out side of your data range
+Intercept is just intrepolated at x = 0, based on other data points
+Intercept is largely determined by the Slope
+
+**What does the P-value for Intercept mean? 12**
+**Why use n-2 as the T-distribution's degree of freedom? P13**
+
+Regression & Correlation
+
+**Regression vs. ANOVA?**
+	ANOVA and regression will not always agree. We don't know which one will be more statistically significant..
+
+When comparing only 2 groups, ANOVA & Regression are both same as the Equal-Variance T-test for 2 groups
+
+Some statisticians argue that T-test, ANOVA, Correlation are all actually Regression!
+	e.g. You can recreate ANOVA using Regression with the help of dummy variables
+	
+**Error Variance - 30?**
+
+Least-Square Method
+	P32: for the denominator, you may put all Xi's into 2 groups: max and min, then test whether Beta is zero. Extreme way but useful sometimes; 
+	
+P43 - 46
+If you find violation for the Constant Variance assumption, Need not to throw out your Regression Model, but you need other methods to accordomate this and get better Confidence Intervals or other Inferential Results!!!
+
+P46 we seek weak linear relationship, Ok. Big trouble if there is obvious linear relationship!!
+
+
+

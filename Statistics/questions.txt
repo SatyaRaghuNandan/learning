@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-02-02T20:14:00+00:00
+
+====== questions ======
+Created Thursday 02 February 2017
+
+1. What's a formal/mathematical definition of Sampling Distribution? Can we take infinite number of samples?
+2. Is the Average SE_Hat an unbiased estimator of the true SE of Sample Mean, given a particular sample size n? — Homework 2
+3. Conditions to apply CLT for Sample Mean estimation? P 178
+4. What is a "Nearly Normal" distribution? [[OpenIntro]] P201  — T Distribution?

@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-18T17:39:26+00:00
+
+====== R code ======
+Created Wednesday 18 January 2017
+
+bmi$greaterequal65 = ifelse(bmi$age>=65,1,0)
+
+table(d$elderly,d$male,dnn=c("Elderly","Male"))
+
+na.rm = T  (removes the null values)
+

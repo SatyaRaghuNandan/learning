@@ -1,0 +1,52 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-07T09:14:29-08:00
+
+====== 10.3 Spark ======
+Created Wednesday 07 December 2016
+
+Class:
+https://bradzzz.gitbooks.io/ga-seattle-dsi/content/dsi/dsi_10_big_data/3.1-lesson/readme.html
+
+Lab:
+https://github.com/ga-students/dsi-sea-week10-3.2
+https://github.com/ga-students/dsi-sea-week10-3.3
+
+Spark integrates with Python well, not a lot of scripting like MrJOB or HIVE, easier for distributing ML tasks.
+
+Resilient Distributed Datasets (RDDs): data is stored in the RAM, not Hard Disk
+	cons: lose of power → data loss, size limit of your RAM
+
+Spark also supports a pseudo-distributed local mode, usually used only for development or testing purposes, where distributed storage is not required and the local file system can be used instead; in such a scenario, Spark is run on a single machine with one executor per CPU core. This is how we will use it.
+
+Directed Acyclic Graph (DAG): an alternative to MapReduce ( it's mostly using lambda function and case statement to link things together)
+
+Apache Spark Stack:
+	MLib: deploy ML tasks
+	Spark Core: divide tasks
+	YARN: resource manager
+
+Functional Languages: Python, JavaScript ..
+Object Oriented Programming Languages: Java, C# ..
+
+Nothing happends until you run "Compute", which you can feed with a chain of actions
+
+Install Spark: https://www.tutorialspoint.com/apache_spark/apache_spark_installation.htm
+Spark Tutorial: http://spark.apache.org/docs/latest/quick-start.html
+Spark Core Programming: https://www.tutorialspoint.com/apache_spark/apache_spark_core_programming.htm
+
+Start Spark:
+	pyspark
+	ifconfig | grep inet, find your public IP: http://10.1.6.4
+	open http://10.1.6.4:4040/jobs/
+
+Spark Streaming:
+	variable.collect()
+	variable.count()
+	variable.cache() ---  saves all the attribute function of a variable into RAM?
+
+PySpark is for doing ML in a distributed system
+PySpark doc: https://spark.apache.org/docs/0.9.0/api/pyspark/index.html
+
+
+

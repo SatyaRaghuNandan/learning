@@ -1,0 +1,51 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-02-03T19:47:33+00:00
+
+====== 4 1-25 Two Sample T Test ======
+Created Friday 03 February 2017
+
+P7 **Why? Even when X_Bar is always normally distributed?**
+Even if the population distribution is normal, the distribution of Z might
+not be normal because s is not close enough to σ. 
+
+P17
+If n is small **and the population distribution is normal**, then use the t n−1
+distribution.
+If n is small and we are not sure if the population distribution is normal then we
+are stuck for now! (see Exact methods later in course)
+
+P35
+Reason 2, why?
+
+
+**What's the theoretical basis for T-test?**
+
+**Comparison of Two Population Means with Independent Samples**
+
+Z-statistic
+
+
+If n A and n B are both large, use the standard normal distribution, (e.g., 1.96) for
+α = 0.05.
+If n is small and the population distributions are both normal, then use the
+t n A +n B −2 distribution.
+If n is small and we are not sure if the population distribution is normal then we
+are stuck for now! (see Exact methods later in course)
+
+R uses the “Welch” adjustment to the degrees of freedom
+
+	unequal variance: when sample sizes are large
+	equal variance: when sample sizes are small and there is theoretical justification for equal variance
+		Pooled Sample Variance
+
+
+
+**Comparison of Two Population Proportions with Independent Samples**
+
+**Only use this test when sample sizes are large**
+**Why must we use the Normal Z test, instead of T test?**
+	For comparison of proportions with small sample sizes there is an “exact” test,
+Null Hypothesis: Same Proportion, phat ("Pooled" estimate) → Same variance
+
+

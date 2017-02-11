@@ -1,0 +1,68 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-13T10:49:46-08:00
+
+====== 11.2 AWK & Online Learing ======
+Created Tuesday 13 December 2016
+
+**AWK:**
+a scripting language ( light, simple programming languages with less data structure) but with Procedural features
+http://www.folkstalk.com/2011/12/good-examples-of-awk-command-in-unix.html
+http://www.folkstalk.com/2011/12/1.html
+
+
+1. basic syntax:
+awk 'BEGIN {start_action} {action} END {stop_action}' filename
+{action} will apply to each line in between
+
+2. script example:
+
+#!/usr/bin/awk -f
+BEGIN {sum=0} 
+{sum=sum+$5} 
+END {print sum}
+
+3. awk '{ if($9 == "t4") print $0;}' input_file
+	print $0;      means print the entire line
+
+Grep:
+http://www.folkstalk.com/2012/01/grep-command-in-unix-examples.html
+
+Find:
+http://www.folkstalk.com/2011/12/101-examples-of-using-find-command-in.html
+-exec is like the "|", pass the output of the first to the second command
+
+
+permissions  
+https://www.maketecheasier.com/file-permissions-what-does-chmod-777-means/
+
+Unix:
+http://www.folkstalk.com/p/unix-commands-list.html
+
+
+
+**Online Learing:**
+
+How to make your trained model portable?
+	Pickle package in Python: first Serialize your model (to a file) then pass the file to another computer, then Deserialize it
+
+Online Model:
+http://scikit-learn.org/stable/modules/scaling_strategies.html
+http://scikit-learn.org/stable/auto_examples/applications/plot_out_of_core_classification.html#sphx-glr-auto-examples-applications-plot-out-of-core-classification-py (classify texts) 
+Scikit-Learn has many models that contains the "Partial_Fit" method!!!  (update the existing model with new coming data, without retain the whole dataset)
+But linear regression & logistic regression don't have "Partial_Fit", becasue Scikit-Learn didn't use Gradient Descent for impletation
+
+SGD: essential for online learning
+much less computations than Gradient Descent, takes in one datapoint each time
+
+Perceptron Model is in the family of Gradient Descent
+http://computing.dcu.ie/~humphrys/Notes/Neural/single.neural.html
+
+Stochastic Gradient Descent:
+Read Andrew Ng's class week 10: https://www.coursera.org/learn/machine-learning/lecture/CipHf/learning-with-large-datasets
+
+1. shuffle your training dataset before each run
+2. the 2nd run starts from where 1st run stops
+3. we can make the SGD converge by tuning the learning rate alpha
+4. question: why does 
+

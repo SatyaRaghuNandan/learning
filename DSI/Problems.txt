@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-27T21:37:58-08:00
+
+====== Problems ======
+Created Sunday 27 November 2016
+
+
+Do I always need to do feature scaling before Select K-Best?
+
+Can I make pipelines using Self-Defined Functions?
+
+How to automatically position the legend in Matplotlib?
+
+When you do Z-test, does the size of your sample matter? 
+	https://www.analyticsvidhya.com/blog/2015/09/hypothesis-testing-explained/
+	given population mean is 85, you have a samle of 40 and sample mean of 95, you get a z-score; and if sample size is 500, you get another z-score
+	What's the minimum sample size to apply Central Limit Theorem?
+	
+
+

@@ -1,0 +1,118 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-20T19:58:53+00:00
+
+====== Spark ======
+Created Friday 20 January 2017
+
+**************************************************************************************************************************************
+**INTRO TO SPARK**
+Limitations of Hadoop:
+	unavailable for real-time processing (designed as batch-oriented), processing time depends on amount of data/number of nodes in cluster
+	unavailable for trivial operations (filters, joins)
+	unfit for large data on network (works on data locality principle, data better reside on nodes), copying data takes time
+	unfit for OLTP (batch-oriented)
+	Namenode can't handle too many files
+	unfit for processing graphs
+	unfit for iterative execution (MapReduce is a stateless execution), not good for Kmeans etc.
+	
+Batch vs. Real-Time Processing
+	e.g.: regular reports vs. fraud detection
+
+**Pair RDD methods?**
+
+In-Memory Processing
+
+Apache Spark
+	open-source cluster computing framework (UC Berkeley AMP Lab, Matei Zaharia in 2009 → Databricks)
+	Components of a Spark Project:
+		Spark Core, RDDs, Spark SQL, Spark Streaming, ML lib, [[GraphX]]
+	Language Flexibility:
+		Java, Scala, Python, R, inline functions (lambda function, clusture),  
+	Spark Execution Architecture:
+	1. Spark-submit script
+	2. Spark applications: processes on cluster, coordinated by [[SparkContext]] object
+	3. Cluster managers: Standalone, Apache Mesos, Hadoop YARN
+	4. Spark's EC2 launch scripts
+	Advantages of Spark
+		Speed, Language diversity, Combination, Unification, Hadoop Support 
+	**Automatic Parallelization of Complex Flows?**
+		scheduler tool (e.g. Oozie)
+		each app has its own executor processes, data can't be shared accross app's w.o. writing to an external storage system
+		driver program must be accessible to the network
+		driver should run in proximity to the worker nodes
+	**API that Match User Goals**
+		around 80 available, filter, collect, distinct ...
+	Different Deployment Modes of Spark
+		Standalone: dev and testing
+		Mesos: scalable partitioning, dynamic partitioning
+		YARN: parallel processing and all benefits of Hadoop cluster
+		EC2: key-value pair benefits of Amazon
+		
+**************************************************************************************************************************************
+**INTRO TO SCALA**
+
+Features:
+	Multi-paradigm (OOD, Functional)
+		every value in it is an object, every function in it is a value
+	Statically typed; with an expressive type system
+	Extensible
+	Rich Concurrency
+	
+Data type:
+	support all types in Java(Any, AnyRef, Nothing, etc.)
+	character uses ' ', string uses " "
+	
+**Type Inference?**
+	a mechanism that allows user to omit certain annotations and return types of mehods
+	compiler can't infer returned result type for Recursive Methods...
+
+**Mutable vs. Immutable Collections?**
+
+Functions
+	a "first-class" value
+	maybe returned as a result or passed as a parameter
+	anonymous functions
+
+Objects
+	Scala has Singleton objects instead of Static members, which is a class with only one instance and can be created using the keyword "Object"
+	This way Scala is more "Object-Oriented" than Java ☺
+	
+Class
+	can be used to define Rational Numbers
+	create objects using keyword "new"
+	
+Trait as Interfaces
+	between C++/Python and Java
+	Traits allow to recreate interfaces and implementation model of Java
+	
+Collections
+	Mutable and Immutable work better in different problems; Start with Immutable if not sure
+	Types: lists, sets, maps, tuples (hold objects in diff types), options (1 or 0 element for a given type), Iterator (a way to access elements of a collection one by one — While Loop) 
+	
+Lists
+	methods: head, tail, isEmpty
+
+Map (Hash Table)
+	two types: Immutable (default), mutable
+	to use Mutable Map:
+		import scala.collection.mutable.Map class
+		refer the mutable set as mutable.Map
+		
+Pattern Matching
+	allows to access messages
+	first-match policy
+	the second-most widely used feature in Scala! (after Closures and Function Values)
+	
+**Implicits?**
+	A method containing implicit parameters are applicable like normal methods
+
+Streams
+	executes lazy lists in which elements are evaluated only when required
+	**A stream is a List with its tail as a lazy val. A value remains computed and is reused (cached).**
+	
+
+
+
+
+

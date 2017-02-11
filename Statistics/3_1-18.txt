@@ -1,0 +1,44 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-18T18:01:25+00:00
+
+====== 3 1-18 ======
+Created Wednesday 18 January 2017
+
+Null & Alter hypotheses:
+	alternative hypothesis can be 1-sided (p > 0.5) or 2-sided (p !=0.5), if Null Hypothesis is p=0.5
+	you may also have Null (p>=0.5) and Alternative (p<0.5)
+	most cases alternative hypothesis is 2-sided, sometimes 1-sided is more appropriate
+
+Errors:
+	trade-off between Type I and Type II errors, can't reduce both at the sametime
+	Type I: significance level, altha
+	Type II: beta
+	Power: Probability of rejecting the null when it's false (desirable is >= 0.8, but is content-based)
+				1 - beta
+			
+Experimental Design
+	P12: reduce Alpha, we get a smaller Power
+	
+Z-score 
+
+P-value
+	Here we are in the Frequentist Paradigm, Not the Bayesian.
+	In fact, Bayesian statisticians don't believe in P-value!
+	
+Others:
+	1. One-sided hypotheses are allowed only before seeing data:
+		After observing data, it is tempting to turn a two-sided test into a one-sided test. Avoid this temptation. Hypotheses must be set up before observing the data. If they are not, the test should be two-sided.
+	2. The significance level selected for a test should reflect the consequences associated with Type 1 and Type 2 Errors
+		a. Type I costly → Small Alpha; Type II costly → Large Alpha
+
+
+**Questions:**
+1. find from Lecture 2: "**By the Central Limit Theorem we know that the binomial distribution can be well approximated by a normal distribution if n is large enough."   Answer: **n*p > 5 and n*(1-p) > 5 is an option
+2. How to plot P5, with prob = 0.7?
+3. **the confidence interval roughly contains all of the values of the proportion that would not have been rejected by the hypothesis test.**
+4. P36 revisit!
+5. P43 Sample Mean of a Normal Distribution always follow a Normal Distribution sample size 20 is too small. Use t-test we can pick a higher critical value that solves the problem (follow up)
+6. https://www.youtube.com/watch?v=TFxx-hNvlQE&list=PLkIselvEzpM7Pjo94m1e7J5jkIZkbQAl4&index=6&spfreload=5
+
+

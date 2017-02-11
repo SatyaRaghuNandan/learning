@@ -1,0 +1,101 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-06T09:13:31-08:00
+
+====== 10.2 AWS ======
+Created Tuesday 06 December 2016
+
+Class: 
+https://bradzzz.gitbooks.io/ga-seattle-dsi/content/dsi/dsi_10_big_data/2.1-lesson/readme.html (EC2 and AWS CLI: follow up step by step)
+https://bradzzz.gitbooks.io/ga-seattle-dsi/content/dsi/dsi_10_big_data/2.2-lesson/readme.html (EMR)
+
+Lab:
+https://github.com/jasonfeiwang/dsi-sea-week10-2.3
+
+
+EC2 (Elastic Compute Cloud): expensive, more robust, more functional
+Heroku: easier to use, smaller datasets
+
+S3 (Simple Storage Service): easier to get access to
+Google Drive/ Dropbox: slower
+
+Server: A server is a computer or software that performs administration or coordination functions within a network
+
+
+**EC2:**
+Amazon tutorial: https://aws.amazon.com/getting-started/tutorials/launch-a-virtual-machine/
+Public Key and Private Key: https://en.wikipedia.org/wiki/Public-key_cryptography
+
+**EC2 setup process:**
+create amazon key pairs
+create an instance
+copy your private key file into [[~/.ssh]]
+
+//Connect to your instance://
+chmod 600 Private_Key
+ssh -i ~/.ssh/amazon_server_key.pem ec2-user@ec2-35-164-210-140.us-west-2.compute.amazonaws.com
+result: 172.31.37.119
+
+Pricing: https://aws.amazon.com/ec2/pricing/  cost calculator
+Spot-Instance: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html
+AMI: an image of your instance
+
+**AWS CLI:**
+install: pip install awscli
+GitHub Repo: https://github.com/aws/aws-cli
+Tutorial: https://aws.amazon.com/getting-started/tutorials/backup-to-s3-cli/
+
+set up access credentials:
+set up IAM user: https://aws.amazon.com/getting-started/tutorials/backup-to-s3-cli/
+Admin2 → Adminy
+Download the CSV credential file (Right after creating the instance, ONLY AVAILABLE AT THIS TIME!!!)
+run "aws configure"
+
+//Check// 
+Pricing: 
+Security Groups: //aws ec2 describe-security-groups --region us-west-2//
+Image: //aws ec2 describe-images --image-ids ami-da2d85ba --region us-west-2//
+
+Launch Spot Instance:
+pay attention to security group
+	use "launch-wizard-1" OR
+	use "default" after adding "SSH" role to it
+result: 172.31.9.23
+
+Access Spot Instance
+ssh -i [[~/.ssh/]] key_name instance_public_dns
+
+Check you instance request:
+aws ec2 describe-spot-instance-requests --region us-west-2
+
+Kill instances:
+//aws ec2 describe-instances --region us-west-2 --output json | grep InstanceId//
+//aws ec2 terminate-instances --instance-ids i-0aa55cd3363b0f187//
+
+**EMR (Amazon Elastic Map Reduce)**
+Create Clusters (choose all default settings)
+automatically created 3: one slave for EC2, one slave for S3, one for master general usage (check slave/master in security group)
+
+Tutorial: http://docs.aws.amazon.com//ElasticMapReduce/latest/ManagementGuide/emr-gs.html
+
+Enable Web Connection:
+	add ssh role for both security groups
+	foxyproxy: https://docs.aws.amazon.com/ElasticMapReduce/latest/ManagementGuide/emr-connect-master-node-proxy.html
+     
+Go to :http://ec2-35-164-58-193.us-west-2.compute.amazonaws.com:8888/
+Register a User, gs: rant all the permissions, install examples
+upload your lab datasets into the **file-manager** section
+create an HDFS table using your uploaded csv in Metastore-Manager (may result in errors, but table shows up after refreshing, bug in Hue?)
+
+Hue (Hive User Environment), Spark and MRJOB are all softwares to work based on Hadoop
+HIVE is a query language (HiveQL) that queries Hadoop's database, it's NOT SQL!
+
+
+**Misc:**
+	Matt Brown's link:
+	https://medium.com/@josemarcialportilla/getting-spark-python-and-jupyter-notebook-running-on-amazon-ec2-dec599e1c297#.hm8xun33h
+	
+	Terminate Instances after creating an image of it
+
+
+

@@ -1,0 +1,128 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-04T17:09:21-08:00
+
+====== 1 1-4 ======
+Created Wednesday 04 January 2017
+
+Do homework in R markdown file
+Do class-exercises in R script is fine
+Better to write your own R code so that don't need to remember Package functions ☺
+
+
+Reading: https://canvas.uw.edu/courses/1097542/pages/readings-for-week-1
+
+**Note: descriptive statistics are denoted by the word “sample” to distinguish**
+**them from the corresponding characteristic of the population. Thus, we say that**
+**the sample proportion is an estimate of the proportion of 1s in the population.**
+**In this course, we may drop “sample” when it is clear from the context.**
+
+Ways to summarize data:
+	categorical var: frequency & relative frequency (table function in R)
+	cross-tabulation (categorical or quantitative)
+	marginal row/column sums
+
+Ordinal Categorical Var
+
+create Categorical from continuous var: Cut function (cutting data into intervals), breaks
+R has an algorithm to determine the best "Break" (interval) when it plots, you can of course change it ☺
+
+Histogram is point-wise constant, PDF is smooth
+Putting the histogram and density function on the same scale!! multiply by sample size and bin-width of histogram!
+(So the Area Under Curve is Sample-Size * Bin-Width)
+
+
+Measure the center of a distribution:
+usage of Mean?
+		estimate the population total
+	
+	Mean vs. Median?
+		median not useful in our example
+		
+		
+	CDF is similar to cumulative relative frequencies
+	CDF vs. **Empirical CDF**
+	
+	
+	BoxPlot:
+		can't see Bi-Modal or not....
+	
+	[[BoxPlot]] & Outliers
+		IQR: inter-quartile range
+		For this purpose an “outlier” is a point that is further than 1.5 X IQR away from the nearest quartile
+		
+	Strip Plot/Jitter Plot:
+		BoxPlot + Dots
+
+Measure of the Spread of a distribution:
+	Sample Variance:
+		n-1 in the denominator instead of n
+		
+	Sample Standard Deviation is usually referred as "SD"
+	
+Bi-Modality:
+	you can probably tell the multiple modes from PDF (maybe not Histogram), but PDF is sensitive to the TURNING PARAMETERS, so the result maybe not reliable
+
+Skew:
+	Right Skew: mean > median, skewness > 0
+	Left Skew: mean < median, skewness < 0
+	Is there an R function that calculates it? 
+		- Package "Moments"?
+	
+Heavy-Tail:
+	47, real vs. best normally approximated distribution
+	Sample Kurtosis is a measure of this (heavy-tailedness realtvie to the normal distribution)
+	P50, 3rd graph, roughly linear but with 2 big outliers....
+	**Study the Q-Q plot (Here it's actually Normal Probability Plot **http://www.itl.nist.gov/div898/handbook/eda/section3/normprpl.htm#importance**)**
+		each point represents a data point (each point is by definition a quantile as well ☺ )
+		x-axis are multiples of SD
+		y-axis are data values
+		you are looking for a straight line fitting all points; Don't compare x-axis with y-axis; will come back when teaching regression
+		**NPP: **
+			**S-shape: heavy tail**
+				**last few points above the line & first few points below the line: fat tails**
+				**last few points below the line & first few points above the line: short tails**
+			**all points below the line: right skewed**
+			**all points above the line: left skewed**
+			
+Association between two variables:
+	Pearson Correlation Coefficient
+	correlation only captures Linear Relationship!
+
+Scatterplot
+
+Scatterplot with smoothing
+	P54, The smoother can pick up non-linear relationship as well
+	
+Line Plot
+
+Spaghetti Plot:
+	normally plot without the data point values
+	
+Transformations:
+	z-score (used in Skewness & Kurtosis)
+	log transformation (some data are by nature good for this: concentratoin of drugs in urine sample)
+		Good example on P58, if not using Log, the distribution is so skewed that is barely legible
+	Geometric Mean works better with Log-Trans than arithmetic mean
+	
+Survival Function:
+	e.g.: Kaplan-Meier Estimator
+	
+
+
+
+**Summary - Methods of descriptive statistics**
+
+	**Summary Statistics**
+		Proportions, Relative frequency distribution, Cross-tabulation, Mean
+		(arithmetic mean), Median, Mode, Range, Variance, Standard
+		deviation, Mean absolute deviation, Quartiles, Quantiles
+		(“percentiles”), Skewness, Kurtosis, Transformations, Z-scores,
+		Geometric mean, Correlation coefficient
+	**Graphical Displays**
+		Boxplot, Strip plot (“jitter” plot), Histogram, Density function,
+		Cumulative distribution function, Survival function, Kaplan-Meier
+		curve, Scatterplot, Scatterplot smoothing, Q-Q plot, Lineplot,
+		Spaghetti plot
+
+

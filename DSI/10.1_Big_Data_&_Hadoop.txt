@@ -1,0 +1,88 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-04T21:07:16-08:00
+
+====== 10.1 Big Data & Hadoop ======
+Created Sunday 04 December 2016
+
+
+class:
+https://bradzzz.gitbooks.io/ga-seattle-dsi/content/dsi/dsi_10_big_data/1.1-lesson/readme.html
+https://github.com/ga-students/dsi-gitbook/tree/master/dsi/dsi_10_big_data/1.1-lesson
+
+Lab:
+https://github.com/ga-students/dsi-sea-week10-1.2 Hadoop Lab with VirbualBox and Vagrant
+https://github.com/ga-students/dsi-sea-week10-1.3 Mr Jobs, Mr Job simulates the Hadoop 
+
+
+We install a Virtual OS (Ubuntu) that has all the Hadoop, Spark, Yarn packaged pre-installed
+
+Velocity: 
+	Near Real Time Computing
+		https://en.wikipedia.org/wiki/Real-time_computing
+		QQ's team at MSN: streaming 15 TB of data per day
+		They asked Omniture for a shorter turnaround
+		https://en.wikipedia.org/wiki/Omniture
+	Batch
+	Stream
+
+How to handle Big Data?
+1. HPC (high performance computing)  huge computers
+2. Cloud Computing
+
+Divide-Conquer:
+	break into independent subtasks, then merge later
+	
+Map-Reduce:
+	a two-phase divide and conquer algorithm
+	The functional paradigm is good at describing how to solve a problem, but not very good at describing data manipulations (eg, relational joins).
+		e.g. Microsoft's Cosmos:
+			   https://www.quora.com/Distributed-Systems-What-is-Microsofts-Cosmos
+			   https://azure.microsoft.com/en-us/blog/behind-the-scenes-of-azure-data-lake-bringing-microsoft-s-big-data-experience-to-hadoop
+			   They have to develop "best practices" for writing queries(e.g. do unique before join)... It's always to JOIN's that hurt performance :(
+
+	combiners: intermediate reducers that are performed at node level in a multi node architecture.
+					  this way you can do less data I/O to the final reducer
+				
+	cat <input-file> | python mapper.py | sort -k1,1 | python reducer.py
+		This line creates a processing pipeline
+		cat: print out the content
+		sort -k1,1: sort by column 1
+
+**Stream processing with shell commands:**
+http://aadrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluster.html
+	data: https://github.com/rozim/ChessData
+	sleep 3 | echo "Hello world." will be run in parallel, not sequentially!
+	sort your output first, then do unique count (since uniq can only merge the adjacent values)
+	split($0): $0 means split the whole line; $1 means just the 1st column
+	This command line pipeline is much faster than Hadoop as Hadoop spent too much time on the I/O among its nodes
+	xargs can let you parallize jobs
+		
+Virtualbox and Vagrant:
+	https://github.com/ga-students/dsi-gitbook/blob/master/dsi/dsi_10_big_data/VM-installation.md
+	We use VM for this lab so that everybody has exactly the same setup (unlike the Heroku one ☺ )
+	
+	vagrant up
+	vagrant ssh
+	vagrant halt
+	
+AWS:
+	training: https://awstraining.csod.com/LMS/catalog/Welcome.aspx?tab_page_id=-67&tab_id=-1
+
+**Hadoop Docs:**
+	HDFS Command Line Documentation:
+		http://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-common/FileSystemShell.html
+	Hadoop: http://hadoop.apache.org/
+	Hadoop & YARN: http://hadoop.apache.org/docs/current/hadoop-yarn/hadoop-yarn-site/YARN.html
+	Hadoop Streaming: https://hadoop.apache.org/docs/r1.2.1/streaming.html
+	**Hadoop MapReduce Tutorial**: http://hadoop.apache.org/docs/current/hadoop-mapreduce-client/hadoop-mapreduce-client-core/MapReduceTutorial.html
+	**Hadoop MapReduce in Python**: http://www.michael-noll.com/tutorials/writing-an-hadoop-mapreduce-program-in-python/
+
+**Mr Job Docs:**
+	**fundamentals**: http://mrjob.readthedocs.io/en/latest/guides/concepts.html
+	examples: https://github.com/Yelp/mrjob/tree/master/mrjob/examples
+	
+
+
+
+

@@ -1,0 +1,74 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-22T15:29:17-08:00
+
+====== outcome ======
+Created Tuesday 22 November 2016
+
+Branding statement:
+	add your experience and education (prior and GA) 
+	
+	be specific at what you want to do (at least down to Vertical Level)
+	design customized customer experience?
+	process optimization?
+	public sector?
+	
+	
+What type of problem do i want to solve and why? (motivation) 
+
+
+Companies:
+	Health: Arivale, Accolade
+	
+	like Chubb/Customer Service: Amazon, Zillow, DocuSign
+	
+	Fast-paced:
+		MAANA: https://www.maana.io/ 
+		Extra Hop: https://www.extrahop.com/  (cool)
+		Flowroute: https://www.flowroute.com/ (cool)
+		Energy Savvy: https://www.energysavvy.com/
+	
+	AI/VR/Algorithms
+		Allen Institute: http://www.alleninstitute.org/  internship?  (AI)
+		kymeta: https://www.kymetacorp.com/   (LISP programmer) (hardcore)
+		Algorithmia: https://algorithmia.com/
+		Start-Up's:
+			http://seattle.startups-list.com/
+			http://www.geekwire.com/startup-list/
+
+	Concur: part of SAP
+
+	Expeditors: http://www.expeditors.com/  3PL software (9-5 daily)  stable like MS? (traditional)
+	
+	Public Sector: Scrata https://socrata.com/segments/city-government/
+	
+Next Steps:
+	Email Casey 0~3 jobs that I want to apply for
+	Apply for Starbucks
+	Finish GA profile by 12/23
+	Send a Quick Bio to Casey when asking for referral
+	Email Casey the position, and why you are interested when applying for Amazon
+	
+	
+Job Application:
+	https://starbucks.taleo.net/careersection/1000222/jobdetail.ftl?job=160007548&lang=en
+
+Meetups:
+	https://techtalkcassandra.splashthat.com/
+	
+Online Resume:
+	creddle: http://creddle.io/
+
+To check out:
+	embded js: https://www.sitepoint.com/javascript-embedded-systems-good-fit/
+	
+
+After sending out a cold application, better to find someone related to that position and network with him/her
+	I just graducated from GA, really insterested in what you guys are doing over ther. Can I buy you a coffee?
+	focus on engineers, independent contributors (hiring managers, recruiters are usually very busy)
+	pretend to be an informational interview, ask about the position when appropriate
+	app, app, app, networking, networking, networking
+	
+Build the momentum, but don't burn yourself!
+
+

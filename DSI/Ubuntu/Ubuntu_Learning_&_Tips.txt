@@ -1,0 +1,73 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-23T19:35:31-08:00
+
+====== Ubuntu Learning & Tips ======
+Created Wednesday 23 November 2016
+
+
+update booting order:
+	sudo efibootmgr
+
+search for a package/software:
+	sudo dpkg -l | grep virtualbox
+
+unzip a file:
+	tar xvf package-name
+
+
+
+**Lesson**
+
+Background
+	1. Terminology
+		a. boot loader: a program that boots the operating system by interacting with the kernel (GRUB ..)
+		b. service: program that runs as a background process: httpd, ftpd etc.
+		c. filesystem: method for storing and organizing files (ext3, ext4, fat..)
+		d. Console = Hardware + Kernel + CLI/Shell
+		e. GUI = X Window System + Window Manager + Desktop Environment (GNOME, KDE, Xfce and fluxbox ..)
+		f. X Window System: a graphical subsystem on top of kernel
+		g. Desktop Environment: a GUI on top of the operating system
+		h. CLI: command line interface
+		i. Shell: command line interpreter (bash, tcsh, zsh ..) 
+	2. Distros
+		a. CentOS, Scientific Linux and Oracle Linux are all binary compatible to Red Hat Enterprise Linux
+		b. Distros - Kernel = Software Package Mgt, User Mgt, File-related operations ... 
+	3. Other
+		a. Linux accesses many features and services through files and file-like objects.
+		b. Linux is a fully multitasking, multiuser operating system, with built-in networking and service processes known as daemons.
+ 
+Linux Structure & Installation
+	1. Filesystems types
+		a. just like a refrigerator ☺
+		b. conventional disk fs: ext2, ext3, ext4, XFS, Btrfs, JFS, NTFS, etc.
+		c. database fs
+		d. special purpose fs
+	2. Filesystem
+		a. names are case-sensitive
+		b. non-core utility programs are under [[/usr,]] compare how files are organized in it with the / 
+		c. Ctrl + L = current directory
+	3. Boot Process (passing control step by step)
+		a. BIOS: Power on Self Test (initialize hardwares like screen, keyboard, main memory ..)  The BIOS software is stored on a ROM chip on the motherboard.
+		b. Boot Loader loads the **Kernel** (User Chosen Kernel image) and **Initial RAM-based file system** (**initramfs**) into Memory
+		c. Kernel uncompress itself, check hardware, initialize hardware device drivers
+		d. Kernel configure the Memory, Processor, storage, subsystems ...
+		e. initramfs  (a bunch of programs & binary files, //drivers to mount mass-storage disk in particular//) finds and mounts the proper root filesystem, clear itself from Memory 
+		f. Kernel(or **inittramfs?**) runs [[/sbin/init]] (The Initial Process), which starts other process to get system running (init keeps the system running, shut it down cleanly, "manager of last resort" for all non-kernel processes)
+		g. init starts Text-Mode login --> command line shell 
+		h. Loading X Window System
+		i. Desktop Env = Session Manager + Window Manager + Other Utilities (can be started/restarted with **startx**) 
+
+	4. GUI
+		a. The default display manager for GNOME is called gdm
+		b. The gdm display manager presents the user with the login screen
+		c. Logging out through the desktop environment kills all processes in your current X session and returns to the display manager login screen.
+		d. Lock Screen = Ctrl + Alt + L
+		e. suspending state: keep's your system's apps, desktop etc in RAM, turn off all other hardwares
+		f. viewing files: Ctrl + 1 = List; Ctrl + 2 = Icon
+		g. hidden files: Ctrl + h
+		h. directory bar: Ctrl + l
+		i. You should never delete your home directory as doing so will most likely erase all your GNOME configuration files and possibly prevent you from logging in
+ 
+	5. Network Manager 
+

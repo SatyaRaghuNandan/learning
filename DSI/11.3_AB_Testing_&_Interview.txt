@@ -1,0 +1,112 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-14T09:15:58-08:00
+
+====== 11.3 AB Testing & Interview ======
+Created Wednesday 14 December 2016
+
+
+**Qingqing Gan**
+**A/B Testing**
+
+**Why** do we do A/B testing?
+A good way to **prove causality**! 
+Normally we know correlation != causality, but in A/B testing, effect must have come from the changes
+
+HiPPO: Highest Paid Person's Opinion
+OEC: overall evaluation criteria
+False-Positive error is "Type I" error
+300 milliseconds are when human eyes can notice the lagging
+impression: number of visible elements in a webpage shown on your screen
+page view: an instance of an Internet user visiting a particular page on a website
+
+To answer an interview question: 
+
+
+3 metrics in A/B Testing:
+successful metrics (most important)
+guardrail metrics (can go up, down, not necessarily lead to bad results, depends on your current goal)
+
+you always need to strick a balance among the metrics
+
+
+**Factors that affct the false-positive rate (you decided to go with the change, but there is actually no difference between A and B):**
+prevalence of real effecits (higher is good)  — prior of alternative hypothesis (domain knowldege)
+Power (higher is good) — enough data points
+P-value — (lower is good)
+//Final Minimum Probability of True Null (False Positive Rate)//
+**false-positive rate is like posterior prob of Null Hypothesis, given observed data, it may be large even when P-value < 5% if the prior prob of Null Hypo is high (not all P-values are equally helpful)**
+
+http://blog.minitab.com/blog/adventures-in-statistics-2/understanding-hypothesis-tests:-confidence-intervals-and-confidence-levels
+http://blog.minitab.com/blog/adventures-in-statistics-2/how-to-correctly-interpret-p-values
+http://blog.minitab.com/blog/adventures-in-statistics-2/not-all-p-values-are-created-equal
+
+
+**SRM (Sample Ratio Mismatch)**
+Quara question: 
+Welch's T-test: statistical tricks you can use when you have unequal sized samples... (discouraged, you need to be very sharp to use it right!)
+P29 of 39: main reason you don't want a bad experiment (e.g. SRM), there are still bugs/problems even if you can compensate with statistical tricks!
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+**Stephen Hsiao:**
+**Metrics** 
+
+If the result of you A/B testing is bad, don't just give up, go back and deep dive!!!
+
+Typical Metrics:
+customer engagement
+monetization
+How to adjust the business strategy? Don't Vote! Do A/B Testing!!! 
+
+Three types of metrics:
+1. success metrics (your objective goal)
+2. guardrail metrics (it tells you lots about your customers, but sometimes too sensitive)
+3. Future metrics
+
+Be aware of the concept of Trigger (e.g. ordering dissert in a restaurant)
+
+
+**Interview:**
+process:
+Phone Screning (http://collabedit.com)
+
+Basic Skills:
+	data savviness (**SQL**, data join, Metrcis)
+	general purpose coding (**data structure & algorithm**) 
+		— clean data, manipulate a string etc. Python is acceptable: trees/array/queue/stack/linked-list/double-linked list/performance
+		— do research on GitHub (python for data structure)
+		— if asked which algorithm is better, always ask your constraints (memory, CPU, etc...)
+		— Practice coding using https://leetcode.com/ do 50-100 practice problems
+	prob/stat
+	
+
+in interview: ask how much time do I have for this question? how deep should I go?
+always clarify the questions and knwo how you will be evaluated
+do you liek quick solution? high-quality solution? many solutions? my best solution only?
+
+Interviewer wants to learn about you:
+	1. how do you approach a problem
+	2. able to defend your answers?
+	3. can communicate well?
+	4. be able to pause and check your thought process
+	5. demonstrate your sense, strength, weakness (honesty)
+
+when you stuck, talk it though creatively, why you are stuck and ask for help, "am I on the right track?"
+"I have seen a similar problem"
+
+Be prepared to answer hard questions:
+1. are you sure your answer is right?
+2. can you solve the question in a different way?
+3. which solution is the best?
+
+Always ask for feedbacks (this might be the only hour in my life talking to you, can you tell me how I can improve?)
+"This is a very interesting problem. Sorry I can't solve it now. I am not a quick person. I will go back and send you my answer. Do you mind that?"
+provide follow-ups
+	"I really enjoyed the conersation with you. May I have your email address?"
+	what you taught me
+	what I didn't do well but realized now
+	"I'd like to hear your feedback"
+	
+When preparing inerview quesions, practice talking it out loud (just getting the right answer is not enough... talk the thought process out!)
+

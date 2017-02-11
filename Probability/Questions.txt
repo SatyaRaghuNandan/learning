@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-04T12:26:54-08:00
+
+====== Questions ======
+Created Sunday 04 December 2016
+
+Problems
+1. Adams Law w. conditioning P396
+2. Exponential Max & Min P304
+3. Intuition behind Poisson Process, why does lambda represent the "Rate"? Geometric converges to Expo as p → 0? 

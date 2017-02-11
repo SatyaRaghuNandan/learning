@@ -1,0 +1,30 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-08T22:06:04-08:00
+
+====== Command Line ======
+Created Sunday 08 January 2017
+
+**Unix File System**
+Change permission: (u, g, o means User, Group, Other)
+
+Directory Permissions begin with a "d" instead of a "-"
+R = Read, W = Write, X = Execute
+
+	chmod ug+rx myfile:  adds read and execute permissions for user and group.
+	chmod a-r myfile:  remove read access for everyone
+	chmod ugo-rwx myfile:  removes all permissions from myfile
+	OR
+	Think of r, w, and x as binary variable: 755, 600, ...
+
+Change group:
+	chgrp group filename
+
+Change ownership:
+	chown user:group filename
+
+Read Plain Text:
+	cat, more, less, head, tail 
+
+
+

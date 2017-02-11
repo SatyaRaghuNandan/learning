@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-20T19:58:49+00:00
+
+====== Hadoop ======
+Created Friday 20 January 2017
+
+Hadoop Eco-System:
+	Core Hadoop: Store data in HDFS, Process data in MapReduce (Both on cluster of machines, locality principle)
+	Tools to easily access data in Hadoop: 
+		Hive: SQL-like code, translated into MapReduce code to be executed on the cluster, good at long Batch Processing jobs
+		Pig: simple scripting language, translated 
+	Impala: query data using SQL, directly from HDFS (no MapReduce), good at Low Latency Queries
+	Sqoop: take data from relational db, put into HDFS as delimited files
+	HBase: real-time database built on top of HDFS
+	Hue, Oozie, Mahout(ML Library), Flume
+	
+CDH: a distribution of Hadoop, by Cloudera, easy to install
+
+
+

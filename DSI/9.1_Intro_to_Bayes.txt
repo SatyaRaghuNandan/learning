@@ -1,0 +1,40 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-28T09:09:40-08:00
+
+====== 9.1 Intro to Bayes ======
+Created Monday 28 November 2016
+
+Class:
+https://github.com/ga-students/dsi-gitbook/tree/master/dsi/dsi_08_bayesian_inference/1.1-lesson
+https://github.com/ga-students/dsi-gitbook/tree/master/dsi/dsi_08_bayesian_inference/1.3-lesson
+https://bradzzz.gitbooks.io/ga-seattle-dsi/content/dsi/dsi_08_bayesian_inference/1.3-lesson/readme.html
+
+
+Frequentist vs. Bayesian
+
+
+
+MAP:  Maximum A Posteriori
+ML vs. MAP:
+https://www.quora.com/What-is-the-difference-between-Maximum-Likelihood-ML-and-Maximum-a-Posteri-MAP-estimation
+ML esimation does not incorporate any prior knowldege and doesn't generate an estimate ofhte certainty of its results
+
+Good Paper - Step by step illustration: http://www.mi.fu-berlin.de/wiki/pub/ABI/Genomics12/MLvsMAP.pdf
+Likelihood vs. Probability
+
+Beta Distr:
+http://stats.stackexchange.com/questions/47771/what-is-the-intuition-behind-beta-distribution
+http://www.joyofdata.de/blog/an-intuitive-interpretation-of-the-beta-distribution/
+Beta distribution is appropriate to express prior belief about a Bernoulli distribution.
+Naive Bayes: MLE, just using the given data, not any prior knowledge
+
+Lab: 
+http://localhost:8888/notebooks/lab/8_9th_week/dsi-sea-week08-1.2/Lab%20Worksheet%20Starter.ipynb
+
+
+resource:
+	https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-041-probabilistic-systems-analysis-and-applied-probability-fall-2010/video-lectures/lecture-21-bayesian-statistical-inference-i/
+	http://people.stern.nyu.edu/wgreene/MathStat/Notes-2-BayesianStatistics.pdf
+
+    

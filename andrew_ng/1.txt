@@ -1,0 +1,27 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-29T21:23:08+00:00
+
+====== 1 ======
+Created Sunday 29 January 2017
+
+Machine Learning Definition
+	Arthur Sameul: field of study that gives computer the ability to learn without being explicitly programmed
+	algorithms that play checkers, Computer plays better than Arthur himself
+	
+	Tom Mitchell: experience E, task T, performance measure P
+	
+4 Major Sections
+	1. Supervised Learning
+		a. regression, classification (SVM can even handle feature space with infinite dimensions!), etc.
+	2. Learning Theory
+		a. why learning algorithms work
+		b. how to apply them effectively
+		c. how many data do you need
+	3. Unsupervised Learning
+		a. find interesting structures in the data
+		b. clustering, image processing (grouping pixels → 3D model from a single image), Independent Component Analysis
+		c. organizing computer clusters, social network analysis, market segmentation, EEG data, text analysis etc.
+	4. Enforcement Learning
+		a. Reward Function
+		b. Robotics, Web-Crawling, 

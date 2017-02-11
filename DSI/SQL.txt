@@ -1,0 +1,102 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-12T12:54:52+00:00
+
+====== SQL ======
+Created Thursday 12 January 2017
+
+PostgreSQL performance:
+	http://okigiveup.net/what-postgresql-tells-you-about-its-performance/
+	
+High-Performance Blog:
+	https://www.periscopedata.com/blog/interactive-analytics-redshift-bigquery-snowflake.html
+	
+Example of Clean Code:
+	http://jonathansacramento.com/posts/20161119_clean_sql.html#
+	
+AWS Redshift:
+	performance deep dive: https://www.youtube.com/watch?v=fmy3jCxUliM
+	2016 what's new: https://www.youtube.com/watch?v=OyHhYIUEPQ4
+	
+To Learn:
+	MySQL, PostgreSQL
+	Cloud Analytics solution: AWS RedShift
+	
+Topics:
+	materialized views
+	partition key
+	indexing
+	why use a view vs. a table?
+	why use a CTE?
+		CTEs (common table expressions), temp tables by WITH clauses, it allows you to create something somewhat equivilant to a view that only exists during that transaction.
+		Readability is huge when it comes to SQL to ensure its doing the right thing. SQL will almost always tell you an answer, it just may not be to the question you think you’re asking. Ensuring your queries can be reasoned about is critical to ensuring accuracy and CTEs are one great way of accomplishing that.
+		
+**Misc:**
+1. Whenever possible, don’t use a nested queries
+2. **Distinct** is same as **Group By**. 
+3. Monotone query: Whenever we add tuples to one or more input tables, the answer to the query will not lose any of the tuples
+	a. Theorem: If Q is a SELECT-FROM-WHERE query that does not have subqueries, and no aggregates, then it is monotone.
+4. Relation, Tuple, Attribute == Table, Row, Column
+5. file types: Heap (unsorted), Sequential (sorted in someway)
+************************************************************************************************************************************************
+**Data Management Concepts**
+	* Data models: how to describe real-world data
+		–  Relational, XML(eXtensible Markup Language), graph data (RDF: Resource Description Framework)
+	* Schema v.s. Data
+	* Declarative query language
+		–  Say what you want, not how to get it
+	* Data independence
+		–  Physical independence: Can change how data is stored on disk without maintenance to applications
+		–  Logical independence: can change schema w/o affecting apps
+	* Query optimizer and compiler
+	* Transactions: isolation and atomicity
+
+**Where vs. Having**
+	* WHERE condition is applied to individual rows
+		–  The rows may or may not contribute to the aggregate
+		–  No aggregates allowed here
+	* HAVING condition is applied to the entire group
+		–  Entire group is returned, or not at all
+		–  May use aggregate functions in the group
+
+**Queries that must be nested**
+	* Queries with //universal quantifiers// (ALL) or with //negation (Not In, Not Exist ...)//
+	* Queries that use aggregates in certain ways
+		–  Note: sum(..) and count(*) are NOT monotone, because they do not satisfy set containment
+		–  select count(*) from R is not monotone!
+
+**Relational Algebra (How to get the data we want)**
+	Relational algebra expression is also called the **“logical query plan"**
+	A **Physical Query Plan**: a logical query plan annotated with physical implementation details
+	
+	For each SQL query... many logical plans
+	For each logical plan... many physical plans
+		e.g. For an inner join: Nest Loop Join, Merge Join, Hash Join
+
+**Query Execution**
+	Pipelined Execution (use whenever possible)
+	Intermediate Tuple Materialization (for certain operator implementations, not enough memory)
+	
+**Index**
+	Index Organization: B+ trees, Hash Table, Bit Maps, R-trees, Inverted Index
+	Clustered (only one) vs. Unclustered (possibly many)
+	Primary (over attributes that include the Primary Key) vs. Secondary 
+	
+	Random reading 1-2% of the file ≈ sequential scanning the entire file;
+	Each new index slows down updates to table
+	
+	**Index Selection Problem** is HARD, done by DBA
+		Make some attribute K a search key if the WHERE clause contains:
+			–  An exact match on K
+			–  A range predicate on K
+			–  A join on K
+		Consider queries in workload in order of importance
+		Consider relations accessed by query
+			–  No point indexing other relations
+		Look at WHERE clause for possible search key
+		Try to choose indexes that speed-up multiple queries
+
+**Database Design**
+	Starting from scratch, design the database schema: relation, attributes, keys, foreign keys, constraints etc
+	
+

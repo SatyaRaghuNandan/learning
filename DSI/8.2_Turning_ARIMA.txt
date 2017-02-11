@@ -1,0 +1,45 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-22T10:09:43-08:00
+
+====== 8.2 Turning ARIMA ======
+Created Tuesday 22 November 2016
+
+Class: https://bradzzz.gitbooks.io/ga-seattle-dsi/content/dsi/dsi_09_time_series/4.1-lesson/readme.html
+
+Resources:
+	Tutorial: https://www.analyticsvidhya.com/blog/2016/02/time-series-forecasting-codes-python/   
+				work on the lab by following this!
+
+		focus on the **test_stationarity** function
+			ts_log_moving_avg_diff.dropna(inplace=True)
+			test_stationarity(ts_log_moving_avg_diff)
+			p-value is smaller than 0.05,  so it's stationary
+		
+		Decomposition
+			results in a much lowered P-value!
+
+		Forecasting a TS:
+			q is the window
+			p is how many times the data should repeat?
+			d is ?
+			
+		ACF and PACF plots:
+			Autocorrelation - q
+			Partial Autocorrelation - p
+
+		results_ARIMA = model.fit(disp = -1)  ? 
+
+
+	Statoinary: http://stats.stackexchange.com/questions/19715/why-does-a-time-series-have-to-be-stationary
+	TS in R: https://www.analyticsvidhya.com/blog/2015/12/complete-tutorial-time-series-modeling/
+	Wold's Theorm: https://en.wikipedia.org/wiki/Wold%27s_theorem
+
+Lab: http://localhost:8888/notebooks/lab/8th_week/dsi-sea-week09-4.2/Seasonal%20ARIMA.ipynb
+
+	from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
+	try out these libraries to plot your acf and pacf
+	
+
+
+

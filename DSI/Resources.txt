@@ -1,0 +1,66 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-30T10:41:56-08:00
+
+====== Resources ======
+Created Wednesday 30 November 2016
+
+Projects & Solutions:
+	17 projects: https://www.analyticsvidhya.com/blog/2016/10/17-ultimate-data-science-projects-to-boost-your-knowledge-and-skills/
+	Kaggle Past Competitions: http://www.chioka.in/kaggle-competition-solutions/
+
+PostgreSQL Pattern Matching:
+	https://www.postgresql.org/docs/9.0/static/functions-matching.html
+	
+Palette:
+	https://www.materialpalette.com/
+	
+Nice Portfolio:
+	https://www.linkedin.com/in/duffin22 (Good UX)
+	
+	GA Students: https://gallery.generalassemb.ly/DSI
+	
+	Corey:
+	GitHub Page Site: https://cmyoung0718.github.io/#services
+	
+	https://www.linkedin.com/in/corey-young-0718?authType=OPENLINK&authToken=e3xG&locale=en_US&srchid=600245861483662868775&srchindex=1&srchtotal=185&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A600245861483662868775%2CVSRPtargetId%3A358796168%2CVSRPcmpt%3Aprimary%2CVSRPnm%3Atrue%2CauthType%3AOPENLINK
+	
+	Matt Brown: https://www.linkedin.com/in/mattbrown3255?authType=name&authToken=JI1y&trk=prof-sb-browse_map-name
+	
+	Jesse: https://www.linkedin.com/in/jroyalty07?authType=name&authToken=6oKK&trk=prof-sb-browse_map-name
+	Shetty: https://www.linkedin.com/in/sadashivashetty?authType=name&authToken=okKt&trk=prof-sb-browse_map-name
+
+	Github Pages:
+		http://www.whoisjuan.me/
+		http://mbtaviz.github.io/
+		https://facebook.github.io/react/
+		
+Big Datasets for Practice:
+	Netflix movie recommendation competition in 2006: 100 millions
+	Yahoo music recom KDDCup 2011: 252 millions
+	
+Interviews:
+	https://datascienceinterview.quora.com/
+
+DS Podcasts:
+	http://partiallyderivative.com/
+	
+Who does What:
+	https://www.datacamp.com/community/tutorials/data-science-industry-infographic#gs.UVSkajs
+	
+Coding in Python:
+	games: https://www.hackerrank.com/
+	algorithms and Data Structure: https://interactivepython.org/runestone/static/pythonds/index.html
+	style: https://www.python.org/dev/peps/pep-0008/#a-foolish-consistency-is-the-hobgoblin-of-little-minds
+
+SQL:
+	http://sqlzoo.net/wiki/Tutorial_Quizzes
+	
+Feature Engineering:
+	Uni-variate selection: http://blog.datadive.net/selecting-good-features-part-i-univariate-selection/
+	
+Visualizing High-Dimensional data: (T-SNE)
+	https://lvdmaaten.github.io/tsne/#implementations
+	
+
+

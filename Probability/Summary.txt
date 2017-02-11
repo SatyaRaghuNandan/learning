@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-04T12:27:56-08:00
+
+====== Summary ======
+Created Sunday 04 December 2016
+
+1. projection, P397
+	a. does this relate to PCA?
+	b. uncorrelatedness = perpendicular
+	c. how do we define "perpendicular"? shortest route from a point to a plane?
+	d. E(Y|X) is the best estimator of Y based on X, lowest MSE?
+
+2. Linear Regression
+	a. assumes conditional Expectation of Y given X is linear in X
+	b. E(error|X) = 0
+
+3. Eve's Law
+	a. E, V, V, E
+	b. Total Var = within-group Var (unexplained var) + between-group Var (explained var)
+

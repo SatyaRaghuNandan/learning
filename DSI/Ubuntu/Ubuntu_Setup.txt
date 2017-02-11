@@ -1,0 +1,87 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-23T10:36:40-08:00
+
+====== Ubuntu Setup ======
+Created Wednesday 23 November 2016
+
+**Finished:**
+	Install Grub Customizer
+	
+	Install Tmux
+	
+	Install Powerline
+		Powerline settings for Gnome-Terminal, Tmux
+		
+	Turn Off Apport at Boot (Crash Reports)
+		sudo -i gedit /etc/default/apport
+	
+	Solarize Gnome-Terminal
+	
+	Solarize Vim:
+	1. Install solarized color
+		Search solarized vim in github
+		put the solarized.vim file under the .vim/colors directory
+	
+	3. Install solarized Theme & Pallette for the terminal
+		   use the ~/Solarized directory to create a new terminal profile to install, choose the dark option 
+		   a.Good Terminal color but downgraded Vim color:  
+			 set terminal color 256 in vimrc file
+			 http://ethanschoonover.com/solarized/vim-colors-solarized    
+			 Problem: VIM still has a down-graded 256 colorscheme
+	   
+		   b. Bad Terminal Coloring but good Vim coloring:
+			  profile SolarizedVIM: both text and pallete choose solarized
+	
+	4. Best Practice: use Gvim instead of running vim in terminal
+		   uninstall vim-gnome
+		   install vim-gtk
+	
+	Disable CUPS-browsed  service (speed up shutdown time)
+		sudo systemctl stop cups-browsed.service
+		
+	Virtual Environments
+		GraphLabGreate, Py35, ENV all in Anaconda2
+	
+	Install and Setup Go
+		https://golang.org/
+		https://tour.golang.org/welcome/1
+		https://golang.org/doc/code.html
+		https://appliedgo.net/
+
+	Install xsel for easy copy to clipboard
+	
+**To-Do List:**
+	How to edit Office Files  under Linux, VirtualBox Windows?
+	
+	Change app/folder/website background colors:
+		http://springsfeng.iteye.com/blog/1522836
+		http://forum.ubuntu.org.cn/viewtopic.php?f=86&t=137162&sid=3f7359bdf10adec3819d68c7cad65ce9&start=15
+		http://www.ilovefreesoftware.com/31/featured/eye-care-extensions-for-google-chrome.html
+		
+	Zim shortcuts
+		http://zim-wiki.org/manual/Start.html
+		
+	Install VirtualBox Module( **and Enable Secure Boot, change CONFIG_MODULE_SIG = Y at /boot/config-4.4.0-51-generic**):
+		[[https://]][[https://help|help.]]ubuntu.com/community/VirtualBox/Installation
+		https://www.virtualbox.org/wiki/Downloads
+		Sign Module in Ubuntu: http://askubuntu.com/questions/760671/could-not-load-vboxdrv-after-upgrade-to-ubuntu-16-04-and-i-want-to-keep-secur
+		Sign Module in Fedora: http://gorka.eguileor.com/vbox-vmware-in-secureboot-linux/
+
+	How to Start Jupyter Notebook with a specific Environment or Kernel? (ENV, Py35 etc.)
+	
+	Backup Ubuntu
+		https://help.ubuntu.com/community/DriveImaging
+		http://clonezilla.org/liveusb.php
+		http://www.dedoimedo.com/computers/free_imaging_software.html
+		
+	Learn Environmental Variables:
+		https://help.ubuntu.com/community/EnvironmentVariables
+		
+	Network Connection Issue:
+		http://int32bit.me/2016/04/18/Linux网络故障排查总结/
+		
+	Install LumaQQ:
+		http://www.it610.com/article/1533421.htm
+
+

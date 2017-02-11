@@ -1,0 +1,76 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-11T06:42:43-08:00
+
+====== 2 1-11 ======
+Created Wednesday 11 January 2017
+
+The Sampling Distribution of Sample Means and Proportions
+
+	random sampling mechanisms:
+		simple random sample
+		stratified ....
+		clustered ....
+		
+	**What if we get a sample mean distribution with Replacement?**
+	Sample with replacement can be used for sampling from probability distributions (OR when sampling from an infinite population like the U.S. population)
+	  Sample with replacement can be used for bootstrap
+	It's rarely used in practice
+	**Sample Mean is an unbiased estimiate of the Population Mean, no matter sampling with or without replacement???!!!**
+		with replacement case is easy to prove, all traditional formula is based on that case
+		**without replacement case is complicated, but can be shown..... Beyond this course!**
+		Read: https://www.ma.utexas.edu/users/parker/sampling/
+
+	rbinom() is to pull a **Random Sample** from a Bernoulli distribution
+	
+	Sampling from a Continuous Population Distribution
+		remember in practice your assumption on the distribution of your population of interest is almost always WRONG! Only approximately correct!
+		**why is the above statement recorded here? ☺**
+		
+		
+The Standard Error (SE) of the Sample Mean
+	**P22   the derivation assume all Xi's are independent (think as sampling w. replacement or sampling from an infinite population), in reality we may need "finite population correction factor" when studying finite population**
+	http://stattrek.com/statistics/dictionary.aspx?Definition=finite_population_correction
+	
+CLT
+	Proof of CLT? use Moment Generating Function or Characteristic Function.
+	AND **when is N sufficiently large?  N's size is context-based.**
+	
+	In practice we use Sample Variance to estimate Population Variance, not other parameters like mean, lambda etc. together with an assumption on the distribution of the data. (Normally your assumption on distribution is wrong!)
+	It's not wise to make unnecessary distributional assumptions.
+	
+
+"Continuity Correction"
+	when we use continuous dist to approximate discrete dist
+	e.g. we should shift the Normal-Bell curve to better fit the Binomial Dist in P33
+	will come up again in "Hypothesis Testing"
+
+
+Confidence Interval (CI)
+	P47, that's why polls like to use 2000 sample, as the margin of error is about 1%
+	CI is derived from CLT and SE
+	CI endpoints can be below 0 and above 1
+	The CI is trying to get a CP of 95%, but doesn't always work as advertised ☺   You can get its true Coverage Probability (CP) using simulation
+	
+	when N is smaller, CI is wider due to larger estimated SE. The resulting CP can be higher or lower than the CP of a larger N, but it's a worse CI (either CP is smaller or CI is too wide to be useful)
+	
+	e.g.
+		P57 take advantage of knowledge of the underlying Distribution to estimate the SE:
+			**Is it just computationally easier or it is by nature more accurate than using the Sample Variance? (Fei thinks it's just computational)**
+		But in general we don't want to make distributional assumptions.....
+
+**To use a Normal Model for the Sample Mean** **In Practice**
+	1. To ensure sample observations are independent
+		a. do a simple random sample consisting of <10% of population
+	2. To make a good estimate of sigma
+		a. sample size >= 30
+		b. population dist is not strongly skewed (can be relaxed if sample size is large)
+
+
+**Questions:**
+	**sampling without replacement gives a sample mean with smaller variability.**
+	**sampling with replacement gave an estimate of the variance that was closer to the population variance.**
+	Can these two be explained by **"finite population correction factor"?**
+	
+	  **The estimates are closer for the mean than for the variance (variances tend to be harder to estimate precisely than means)**
+

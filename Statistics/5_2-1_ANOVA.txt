@@ -1,0 +1,53 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-02-01T17:48:09+00:00
+
+====== 5 2-1 ANOVA ======
+Created Wednesday 01 February 2017
+
+Homework 4:
+	second half: use the same simulation dataset but try 2 different ways to handle it. "Blocking" of dataset!
+	
+ANOVA only works in equal-variance mode
+Robust Standard Errors can help to do comparison of multiple means with unequal variances
+
+Two-Sample T-test requirements:
+	1. Independecne
+	2. Equal variances
+	3. Sample sizes must be large or the population distributions must be normal
+
+Problem of multiplicity
+	P12, to prove the Type I error is larger than 5%, a bit less than 15% (depends on the correlation of the three tests?)
+
+ANOVA
+	a natural extension of the idea of T-test
+	P16-17  is not essential to know
+	MSB (Mean Squares between), MSW (Mean Squares within)
+	Typo on P19 about P = 0.49
+	If you want to know the probability of a specific alternative (Null being all are equal), don't use ANOVA, use some other methods
+		F-test rejects Null, you know not all are equal → Other specialized tests
+
+	 **the average value of the residuals is always 0?**
+
+	**Randomization, Blocking, Experimental Design in Quiz 10?**
+	
+	Lab 5: 11, 17, why similar? same numerator?
+	
+			  20: ANOVA assumptions are met if we use the Square Root of the Count variable, but not if using the Count variable directly
+				   This is a useful way to handle the Response Variable: **Transformation**
+				   But it changes the Hypothesis, See Question 21
+				
+			Old school: transform the data to meet the Testing Model assumptions
+			New approach: find novel models to do the testing without changing the underlying data
+			  
+Homework 4
+	**Q13, the result is close to those in 11 and 12, Since the Sample Sizes are still the same as before ... ?**
+	
+	Q18: if you use a stringent (small) alpha, you need larger sample sizes
+	
+	Q20: The Equal Variance approach inflates both the Type I Error and the Power ("false power")
+	
+
+**Rationale of F-test?**
+**Rationale of Bonferroni correction?** 
+

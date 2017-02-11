@@ -1,0 +1,33 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-29T11:34:34-08:00
+
+====== 9.2 Naive Bayes ======
+Created Tuesday 29 November 2016
+
+Only use Naive Bayes for Classification, not Regression
+Mostly used in Text Classification (Spam detection, sentiment analysis, text categorization — like LDA  )
+Normally NB is compared with Logistic Regression (which also has a likelihood function)
+Usually worse performance than Logistic Regression
+LogRe can handle correlation between noises, NB can't
+
+But it's an important IDEA and often not that bad
+
+Bag of Words assumption (position doesn't matter)
+Conditional Independence (text features are independent from each other) , **THAT's WHY IT IS CALLED NAIVE!!!**
+
+What's the input for Multinomial NB and Bernoulli NB? 
+I know Gaussian NB is fed with numerical data matrix
+
+https://web.stanford.edu/class/cs124/lec/naivebayes.pdf
+
+
+
+Lesson:
+https://bradzzz.gitbooks.io/ga-seattle-dsi/content/dsi/dsi_08_bayesian_inference/4.3-lesson/readme.html
+https://github.com/ga-students/dsi-gitbook/tree/master/dsi/dsi_08_bayesian_inference/4.3-lesson
+
+Lab:
+https://github.com/jasonfeiwang/dsi-sea-week08-4.4
+http://localhost:8888/tree/lab/8_9th_week/dsi-sea-week08-4.4/code
+Lab is similar to one class demo, same steps

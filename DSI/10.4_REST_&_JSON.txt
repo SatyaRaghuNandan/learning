@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-07T13:26:15-08:00
+
+====== 10.4 REST & JSON ======
+Created Wednesday 07 December 2016
+
+Class:
+https://github.com/ga-students/dsi-sea-week10-3.4/
+
+Lab:
+http://localhost:8888/notebooks/lab/10_week/dsi-sea-week10-3.4/Post%20Practice.ipynb
+
+
+Given a lat and longitude, predict the highest crime
+
+build a class for your ML model, which includes the predict method
+train the model using seattle gov data during the initializing stage
+
+construct a model in views.py
+
+test your codes using Honcho (sending POST requests to local host)
+

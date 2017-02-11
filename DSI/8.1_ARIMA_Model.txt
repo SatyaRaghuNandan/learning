@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-22T09:58:24-08:00
+
+====== 8.1 ARIMA Model ======
+Created Tuesday 22 November 2016
+
+ARIMA Model
+
+Class: 
+https://bradzzz.gitbooks.io/ga-seattle-dsi/content/dsi/dsi_09_time_series/3.1-lesson/readme.html
+
+Lab:
+https://github.com/ga-students/dsi-sea-week09-3.2
+
+Not a hardcoare ML algorithm, but a useful way to work with Time Series data
+
+
+
+

@@ -1,0 +1,106 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-29T15:43:25-08:00
+
+====== 10.4 Hackathon ======
+Created Tuesday 29 November 2016
+
+Socrata Data:
+https://data.seattle.gov/
+data.kingcounty.gov
+
+opendatanetwork
+https://www.opendatanetwork.com/
+
+Socrata Open Data API's — SODA
+https://dev.socrata.com/
+
+
+
+RESTful API vs. Http API? 
+Types of API's ?
+https://developer.ibm.com/apiconnect/documentation/api-101/types-apis/
+
+simple query (column name with no $ )
+SoQL Queries  (with $where, similar to SQL querying)
+
+1000 per page
+limit and offset
+
+Application tokens (to get unlimited data)
+dev.socrata.com/register
+"$$app_token"
+
+Get help at Developer Portal:
+dev.socrata.com
+
+dev.socrate.com/irc.html
+Stack Overflow: soda or socrata
+
+
+Tool
+https://www.hurl.it/
+test API using SoQL
+
+**Resources from Socrata:**
+Presentation:https://socrata.github.io/presentations/hackathons/2016-12-08-general-assembly.html#/
+Front End Dev: https://jsfiddle.net/
+Developer Portal: https://dev.socrata.com/
+Developer IRC: https://dev.socrata.com/irc.html
+SoQL queries: https://dev.socrata.com/docs/queries/
+
+
+**My Socrata App & Token:**
+Name SquadApps
+Description To improve the safety of bicycling in Seattle Metro area
+Organization General Assembly
+Websitehttps://serene-oasis-18729.herokuapp.com/site/socrata-app/detail/
+App Token
+LQDnUrd2famQS94Fa97DLfC5J
+Secret Token
+_pK_TyliPvCBOiCd9krtHh8z93eUgSXM
+
+
+**Lessons:**
+find a leader, know eath member's strength
+group for idea brain storming, groups for refind data requirement
+
+
+
+Bicycle Problems
+Need:
+http://www.seattle.gov/transportation/bikedata.htm
+
+Datasets:
+https://data.seattle.gov/Transportation/City-of-Seattle-Bicycle-Racks/vncn-umqp
+https://data.seattle.gov/Transportation/SDOT-Bicycle-Master-Plan-Update-Local-Connector-Ne/yryt-khsq
+https://data.seattle.gov/Transportation/bbbbb/gvpm-speq
+https://data.seattle.gov/Transportation/October-Bike-Counts/k2b3-a5hg
+https://performance.seattle.gov/dataset/Bicycle-Data-4/9wgu-t6ra
+https://data.seattle.gov/Transportation/Bike-Traffic-Over-Time/x5hr-6w8c
+https://data.seattle.gov/Transportation/Bicycle-Related-Collisions-Updated-2-28-16/8jtd-n3ey
+collison data:
+https://dev.socrata.com/foundry/data.seattle.gov/v7k9-7dn4
+
+
+Apt-Rental Problem:
+Zillow Web Services Identification (ZWSID) is: **X1-ZWz19gh4l3cw7f_7rj5m**
+
+
+Google API Key:
+AIzaSyBjG_bAi3vcJmv4DrHRFTYL24xSkmck5cw
+
+
+Connect the Judges:
+https://docs.google.com/document/d/1fo4oM7fHZ8thtb_xExFJTj-wcdjjiWJYLnO0vXXdi7I/edit
+
+Final webpage:
+http://jacob-elder.com/Sketchy-Section/
+
+
+For future iterations:
+1. There were thoughts about providing a way for users to contact representatives. 
+2. A big one was comparing traffic volume of intersections to collision rates when rating safety. For example, if an intersection has 2x more accidents than average but also 2x the traffic volume - does that mean it's actually average in regards to safety? 
+3. There were also suggestions to incorporate a lot of the other data sets (pedestrian injuries, pedestrian fatalities, bike accidents, bike fatalities) so as to not just rate vehicle to vehicle collisions.
+4. functionality to put in street address & pinpoint, put in details with in the marker
+5. I'd love to see a time dimension added - most dangerous intersections that last N days, as well as most dangerous intersections during the morning commute, evening commute, etc... (Matt Danielson)

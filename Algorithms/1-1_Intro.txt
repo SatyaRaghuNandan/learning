@@ -1,0 +1,46 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-01-15T17:10:14+00:00
+
+====== 1-1 Intro ======
+Created Sunday 15 January 2017
+
+**Introduction**   
+
+You will get: 
+	A better programmer 
+	Sharpened mathematical and analytical skills 
+	Start thinking "algorithmically"  
+	Literacy with computer science's "greatest hits" 
+	Ace your technical interviews 
+ 
+You need to do: 	
+	Translate the high-level algorithm descriptions taught here into working programs in some programing language.
+ 
+Karatsuba Multiplication:
+	Divide-and-Conqure; 
+	recursive calls to get the items we need; 
+	
+Three design paradigms:
+	divide-and-conqure; greedy algorithms; dynamic programming algorithm; 
+
+
+Merge Sort Algorithm  (recursive)
+	Divide the array of numbers into two, make two Recursive calls, then merge the two sorted sub arrays to get the final sorted array 
+	Merge step: traverse the two sub-arrays same time, compare A(i) and B(j), put the smaller one into the final array 
+	Running time ~~ # of "Enter" key you need to hit during Debugging (# of operations) 
+	Upper Bound: 6n*[log2(n) + 1], better than **Selection Sort, Insertion Sort and Bubble Sort** (quadratic order) 
+ 
+Guiding Principles of Analysis of Algorithms 
+	1. "Worst-Case Analysis"
+		a. vs. "Average Case analysis" or Benchmarks, which both requires Domain Knowledge of the data: frequency, distribution…)
+		b. basically assume nothing on the data input, and thus appropriate for analyzing "general-purpose" subroutines
+	2.Don't pay attention to constant factors, lower-power terms but the Rate of Growth on performance
+	a. way easier
+	b. constants depend on architecture/complier/program anyways: pseudo code → high-level code → machine code (further variation due to processor, compiler, compliation optimization, program implementation etc.)
+	c. lose very less predictive power, only a few granularity information
+	d. "Asymptotic Analysis"
+		a. focus on large input size (compare the run time for large input "n") 
+	
+	To Sum Up: Fast Algorithm ~= worst-case running time grows slowly with input size 
+	Holy Grail: linear running time (or close to it)

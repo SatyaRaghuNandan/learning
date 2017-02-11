@@ -1,0 +1,47 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-30T11:03:38-08:00
+
+====== Interview Prep ======
+Created Wednesday 30 November 2016
+
+Bad Job Interview: 
+https://www.youtube.com/watch?v=UkSfp3XHSko
+
+Don't turn down an interview, even for the sake of practice
+
+handshakes:
+super-hawk, limb-fish
+
+low-register and soothing voice
+
+talking points (after GA experience):
+	1. learn new techs quicly and apply them quickly
+	2. work in an agile env
+	3. multiple projects
+	4. work in teams as wells as indicidually, and meet deadlines
+	5. ask the right questions and get the right answers (Labs & Project with vague directions and you figured them out!!!)
+
+questions to ask:
+	1. where is your team strongest?
+	2. where is your team weakest?
+	3. how many ppl on ur team?
+	4. how many data scientists do you plan to have in 3 months?
+	5. Is this a role you are creating/to be backfilled? Somebody left?
+	6. What's the career trajectory of people work here? Do they view it as a spring-board?
+	7. **What are the biggest challenges for this position? (the interviewer will automatically think and tell you about the last person at this role) Don't ask about the last person directly**
+
+Question to ask at the end:
+	1. What are the next steps in the process?
+	2. Who should I follow up with? (Get a specific name, email/phone)
+
+
+**Mock Interview Application (By weekend)**
+https://docs.google.com/forms/d/e/1FAIpQLSc0UEQRpUSB2GMXZMrkQM6LueEwIuf1UvxmPMrZV8bah6yX4A/viewform
+	1. **Resume should be plain text, left indented**
+	2. **Print out the JD and bring it with you on mock interview**
+	3. **Also do your GA profile, as much as it can help**
+	
+	**GA:**
+1. **a Washington state Licensed school, not an accreditted school**
+2**.  a global education company, not a bootcamp:)**

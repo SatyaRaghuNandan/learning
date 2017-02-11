@@ -1,0 +1,58 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-11-19T16:58:31-08:00
+
+8.2 Recap on Project 7
+
+Created Saturday 19 November 2016
+
+Workthrough Lab 7-4.3, Apply this to the **Tweet Sentiment Analysis Project**
+
+choose only 4 categories
+
+tf-idf all settings are default
+**max_df = 0.1, min_df = 2?**
+
+TruncatedSVD(300)
+then normalize the data with pipeline
+
+lsa = make_pipeline(svd, normalizer)
+X_lsa = lsa.fit_transform(X)
+
+lsa (latent semantic analysis) and IR term (information retrieval): basically decomposition
+
+do K-Means
+true_k is the number of unique labels
+
+max_iter = 100: number of iterations allowed is 100
+n_init = 30: try running the algorithm 30 times and then take the average
+
+**homogeneity_score:** 
+compare label from the Clustering algorithm and the Original dataset
+
+**completeness_score:**
+switch the two sets of labels, otherwise same as homo_score
+
+**v_measure** is the harmonic combination of the above two
+**Adjusted Rand-Index**: similarity measure between two clustering labels, like correlation coefficient, 0 is worst, from -1 to 1
+
+You can print out Classification Report and see its relation with these scores
+
+**inverse_transform can get the centroids in the original corodinates**
+
+
+
+Project 7:
+https://bradzzz.gitbooks.io/ga-seattle-dsi/content/dsi/dsi_07_unsupervised_learning/5.1-lesson/readme.html
+https://www.kaggle.com/crowdflower/twitter-airline-sentiment/kernels
+https://www.kaggle.com/solegalli/d/crowdflower/twitter-airline-sentiment/airline-sentiment-part-2/comments
+
+see the key words with moods with WordCloud
+Add some to the Stop Words using Union with "English"
+
+keep the Negative and Positive tweet balanced (3000 vs. 3000, not 1000, vs. 200), otherwise all your keyword features will be Negative ones....
+
+Sample Paper:
+	http://www.aclweb.org/anthology/P02-1053.pdf
+
+

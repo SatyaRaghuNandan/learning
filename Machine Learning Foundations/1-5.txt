@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2016-12-17T02:26:34-08:00
+
+====== 1-5 ======
+Created Saturday 17 December 2016
+
+When can we use ML?
+1. exists some "underlying pattern" to be learned (so performance measure can be improved)
+2. but no programmable (easy) definition (so ML is needed)
+3. somehow there is data about the pattern (so ML has some inputs to learn from)
+
