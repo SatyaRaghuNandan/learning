@@ -10,14 +10,14 @@ To Do's:
 	2. QQ's tips:
 		Neal analytics works very closely with azure ML. So it would be better to get yourself familiarized a bit before talking to them. I have played with azure ML before. Very easy. Look at their demos. It won't take more than two hours.
 		Worst case, if none of you heard back from those companies after some time, let me know. I can try to find the contacts.
-	5. use GitHub Pages (https://pages.github.com/) as my portfolio (use HTML to edit the templates) got from
+	5. use GitHub Pages (https://pages.github.com/) as my **portfolio** (use HTML to edit the templates) got from
 		start bootstrap https://startbootstrap.com/ (remember to copy contents in the folder, not the folder)  or 
 		Jekyll (https://jekyllrb.com/)
 			    
 		create one github page per project (new repos, use orphan branches, use templates that's consistent with the Main page one)
 			https://www.youtube.com/watch?v=nN6QuNqmAwk  or
 			        
-	6. Practice the FOUNDAMENTALs!      SQL, Coding with HackerRank.com, ML algorithms
+	6. Practice the FOUNDAMENTALs!      SQL, General-Purpose Coding, ML algorithms
 	7. Apply and Reseach Amazon SCOT jobs (https://www.amazon.jobs/en/teams/supply-chain-optimization-technologies?base_query=&loc_query=&job_count=100&result_limit=20&sort=recent&team_category%5B%5D=supply-chain-optimization-technologies&location%5B%5D=seattle-wa&cache)
 	8. Read: http://blog.thedataincubator.com/2015/08/columbia-astrophysics-postdoc-moves-to-capital-one-labs-alumni-spotlight-on-brian-farris/
 	9. Read: https://hbr.org/2014/08/the-question-to-ask-before-hiring-a-data-scientist
@@ -29,40 +29,39 @@ To Do's:
 
 ***********************************************************************************************************************************
 
-Spark: SimpliLearn
-ML: Sebastian Book & Notebooks + Harvard DS
-Coding: CTCI book
-SQL: Suciu Notes + DSI SQL section
-
 Statistics:
 	data_557 class
-	mathematical statistics
+	All of Statistics
+	John Rice's Math book
 
-Learn on Friday:
-	Redshift
-	Linux Command Line
-	Time Series
-	Bayesian Inference
-	[[MongoDB]]
-	A/B Testing
-	Hadoop/Hive
+Need to Learn:
+	Immediate:
+		AWS: EC2, S3, Redshift (Amazon Online)
+		Linux Command Line (Online Course)
+		Time Series (Havard DS)
+		Bayesian Inference (Havard DS)
+		[[MongoDB]] (their website, DSI)
+		A/B Testing (Web Analytics, Video)
+		Hadoop/Hive (Udacity)
+	
+	Later:
+		Java
+		Cloud: Azure, Google Cloud Platform 
+		Interactive visualization and BI platforms (Tableau, Spotfire, etc.) 
+		RESTful API’s 
+		JavaScript visualization languages (D3, Highcharts, etc.), web-application frameworks (angularJS, Ruby on Rails, etc.), and web design skills (HTML, CSS) 
+		Business: Business Foundations Specialization by Wharton School, Coursera 
 
 
 Projects: 
-1. Imbalanced-Problem with real datasets, try multiple models, deep dive into ROSE, Fraud Detection
-2. Spark project
-3. 20 real projects
-4. Slackbot on Zillow?
-5. Romeo'Oh'Romeo
-		Fetch data from the web; remove any non-text data such as HTML tags.
-		Create the Markov chain with clean text data.
-		Generate and display text using the Markov chain
+1. Imbalanced-Problem with real datasets, try multiple models, deep dive into ROSE, **Fraud Detection**, Cencus Data from data.gov? **(Linear Model)**
+2. Spark project **(Big Data**), SimpliLearn, book examples
+3. 20 real projects bought
+4. Slackbot on Craiglist **(Data Engineering, Practical)**
 
 
-Daily work:
-1. Project
-2. ML algorithm from Sebastian
-3. Leetcode Python
-
-
-
+Daily work/Study:
+1. Projects
+2. ML algorithm from Sebastian + Andrew Ng class
+3. CTCI
+4. SQL: Suciu Notes + DSI SQL section

@@ -1,0 +1,55 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-02-12T10:21:23+00:00
+
+====== general-questions ======
+Created Sunday 12 February 2017
+
+1. **Tell me about yourself? (This is a pitch, drop in shows of success)**
+	Current Role
+	College
+	Post College & Onwards
+	Current Role
+	Outside of Work
+	Wrap Up
+	
+2. **What are your weaknesses?** 
+	I tend to pay too much attention to detail. While that's good because it lets me find limitations of the data at early stage, it also means that I sometimes can't execute quickly enough. Because of that, I make sure to always have a time-table to control the cadence of my work. Also, I normally set my deadline to be one day prior to the real deadline so I have some extra time to perfect my result.	
+
+	Hard to handle ambiguity, sometimes overwelmed by various choices and learning resources.
+	Spent too much time on perfecting the solution; can't figure out how much to put in given customer's need and time & resources I have.
+	
+
+3. **Why do you choose to move from Philadelphia to Seattle?** 
+	Because I wanted to bring my career to the next level. At my last job I did most of my work in Excel and SQL, which can be very limited at times. For instance, our customers was asking for customized product recommendation for each clients, which is beyond my skill set. So I want to learn more advanced skills like data anlyais & visualization in Python, Machine Learning and so on. Luckly my wife and I both got admitted to UW's Master of Science program in Data Science and Seattle has a great Tech community. So I moved here.
+
+4. **Why did you study at GA?**
+	a. To expedite my career path in data science
+	b. very well-rounded corriculum, covering all aspects of data science, project-based, instructor is from Microsoft with 8-years of experience in 
+	c. it offers lots of resources: networking events, seminars, alumnis; so I can know the Seattle Tech community better
+
+5. **Are you studying part-time? How would you handle study and work? Will travel be a problem for your study?**
+	Yes, I am studying part-time, with one evening class per week. Actually most of the students in the program are working full-time and studying part-time. I go to graduate school to advance my career, so I will prioritize work verse study when there is a conflict. If needed, I can talk to my program coordinater to suspend my study for one year or so.
+	
+6. **Why did you leave your last job?** 
+	At my last job I did lots of important work but I think they can be done with better technology & process, I want to bring my career to the next level by adding more "Science" and "Innovation" elements into it. 
+
+6. **Why did you study International Economics?** 
+		I like to think big and cared about the issues that have bigger impacts, so I majored in International Affairs,  not engineering or quantitative finance that are more practical and easier to land on a job. My goal was to work at the UN or World Bank. But later I found public sector is not that exciting to me…. They are doing very important work, but the pace is quite slow.  
+
+7. **What's your ETL experience?** 
+	Unix Server Job of Loading Data File of 3 million rows, all pre-bind underwriting data 
+	SSIS class self-study (syllabus of LaoTu, drop some concepts)
+
+8. **Your Ability to Educate others on Statistical Methods?**
+	Besides my day-work, I studied 4 actuarial exams at my spare time: 
+	probability, financial math (Black Scholes),  statistical models (parametric model, empirical models) 
+	I took the exam because I wanted to learn a new skill, want to know the science behind insurance, how do the underwriters valuate a risk, beside their experience & relationship with the customer, what's the logic behind it. 
+	Property & Casualty seems more like a People Business to me at the beginning. 
+	
+9. **What do you do at your spare time?**
+	a. technical hobby
+	b. demonstrating a positive personality attribute
+		I play with Linux ☺
+		I take ML courses
+

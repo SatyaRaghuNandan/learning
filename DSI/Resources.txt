@@ -62,5 +62,34 @@ Feature Engineering:
 Visualizing High-Dimensional data: (T-SNE)
 	https://lvdmaaten.github.io/tsne/#implementations
 	
+How to Scale your data?
+	http://www.faqs.org/faqs/ai-faq/neural-nets/part2/section-16.html
+	http://scikit-learn.org/stable/modules/preprocessing.html
 
+Jeff Dean on AI:
+	http://www.nytimes.com/2016/12/14/magazine/the-great-ai-awakening.html?_r=0
+	
+Kevin Kelly on AI:
+	https://www.ted.com/talks/kevin_kelly_how_ai_can_bring_on_a_second_industrial_revolution
 
+Deep Learning Frameworks:
+	https://medium.com/@ricardo.guerrero/deep-learning-frameworks-a-review-before-finishing-2016-5b3ab4010b06#.d011u9y53
+	
+Coding Preparation:
+	https://www.diycode.cc/topics/220
+	https://www.evernote.com/shard/s576/sh/7e58b450-1abe-43a8-bf82-fbf07f1db13c/049802174415b418a2e65f75b744ab72
+
+Other Readings:
+	stemming: http://www.rdatamining.com/examples/text-mining
+	collaborative filtering: http://www.salemmarafi.com/code/collaborative-filtering-with-python/
+	our-of-core learning, minikmeans: http://scikit-learn.org/stable/modules/clustering.html#mini-batch-kmeans
+	Pyspark for ML: https://spark.apache.org/docs/0.9.0/api/pyspark/index.html
+	cosine similarity: http://blog.christianperone.com/2013/09/machine-learning-cosine-similarity-for-vector-space-models-part-iii/
+	semantic meaning using word2vec: https://www.oreilly.com/learning/capturing-semantic-meanings-using-deep-learning
+	Linkedin For Python: https://ozgur.github.io/python-linkedin/
+	Spark on DataBricks: https://databricks.com/product/getting-started-guide/machine-learning
+	recommendation engine: https://neo4j.com/blog/real-time-recommendation-engine-data-science/
+	Indeed Job recommendation algorithm: https://www.oreilly.com/ideas/algorithms-and-architecture-for-job-recommendations
+	Difference between DataFrame and RDD in Spark: https://stackoverflow.com/questions/31508083/difference-between-dataframe-and-rdd-in-spark
+	
+	

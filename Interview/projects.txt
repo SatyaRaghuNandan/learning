@@ -1,0 +1,33 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-02-12T10:21:05+00:00
+
+====== projects ======
+Created Sunday 12 February 2017
+
+******************************************************************************************************************************************************
+**GA Hackathon Championship:**  Sketchy Sections: 
+	Situation: 
+		to build any application/product useful to Seattle residents using the government's open dataset API called Socrata; teamed up with a UX designer and web-developer 
+	Task: 
+		web-app showing cross-streets in Seattle with high collision rate and compare it's relationship with Traffic lights. 
+	Action:  
+		I contributed to the idea of transportation safety:  Others thought about app for Parking,  
+		I provided the data support for the web-app 
+			pull, clean the collision and traffic light datasets: 40,000 rows for collision; 1,080 for traffic lights;  
+	
+		Q1: how to join them together?  
+		Solution: Used Google's Geocoding API to translate cross-streets of Traffic Lights into GPS coordinates 
+	
+		Q2: very low match rate after joining on GPS coordinates: 
+		Sol: research on the accuracy of GPS, find 6-decimals is 11 cms, 4-decimals 11 meters; decided to join on coordinates with 4-decimal places 
+		Saved the joined dataset in JSON format for the web-developers 
+		
+	Result: 
+		1st place, the most completed project from design to data to presentation, very useful to the audience 
+
+
+**PCA: scikit-learn**  
+	20-newsgroup text dataset
+
+******************************************************************************************************************************************************

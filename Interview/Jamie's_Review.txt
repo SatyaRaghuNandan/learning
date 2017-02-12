@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-02-12T10:38:56+00:00
+
+====== Jamie's Review ======
+Created Sunday 12 February 2017
+
+2015 Year-End Performance Review by Jamie 
+
+ 
+
+Jason continued to enhance his technical and relationship building skills, he applied critical thinking to solve problems and make process improvement recommendations, and he acted as leader on various key initiatives in 2015. Jason partnered with the Global Account Segment Leaders and D&B to improve the D&B Data, played a critical role in developing Integration data Sets for the Chubb Merger, and he is currently taking a leadership role related to the Chubb Rostered Account Universe. I fully expect Jason to continue his growth in 2016. 
+ 
+
+Jason was a key contributor on the Data Analytics Team in 2015. Jason worked to streamline the monthly reporting process, improve data quality, and he was instrumental in the Chubb Integration Data Analysis. He was involved in many of the highly visible data projects throughout 2015. 
+
+Jason developed SQL Automation for the Monthly Field Reports and the Rostered Global Account Universe Metrics, which significantly reduced the turnaround time for the monthly reporting process. Additionally, Jason partnered with the AVP of Data Analytics to customize the D&B Tree in line with the ACE Reporting of Corporate Hierarchies and he worked to solidify the rostered account customer profiles. He ultimately went on to lead the D&B and Rostered Account processes by yearend.  
+
+In the second half of 2015, Jason provided data and analytics for the vast majority of the Chubb Integration Projects and assisted in developing the Integrated Rostered Account Universe and Major Account Kick-off Presentations. Jason will continue to be a key member of the Data Analytics Team in 2016. He is actively involved with the Major Account Segment Leaders and is the owner of the D&B and Customer Profile Processes. He will have an opportunity to develop the metrics and measurements for the Integrated Customer Major Account Penetration as we move forward into 2016. The growth opportunity for Jason is developing a tool or dashboard to manage and measure the Rostered Account Growth. 

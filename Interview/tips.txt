@@ -1,0 +1,80 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-02-12T10:26:24+00:00
+
+====== tips ======
+Created Sunday 12 February 2017
+
+**Resume**: 
+	Keep the resume short: 	
+		One page or less, remove the irrevalent materials, demonstrate respect for the interviewer's time 
+
+	Account for all of your time: 
+		Fill in the gaps with education, volunterring, additional training 
+	
+	Font size 10pt - 12pt, avoid novelty fonts (Arial looks great), consistent margins, Line up watermarks when printing, printing using quality paper 
+	
+	Develop Greater References: 
+	At least three really good ones, the more varied the better;  develop references at the same time as developing  the resume; ask if a person would be willing to provide a professional reference; have a brief discussion about what you'd like them to say or not say; thank your new reference; A hand-written Thank-You note;  
+	"I just wanted to send you a quick note to say 'thanks again' for agreeing to give me a professional reference. It means a lot to me that you agreed to do that, especially since I haven't been your tenant for almost a year now! I really appreciate your help, thanks again.          ----Sincerely, Fei 
+
+
+**Questions for the interviewer:** 
+	Don't ask  
+		"what's a typical career path there?" ---- sounds like you want to jump even before getting in 
+		
+	Can ask 
+		Who are the current team members and what do they do? What's the interaction like? How does project planning happen on the team?
+		Any short-term goal of the team? Any long-term goal of the team?
+		
+		What brought you to this company? What has been most challenging for you at your current role?
+
+I notieced that you use technology X. How do you use it to handle problem Y?
+
+		I'm very interested in X, and I'd love to learn more about it. What opportunities are there at this company to learn about it?
+		I am not familiar with technology X, but it sounds like a very intersting solution. Coundl you tell me a bit more about how it woks?
+		
+
+**Phone Screning** (http://collabedit.com)
+
+**Basic Skills:**
+	data savviness (**SQL**, data join, Metrcis)
+	general purpose coding (**data structure & algorithm**) 
+		— clean data, manipulate a string etc. Python is acceptable: trees/array/queue/stack/linked-list/double-linked list/performance
+		— do research on GitHub (python for data structure)
+		— if asked which algorithm is better, always ask your constraints (memory, CPU, etc...)
+		— Practice coding using https://leetcode.com/ do 50-100 practice problems
+	prob/stat
+	
+
+**Technical questions:**
+	Interviewer wants to learn about you:
+	1. how do you approach a problem
+	2. able to defend your answers?
+	3. can communicate well?
+	4. be able to pause and check your thought process
+	5. demonstrate your sense, strength, weakness (honesty)
+
+	ask how much time do I have for this question? how deep should I go?
+	always clarify the questions and knwo how you will be evaluated
+		do you like quick solution? high-quality solution? many solutions? my best solution only?
+
+	when you stuck, talk it though creatively, why you are stuck and ask for help, "am I on the right track?"
+	"I have seen a similar problem"
+	"This is a very interesting problem. Sorry I can't solve it now. I am not a quick person. I will go back and send you my answer. Do you mind that?"
+
+	Be prepared to answer hard questions:
+	1. are you sure your answer is right?
+	2. can you solve the question in a different way?
+	3. which solution is the best?
+
+Always ask for feedbacks (this might be the only hour in my life talking to you, can you tell me how I can improve?)
+provide follow-ups
+	"I really enjoyed the conersation with you. Can I have your email address?"
+	In follow-up Email:
+		what you taught me
+		what I didn't do well but realized now
+		"I'd like to hear your feedback"
+	
+When preparing inerview quesions, practice talking it out loud (just getting the right answer is not enough... talk the thought process out!)
+

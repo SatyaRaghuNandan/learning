@@ -1,20 +1,9 @@
 Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
-Creation-Date: 2016-11-22T15:29:17-08:00
+Creation-Date: 2017-02-12T11:29:18+00:00
 
-====== outcome ======
-Created Tuesday 22 November 2016
-
-Branding statement:
-	add your experience and education (prior and GA) 
-	
-	be specific at what you want to do (at least down to Vertical Level)
-	design customized customer experience?
-	process optimization?
-	public sector?
-	
-	
-What type of problem do i want to solve and why? (motivation) 
+====== DSI-outcome ======
+Created Sunday 12 February 2017
 
 
 Companies:
@@ -41,17 +30,8 @@ Companies:
 	Expeditors: http://www.expeditors.com/  3PL software (9-5 daily)  stable like MS? (traditional)
 	
 	Public Sector: Scrata https://socrata.com/segments/city-government/
-	
-Next Steps:
-	Email Casey 0~3 jobs that I want to apply for
-	Apply for Starbucks
-	Finish GA profile by 12/23
-	Send a Quick Bio to Casey when asking for referral
-	Email Casey the position, and why you are interested when applying for Amazon
-	
-	
-Job Application:
-	https://starbucks.taleo.net/careersection/1000222/jobdetail.ftl?job=160007548&lang=en
+
+Email Casey the position, and why you are interested when applying for Amazon
 
 Meetups:
 	https://techtalkcassandra.splashthat.com/
@@ -60,7 +40,7 @@ Online Resume:
 	creddle: http://creddle.io/
 
 To check out:
-	embded js: https://www.sitepoint.com/javascript-embedded-systems-good-fit/
+	embeded js: https://www.sitepoint.com/javascript-embedded-systems-good-fit/
 	
 
 After sending out a cold application, better to find someone related to that position and network with him/her

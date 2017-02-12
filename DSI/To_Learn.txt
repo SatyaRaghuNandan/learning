@@ -69,15 +69,6 @@ Beautiful Soup Cheatsheet:
 Regression 45 quizzes:
 	https://www.analyticsvidhya.com/blog/2016/12/45-questions-to-test-a-data-scientist-on-regression-skill-test-regression-solution/
 	
-Other topics:
-	General-purpose coding & algorithms
-	Cloud: AWS, Azure, Google Cloud Platform 
-	Statistics: R/SAS 
-	Scripting: Python 
-	Interactive visualization and BI platforms (Tableau, Spotfire, etc.) 
-	Hand-on experience with RESTful API’s 
-	JavaScript visualization languages (D3, Highcharts, etc.), web-application frameworks (angularJS, Ruby on Rails, etc.), and web design skills (HTML, CSS) 
-	Business: Business Foundations Specialization by Wharton School, Coursera 
 
 
 

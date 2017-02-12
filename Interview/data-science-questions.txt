@@ -1,0 +1,51 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-02-12T11:07:05+00:00
+
+====== data-science-questions ======
+Created Sunday 12 February 2017
+
+1. **What's your process to handle a problem as a DS?**
+		1. Business Understanding
+			a. understanding the project objectives and requirements from a business perspective
+			b. converting this knowledge into a data mining problem definition
+			c. design a preliminary plan
+		2. Data Understand
+		
+			In Steps 1-2 I need to ask:
+				What's the problem? 
+				Where is the data? 
+				Who is the subject-matter expert?
+		
+	3. Data Preparation
+	
+	4. Modeling
+	5. Evaluation
+	6. Deployment
+
+2. **How do you store large amout of data like 2 million rows with 150 attributes?**
+		If it requires real-time access, quick storage: use Mongo or Spark
+	
+3. **How do you handle Missing Values in the features column AND target variable?**
+		Imputation:
+			Imputer Package from SK_Learn: Mean, Median, Most Frequent
+				Create Inclusion Indicator for the problematic column, Check its correlation with other columns:
+	1. missing at completely random, **filling with Mean and Median?** 
+	2. missing at random, with some patterns
+		a. treat inclusion indicator as target variable, use Logistic Regression to predict it with other columns
+		b. If a reasonable accuracy score, we say there are good correlations
+		c. then predict that column with values from other columns (linear regresion etc.)
+		d. **WHY can we do this?**
+	3. missing not at random (pattern): collect more data or irgnore that column
+		Resampling:
+		 
+4. **How do you do feature enginerring?**
+		......
+	
+5. **What are the major classification algorithms and what are the pros and cons of them?**
+		why is Naive Bayes classifier usually less accurate than linear models?
+	
+6. **How would you handle large real-time analysis problem, what tool?**
+		Spark
+
+7. **Tell me about your experience with Machine Learning?**
