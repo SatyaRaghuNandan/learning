@@ -1,0 +1,174 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-02-13T10:04:36+00:00
+
+====== chubb-experience ======
+Created Monday 13 February 2017
+
+ 
+**Team's Job: **
+
+I worked in Data Analytics team of Chubb Insurance. It was a new initiative from the CEO to make the company more data-driven. We provided high-level reports & analyses to senior management by integrating various data sources across the company. (expanded a lot by acquiring lots of other companies) 
+****************************************************************************************************************************** 
+
+**Actions:** 
+	Created the monthly reporting for: 
+		the CEO, the Chief Underwriting Officer  
+		all 9 regional sales branches 
+		14 business units 
+		All 10+ broker owners 
+	under great pressure (usually in a 3-day window) 
+
+	Designed Customized reporting package for senior Sales Executives, one example is reports on the 6,000 major accounts using Dunn & Bradstreet (D&B) firmographic data (a Customized D&B Tree in line with the Chubb Reporting of Corporate Hierarchies) 
+	Were responsible for data Integration between Legacy ACE & Chubb (largest Merger in the Property & Casualty Insurance industry by that time, $28.3 billion deal), completed several highly visible projects in 3 months 
+
+****************************************************************************************************************************** 
+**My focus:** 
+
+And for my role, as the team's first data analyst, I was in charge of 70% of the team's ETL processes; applied critical thinking skills to solve problems in reporting & analysis; I made process improvement recommendations, and also acted as leader on various key initiatives like D&B reporting. 
+I spent 40% of time on data engineering and reporting, 30% on relationship building with business people, and the rest 30% on providing ad-hoc analyses; 
+Most of the time I use Netezza SQL & Excel and sometimes visualization tools like QlikView. 
+
+****************************************************************************************************************************** 
+
+**Summary of my work:** 
+
+	ETL: 
+	 70% of the team's ETL process            
+		Ran a SQL procedure from a Unix Server each night to refresh a combined dataset which the entire team's reports are based upon 
+		Monthly Chubb data integration, flat file of 4 Million Rows, 2.7 Gigabytes 
+		Normalize Broker Pipeline Dataset for broker analysis 
+
+	Manage the CRM Reporting process of 6000 Major Accounts for Senior Account Executives (Account Owner): 
+		Solidify the Major Account Customer Profiles with account owners 
+		Customized Dunn & Bradstreet (D&B) data (A Customized D&B Tree) to fit Chubb's relationship with the major customers 
+		I maintain this D&B Tree on a weekly basis 
+
+	Monthly Reporting for Broker Owners, Regional Execs and Business Units 
+
+	Ad-hoc Analysis, Reporting and Visualization (for 2 Business Units and 4 Major Account Sales Executives) 
+
+****************************************************************************************************************************** 
+ **Results**: 
+	My manager and I started as 2-men's shop and it grew to 7 people in 2 years. 
+	My work was highly acknowledged by our internal clients; I built partnership with two business units (Medical Risk & Prof. Liability) and 4 major account sales executives, providing regular reporting packages and ad-hoc analyses to them every week. 
+	I maintained the Customer Relationship Management reporting process and became my manager's go-to person for D&B problems. 
+	I was promoted twice and got a salary increase of 10% each year. 
+
+	My team was recognized by CEO on Annual Kick-Off meeting two years in straight and also received a personal note from the Chairman to thank our work on the Data Integration project with Chubb. 
+
+(Bias for Action, High Standard, Ownership of the project)  
+
+
+**************************************************************************************************************************** 
+**CRM Reporting:** 
+
+Automation of D&B Tree: 
+My example of creating the Automation of the Customized D&B Tree, bypassing IT Team (Problem-Solving, Critical-Thinking), take ownership of results (Take ownership of Results) 
+For the first 3 months I relied on them, they are my dependencies, but there is a two-day window for them to update the D&B Tree with the latest feedback I collected from the business users; 
+Berkshire Hathaway, GEICO, Benjamin Moore 
+
+
+ D&B data quality issue, I wrote two long emails to my manager, and analyzed that issue in detail: who are the stakeholders? Why it didn't work? How should we change the situation? (Deep Dive) 
+
+	legacy database, human-error during data-entry, thousands of underwriters manually key-in info, database manager was very reluctant to modify production data, because he doesn't want to be hold responsible for any potential error introduced during the process 
+
+	D&B team wants to get involved and preserve their advantage in D&B data within the company; in additional their team tried to build a CRM system with D&B data two years ago but didn't succeed so even the name of their team or the word "CRM" is a sour spot for many people in the company… 
+
+	Operation team don't have enough resource, the do some data correction batch-matching process but only on the data input from certain business units 
+
+I did two in-depth analyses for my manager; there was no enough push from the higher level, maybe due to the lack of resource, so I decided not to worry about it since it's beyond of my control: 
+
+	automate the process of data input 
+
+	apply the same batch-matching process across the board, at least design a time-table 
+
+	Set up a Data quality Issue Request Mailbox, let the users to identify errors and we will make corrections accordingly 
+ 
+**************************************************************************************************************************** 
+
+**Data Integration with ACE-Chubb Merger:** 
+
+Define the Top 10 largest brokerage companies that ACE and Chubb write business with. 
+
+Define the Major Account Universe (largest accounts by combined in-force premium) and determine which regional sales branch each account should belong to. 
+
+ **************************************************************************************************************************** 
+
+**"In-Force Summary" Report for NSL's: (Don't use this as a Technical Achievement)** 
+
+pull all the policy-level data of all In-Force-Business for the major accounts,  and summarized the data with pivot table, showing total GWP, NWP, Margin and most importantly, how many lines are in-force within each business units, by account  
+
+Say Walmart has 3 lines in-force within the Medical Risk business unit: the Account Owner wants to know which specific three products: life science, medical liability, medical malpractice? and better yet, how many policies are there for those 3 lines and when will the expire, who is the current underwriter? 
+
+So I  drill-down to policy-level, they need to drill down but don't have Power Pivot, a new feature from Excel 2013, I kept on studying, how to make it easier for the users? (Customer Obsession)  
+
+	modify my query set  
+
+	some user want to sort the account in a particular way, (say by the account owner's region, margin ratio low to h 
+
+	high, by Net Written Premium etc.) but in pivot tables they can't do it. So I wrote a Macro that copies the exhibit into a separate worksheet with the exactly same format, then assigned the Macro to a Button so they can get the new table with a click-of-the-mouse 
+
+	When they double-click, getting the policy-level data,  
+
+	I did a Table of Content page at the beginning with many screen shots that explains how to use the workbook. 
+****************************************************************************************************************************  
+
+**Margin Report:** 
+
+A new initiative from the CEO, to view the performance of each business unit with actuary calculated Margin; for a long time business units report their Post-Underwriting-Action Margin, which is a very subjective metric, but now CEO want to use the Pre-Action Margin to gauge the performance. Of course the business unit leaders are not used to and they were trying to shoot holes in it. So we got to validate each step in our process.  (High Standard) 
+
+I standardized the Format:  
+
+	fixed number of lines between the exhibits & footnotes,  
+
+	conditional formatting to highlight the negative margin ratios 
+
+	freeze top rows for easier scrolling-down the page 
+
+	create a Table of Content with Macros to  print the whole report or each worksheet by clicking of a button 
+
+ **************************************************************************************************************************** 
+
+**Disagreement with manager:** 
+
+My example of disagreeing with Jim on the way of Global Account Reporting (Backbone -- Disagree & Commit) 
+
+AVP of our team led the "Major Account Reporting" project 
+
+I partnered with the AVP of Data Analytics to customize the D&B Tree in line with the Chubb Reporting of Corporate Hierarchies and he worked to solidify the Major Account customer profiles. He ultimately went on to lead the D&B and Major Account processes by year end.  
+
+ **************************************************************************************************************************** 
+
+**Reporting Best Practices:** 
+
+my Loading data into Excel from Netezza using ODBC (share the best practice ==> ownership; focus on details) 
+
+at the beginning, half of the battle was getting the data 
+
+	we just run the query in Aginity Workbench (an IBM tool for database development), copy & Paste the result into Excel. sometimes the result simply has too many rows so it takes minutes to finish pasting and the format will change, like the text-string will change to numbers, if you need to add a column you need to change the data range and PowerPivot will disappear once you refresh the data source… 
+
+	some members in my team don't know SQL so they couldn't get the data they need efficiently, has to come to me or my colleague who might be busy with other urgent projects 
+
+So I thought there must be a better way, simpler and faster and more like a self-service: 
+
+Actually there is a way Excel can directly pull data from Netezza database, using Open Database Connection (ODBC), it will pull down as an Excel table, instead of an Excel Range, so if every time I need to modify the data, say adding two columns or filtering out 100 rows, I just need to recreate the table in Netezza and then refresh the connection in Excel to pull down the new dataset. 
+**************************************************************************************************************************** 
+
+**Sensitive Customer/Challenging interaction with a teammate:** 
+
+my 10+ meetings with a VP in the Corporate Underwriting Team, Scott Rubin: (Earn Trust) 
+
+He is not familiar with our team but heard that we can pull the sales data across all databases in the company, so he reached out to my manager for help, who happened to be on vacation at that time.. 
+ 
+So I stepped up to work with him and later found Scott was the most meticulous customer I ever dealt with.  
+
+He would call me first thing in the morning, to set up a meeting in the afternoon, to go over my query logic to make sure it pulls the right data he needs.  
+
+His first version was greatly challenged by his supervisor so he returned with tens of questions and modifications and then worked through my SQL codes line-by-line with me, because He wants to double-check everything is as he expects.  
+ 
+Honestly I was not used to his style, but still did my best to show my capability. I responded to his emails very promptly, treating his question/concerns as a top priority.  
+
+One time I found a small error in my logic right after returned to my office from our meeting so I called him immediately to correct that.  
+ 
+****************************************************************************************************************************

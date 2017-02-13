@@ -6,13 +6,34 @@ Creation-Date: 2017-02-12T10:21:05+00:00
 Created Sunday 12 February 2017
 
 ******************************************************************************************************************************************************
-**GA Hackathon Championship:**  Sketchy Sections: 
+**Class Imbalance Problem:**
+	This is my self-picked capstone project. I chose it on purpose because I believe it's a imbalanced-class datasets are prevalent in the real world and the techniques and experience I gain through this project will be very beneficial at work in the future.
+	
+	I chose the U.S. census dataset from UCI Machine Learning Repository, income level of U.S. workers in 1997. The goal was to correctly predict the income level of a worker based on her attributes like age, region, industry. There are two income levels: above 50K, which is the Positive class, and below 50K, the negative class. 
+	
+	I performed explorative data analysis using scatter plots and histograms; conducted data imputation for columns with missing values; transformed categorical variables into indicator columns; checked the distribution of target class, which is 96:4, highly skewed as expected. 
+	
+	Splited the dataset and reserved 10% as the Test data. The rest 90% was used to train my model.
+	
+	Did logistic regression and found the Overall Accuracy is high, 94%, but the recall for Positive Class is merely 31%, Negative Class is 99%, classifier predicted almost everything to be negative and treated the positive data points as noises.
+	
+	I did extensive researches online and did the following things:
+	1. Identified the best metrics to check the performance of my model (Accuracy and AUC are bad, use Recall for Both Classes, since I care about both)
+	2. Leveraged an R package called ROSE, which generates artificial data from the minority classes based on a Smoothed Bootstrap approach
+	
+	Recall of Positive Class from the Test data rose to 89%, while the Negative Class Recall remain as high as 83%.
+	
+	
+******************************************************************************************************************************************************
+**GA Hackathon Championship:**  
+	Sketchy Sections: 
+	
 	Situation: 
-		to build any application/product useful to Seattle residents using the government's open dataset API called Socrata; teamed up with a UX designer and web-developer 
-	Task: 
-		web-app showing cross-streets in Seattle with high collision rate and compare it's relationship with Traffic lights. 
+		to build any application/product that's useful to Seattle residents using the government's open dataset API called Socrata; teamed up with a UX designer and web-developer 
+
 	Action:  
 		I contributed to the idea of transportation safety:  Others thought about app for Parking,  
+		Decided: a web-app showing cross-streets in Seattle with high collision rate and compare it with Traffic lights. 
 		I provided the data support for the web-app 
 			pull, clean the collision and traffic light datasets: 40,000 rows for collision; 1,080 for traffic lights;  
 	
@@ -24,10 +45,5 @@ Created Sunday 12 February 2017
 		Saved the joined dataset in JSON format for the web-developers 
 		
 	Result: 
-		1st place, the most completed project from design to data to presentation, very useful to the audience 
-
-
-**PCA: scikit-learn**  
-	20-newsgroup text dataset
-
+		1st place, the most completed project from design to data preparation to presentation, very useful to the audience 
 ******************************************************************************************************************************************************
