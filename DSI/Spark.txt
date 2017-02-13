@@ -111,6 +111,9 @@ Streams
 	executes lazy lists in which elements are evaluated only when required
 	**A stream is a List with its tail as a lazy val. A value remains computed and is reused (cached).**
 	
+**************************************************************************************************************************************
+Using RDD for creating Applications in Spark
+
 
 
 

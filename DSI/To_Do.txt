@@ -38,6 +38,7 @@ Need to Learn:
 	Immediate:
 		AWS: EC2, S3, Redshift, EMR (Amazon Online)
 		Linux Command Line (Online Course)
+		Tableau (Udemy)
 		Time Series (Havard DS)
 		Bayesian Inference (Havard DS)
 		[[MongoDB]] (their website, DSI)

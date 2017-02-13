@@ -5,6 +5,8 @@ Creation-Date: 2017-01-20T19:58:49+00:00
 ====== Hadoop ======
 Created Friday 20 January 2017
 
+https://github.com/ga-students/dsi-sea-week10-1.2
+
 Hadoop Eco-System:
 	Core Hadoop: Store data in HDFS, Process data in MapReduce (Both on cluster of machines, locality principle)
 	Tools to easily access data in Hadoop: 
@@ -17,5 +19,14 @@ Hadoop Eco-System:
 	
 CDH: a distribution of Hadoop, by Cloudera, easy to install
 
+HDFS: 
+	a file is split into Chunks of 64 MB's (blk_1, blk_2, etc.)  Each block is stored on one Node in the Cluster. 
+	There is a DAEMON (software) running on each machine in the Cluster, called the Data Node
+	Another DAEMON, Name Node is running on another machine, stores the Meta Data (which Nodes contains the parts of which file)
+	
+	Hadoop replicates each block **THREE** times on HDFS (for backup)
+	If the **Meta Data** on Name Node is lost, entire Cluster fails...
+		→ Store Meta Data on a remote disk also, using NFS
+		→ Active and Standby (backup)
 
 
