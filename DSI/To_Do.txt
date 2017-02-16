@@ -63,6 +63,7 @@ Projects:
 
 Daily work/Study:
 1. Projects
-2. ML algorithm from Sebastian + Andrew Ng class
-3. CTCI
+2. ML algorithm: from Sebastian + Andrew Ng class
+3. Coding: CTCI
 4. SQL: Suciu Notes + DSI SQL section
+5. Spark: AAS book + Coursera Class

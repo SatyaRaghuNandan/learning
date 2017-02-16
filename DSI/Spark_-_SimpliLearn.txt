@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 Creation-Date: 2017-01-20T19:58:53+00:00
 
-====== Spark ======
+====== Spark - SimpliLearn ======
 Created Friday 20 January 2017
 
 **************************************************************************************************************************************
@@ -112,8 +112,7 @@ Streams
 	**A stream is a List with its tail as a lazy val. A value remains computed and is reused (cached).**
 	
 **************************************************************************************************************************************
-Using RDD for creating Applications in Spark
-
+**Using RDD for creating Applications in Spark**
 
 
 

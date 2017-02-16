@@ -1,0 +1,31 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-02-16T15:43:09+00:00
+
+====== Spark-Oreilly ======
+Created Thursday 16 February 2017
+
+Introduction
+***********************************************************************************************************************************************
+Advantages of Spark:
+	Analysts can experiment with their data much more quickly (data preprocessing & iteration)
+		Pass all intermediate results into pipeline, no need to write them out
+		rich set of transformations
+		in-memory processing
+	Better at being an operating system than most exploratory systems
+	
+Limitations of Spark:
+	batch processsing: not as good as Hadoop
+	SQL functionality: not as good as Hive
+	Statistics: nowhere close to R
+	Stream processing, ML, graph processing: on-going development
+
+***********************************************************************************************************************************************
+
+
+Scala & Spark
+***********************************************************************************************************************************************
+spark-shell — master local[*] (-- driver -memory 2g) 
+
+[[SparkContext]] is an **Object** that coordinates the execution of Spark jobs on the cluster (referenced by "sc")
+

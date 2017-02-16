@@ -62,9 +62,11 @@ Virtualbox and Vagrant:
 	https://github.com/ga-students/dsi-gitbook/blob/master/dsi/dsi_10_big_data/VM-installation.md
 	We use VM for this lab so that everybody has exactly the same setup (unlike the Heroku one ☺ )
 	
-	vagrant up
-	vagrant ssh
-	vagrant halt
+	**vagrant up**
+	**vagrant ssh**
+	**bigdata_start.sh**
+	
+	**vagrant halt**
 	
 AWS:
 	training: https://awstraining.csod.com/LMS/catalog/Welcome.aspx?tab_page_id=-67&tab_id=-1
