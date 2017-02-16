@@ -8,9 +8,13 @@ Created Wednesday 08 February 2017
 Intercept can sometimes be of no meaning, when x = 0 is out side of your data range
 Intercept is just intrepolated at x = 0, based on other data points
 Intercept is largely determined by the Slope
+Intercept can be thought as the Mean Response when all predictors are zero.
+
 
 **What does the P-value for Intercept mean? 12**
 **Why use n-2 as the T-distribution's degree of freedom? P13**
+
+use the wording "The association with experimental study", Not "Cause and Effect"
 
 Regression & Correlation
 
@@ -24,13 +28,18 @@ Some statisticians argue that T-test, ANOVA, Correlation are all actually Regres
 	
 **Error Variance - 30?**
 
+Transformations can cure Non-constant variance of residuals, or non-normality 
+
 Least-Square Method
 	P32: for the denominator, you may put all Xi's into 2 groups: max and min, then test whether Beta is zero. Extreme way but useful sometimes; 
 	
 P43 - 46
 If you find violation for the Constant Variance assumption, Need not to throw out your Regression Model, but you need other methods to accordomate this and get better Confidence Intervals or other Inferential Results!!!
 
-P46 we seek weak linear relationship, Ok. Big trouble if there is obvious linear relationship!!
+**P46 we seek weak linear relationship, Ok. Big trouble if there is obvious linear relationship!!**
 
 
+**Bonferroni correction is too stringent (resulting in too small powers), so many times people don't use it. They will report the uncorrected test and acknowledge it.**
+	Question: when should we use Bonferroni in general?
+	
 

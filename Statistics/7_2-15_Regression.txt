@@ -1,0 +1,31 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-02-15T17:11:03+00:00
+
+====== 7 2-15 Regression ======
+Created Wednesday 15 February 2017
+
+Reason for more complicated model:
+	P4: is the slope in VC larger than that of OJ? 
+	
+Motivation for Multiple Variable Regression?
+	consider multiple factors together
+	
+Interaction of variables: 
+	https://en.wikipedia.org/wiki/Interaction_(statistics)
+	
+
+Interactions tend to have higher SE's, since they are difference of differences
+
+When you add in Interaction terms, the SE of all predictor's all increase, since you are asking the model more with the same amount of data...
+
+When your sample size is small, It's an "Under Sampled Experiment", It has low Power....
+
+P42: P-values for blocks are testing whether Block 2 has the same effect as Block 1, Block 3 vs. Block 1, etc....
+
+
+**Observational vs. Experimental Study?**
+
+
+randomization eliminates confounding ☺ 
+

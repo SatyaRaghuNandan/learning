@@ -27,7 +27,7 @@ ANOVA
 	If you want to know the probability of a specific alternative (Null being all are equal), don't use ANOVA, use some other methods
 		F-test rejects Null, you know not all are equal → Other specialized tests
 
-	 **the average value of the residuals is always 0?**
+	 Assumption of constant variance is more important than Assumption of Normality, don't proceed if the former fails
 
 	**Randomization, Blocking, Experimental Design in Quiz 10?**
 	
