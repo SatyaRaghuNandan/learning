@@ -92,10 +92,9 @@ HIVE is a query language (HiveQL) that queries Hadoop's database, it's NOT SQL!
 
 
 **Misc:**
-	Matt Brown's link:
-	https://medium.com/@josemarcialportilla/getting-spark-python-and-jupyter-notebook-running-on-amazon-ec2-dec599e1c297#.hm8xun33h
-	
 	Terminate Instances after creating an image of it
 
-
+	Save Vast Amount of Data online: AWS
+	S3 if need frequent access
+	Glacier if don't need frequent access
 

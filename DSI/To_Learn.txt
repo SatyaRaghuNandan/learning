@@ -19,6 +19,16 @@ GitHub:
 Hadoop & MapReduce:
 	https://www.youtube.com/watch?v=Fyxi0qlyTaQ&list=PLAwxTw4SYaPkXJ6LAV96gH8yxIfGaN3H-&index=2
 	
+Python
+	Learn Python the Hard Way
+	Flask for small web project
+	Django for a full web framework: Pinterests, Instagram
+	HackerRank
+	Learning Resources:
+		https://github.com/CodementorIO/Python-Learning-Resources
+	Third-Party API:
+		https://github.com/vinta/awesome-python#third-party-apis
+
 AI:
 	Perceptron with Go: https://appliedgo.net/perceptron/
 	Turing Paper: http://www.loebner.net/Prizef/TuringArticle.html
@@ -29,7 +39,7 @@ Unix:
 		http://www.grymoire.com/Unix/Awk.html
 
 Udemy Courses:
-	Python for Data Science (Big Data Setup), R, Tableau, ...
+	R, Tableau
 	
 AWS:
 	https://aws.amazon.com/articles/3998
@@ -40,7 +50,17 @@ Linux:
 	
 SQL:
 	http://stackoverflow.com/questions/24949676/difference-between-partition-key-composite-key-and-clustering-key-in-cassandra
+	http://sqlzoo.net/wiki/Tutorial_Quizzes
 
+Mongo DB:
+	https://university.mongodb.com/
+	https://github.com/farrell0/MongoDB-Developers-Notebook
+	https://www.mongodb.com/customers/city-of-chicago
+	https://www.mongodb.com/use-cases/internet-of-things
+	
+Spark:
+	https://github.com/databricks/learning-spark
+	
 Business Analytics:
 	https://www.analyticsvidhya.com/blog/author/sunil-ray/
 	
@@ -69,6 +89,22 @@ Beautiful Soup Cheatsheet:
 Regression 45 quizzes:
 	https://www.analyticsvidhya.com/blog/2016/12/45-questions-to-test-a-data-scientist-on-regression-skill-test-regression-solution/
 	
+How to remove the Outliers?
+	https://en.wikipedia.org/wiki/Outlier#Identifying_outliers
+	https://en.wikipedia.org/wiki/Dixon%27s_Q_test
+Confounding Variables
+	https://en.wikipedia.org/wiki/Confounding
+	https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation
+	http://blog.searchmetrics.com/us/2015/09/11/ranking-factors-infographic-correlation-vs-causality
+	http://ocw.jhsph.edu/courses/fundepiii/pdfs/lecture18.pdf
+
+Bias-Variance Tradeoff:
+	https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff
+	http://scott.fortmann-roe.com/docs/BiasVariance.html Good Explanation
+	http://scott.fortmann-roe.com/docs/BiasVariance.html
+	https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff
+	
+
 
 
 

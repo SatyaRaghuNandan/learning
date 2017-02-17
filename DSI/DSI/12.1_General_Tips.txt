@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-02-17T12:27:02+00:00
+
+====== 12.1 General Tips ======
+Created Friday 17 February 2017
+
+Data Science/ML is mostly about Pattern Detection, find hidden patterns that people can't easily
+find by EDA, otherwise it's just Data Analysis
+
+Two principles in Computer Science:
+	1. Don't Repeat Yourself
+	2. Keep It Simple
+	Best way to memorize is to practice
+	Best way to practice is to make the practice fun
+
+

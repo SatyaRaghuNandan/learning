@@ -2,10 +2,14 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 Creation-Date: 2017-02-17T10:00:56+00:00
 
-====== questions ======
+====== 0.0 Questions ======
 Created Friday 17 February 2017
 
 1. Can we delete multiple items in a dictionary with just one statement? e.g. del zoo_animals['Sloth', 'Bengal Tiger']
 
 2. what if your new branch conflicts with the remote branch? how would the remote side receive my pushed branch?
 
+3. When doing Multinomial Logistic Regression, How to determine the import features? P-value or Just run the lr model to get Feature Coefficients?
+		e.g. logisticregression(class = 'multinomial', solver = 'sag') sag means Stochastic Average Descent
+
+4. How to use the ax in plotting?

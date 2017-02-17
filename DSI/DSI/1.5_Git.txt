@@ -1,0 +1,35 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-02-17T12:28:14+00:00
+
+====== 1.5 Git ======
+Created Friday 17 February 2017
+
+Steps to collaborate on Git Hub
+	1. fork from start repo on gihub TO PERSONAL REPO
+	2. clone fork onto computer (terminal) in the correct folder. open jupyter notebook..
+	3. Modify directly in that same repo forked form
+	4. commit -am “blah
+	5. push up (from within folder, “dsi-sea-week01-3.4”)
+	6. send pull request in github repo 
+
+Steps to combine your work and the remote updates:
+	1. git checkout -b temp(create a new branch)
+	2. git add .
+	3. git commit (store your changes temporarily in the new branch)
+	4. git pull origin master (get the latest content from the remote)
+		# here you may see "auto-merging failed" conflicts exist, you can't switch back to master until you solve the conflicts
+		# check the git status, do another commit if necessary
+	5. git checkout master
+	6. git merge temp (merge your work into this new pull)
+	7. git branch -d temp
+		 git stash is another way if you have only a few small changes
+
+Third Way:
+	1. git checkout v2 ( create a new "DIFF" file)
+	2. git pull origin master (Local files will change)
+	3. git merge -s ours master
+	4. git checkout master
+	5. git merge v2 (Local files will change again)
+	6. git push origin master
+

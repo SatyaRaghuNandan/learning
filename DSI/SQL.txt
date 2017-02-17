@@ -30,7 +30,26 @@ Topics:
 	why use a CTE?
 		CTEs (common table expressions), temp tables by WITH clauses, it allows you to create something somewhat equivilant to a view that only exists during that transaction.
 		Readability is huge when it comes to SQL to ensure its doing the right thing. SQL will almost always tell you an answer, it just may not be to the question you think you’re asking. Ensuring your queries can be reasoned about is critical to ensuring accuracy and CTEs are one great way of accomplishing that.
-		
+
+**Transactional Integrity**
+	every part of the transaction must be completed before the whole process is done
+	
+**Guaranteeing Transaction Reliability** (often asked during interview)
+	There is a set of properties known by the acronym ACID that guarantee that database transactions are processed reliably and
+	concurrently:
+	1. Atomicity: all or nothing
+	2. Consistency: all related tables must be updated at the same time you make an update in one table (one reason that NoSQL was invented)
+	3. Isolation: (databases use date-time, timestamp) Imagine you make 8 updates and then a selection right after, you expect to see the updated data!
+	4. Durability: once a change has been committed, it will be saved somewhere all the time
+		https://en.wikipedia.org/wiki/ACID
+
+**BASE ( NoSQL version of ACID)**
+	1. Basically available indicates that the system does guarantee availability. (multiple threads can write at the same time for NoSQL; but for SQL, all threads has to merge before they can write in the destination 
+	2. Soft state indicates that the state of the system may change over time, even without input.???
+	3. Eventual consistency indicates that the system will become consistent over time, given that the system doesn't receive input during that time. (Don't care when a transaction will happen, given knowing it will be there eventually)	
+
+	Main concept: get rid of locks, allow everyone to write, worry about consistency later; writes faster
+
 **Misc:**
 1. Whenever possible, don’t use a nested queries
 2. **Distinct** is same as **Group By**. 

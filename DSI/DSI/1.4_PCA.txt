@@ -1,0 +1,33 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-02-17T11:03:51+00:00
+
+====== 1.4 PCA ======
+Created Friday 17 February 2017
+
+In essence: look at our data from a different way, transforming the features
+	But what do the transformed features represent in real life? YOU NEED TO THINK ABOUT THIS!!
+
+Math paper on Eigen-Vectors: http://www.math.hawaii.edu/~lee/linear/eigen.pdf
+
+Good Explanations of PCA:
+https://georgemdallas.wordpress.com/2013/10/30/principal-component-analysis-4-dummies-eigenvectors-eigenvalues-and-dimension-reduction/
+
+The eigenvector with the highest eigenvalue is therefore the principal component.
+	http://sebastianraschka.com/Articles/2015_pca_in_3_steps.html#pca-vs-lda
+	http://sebastianraschka.com/Articles/2014_pca_step_by_step.html
+
+Image Compression with SVD:
+	https://www.quora.com/What-is-an-intuitive-explanation-of-singular-value-decomposition-SVD
+	
+Good Papers:
+	https://arxiv.org/pdf/1404.1100.pdf
+	
+Procedure **(Why this procedure will accomplish PCA, A mathematical proof? )**:
+	1. Preprocess your data points (get to 0-mean and same unit)
+		i. Mean Normalization is a must ( x --> (x - mean of x) )
+		ii. May also need Feature Scaling ( such that feature values are in comparable ranges: divide by max -min )
+	2. Calculate the d*d covariance matrix (1, 2 is equivalent to calculating the Correlation Coefficient Matrix)
+	3. Do the SVD and sort the eigenvectors by eigen-values
+	4. select the first few eigenvectors
+

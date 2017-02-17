@@ -37,16 +37,16 @@ Statistics:
 Need to Learn:
 	Immediate:
 		Hadoop (Pig, Hive, Cascading, Cloudera, Hortonworks) (Udacity)
-AWS: EC2, S3, Redshift, EMR (Amazon Online)
-Bash Scripting (Online Course)
-Tableau (Udemy)
-Time Series (Havard DS)
-Bayesian Inference (Havard DS)
-[[MongoDB]] (their website, DSI)
-A/B Testing (Web Analytics Book, Video)
+		AWS: EC2, S3, Redshift, EMR (Amazon Online)
+		Bash Scripting (Online Course)
+		Tableau (Udemy)
+		Time Series (Havard DS)
+		Bayesian Inference (Havard DS)
+		MongoDB (their website, DSI)
+		A/B Testing (Web Analytics Book, Video)
+		Basic Java
 
 	Later:
-		Java
 		Cloud: Azure, Google Cloud Platform 
 		Interactive visualization and BI platforms (Tableau, Spotfire, etc.) 
 		RESTful API’s 

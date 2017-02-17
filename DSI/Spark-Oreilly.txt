@@ -27,5 +27,5 @@ Scala & Spark
 ***********************************************************************************************************************************************
 spark-shell — master local[*] (-- driver -memory 2g) 
 
-[[SparkContext]] is an **Object** that coordinates the execution of Spark jobs on the cluster (referenced by "sc")
+SparkContext is an **Object** that coordinates the execution of Spark jobs on the cluster (referenced by "sc")
 

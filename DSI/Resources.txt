@@ -12,11 +12,28 @@ Projects & Solutions:
 PostgreSQL Pattern Matching:
 	https://www.postgresql.org/docs/9.0/static/functions-matching.html
 	
+Statistics:
+	Minitab Statistics: http://support.minitab.com/en-us/minitab/17/topic-library/topic-library-overview/
+	
+Experiment Design:
+	https://en.wikipedia.org/wiki/Reproducibility
+	http://www.stat.yale.edu/Courses/1997-98/101/expdes.htm
+	
+Data Science Workflow:
+	http://cacm.acm.org/blogs/blog-cacm/169199-data-science-workflow-overview-and-challenges/fulltext
+
+JSON API's for Web Development:
+	https://github.com/toddmotto/public-apis
+
+Workflow control:
+	https://github.com/apache/incubator-airflow
+		
 Palette:
 	https://www.materialpalette.com/
 	
 Nice Portfolio:
 	https://www.linkedin.com/in/duffin22 (Good UX)
+	http://www.juliesakalys.com/#!/
 	
 	GA Students: https://gallery.generalassemb.ly/DSI
 	
@@ -51,10 +68,7 @@ Who does What:
 Coding in Python:
 	games: https://www.hackerrank.com/
 	algorithms and Data Structure: https://interactivepython.org/runestone/static/pythonds/index.html
-	style: https://www.python.org/dev/peps/pep-0008/#a-foolish-consistency-is-the-hobgoblin-of-little-minds
-
-SQL:
-	http://sqlzoo.net/wiki/Tutorial_Quizzes
+	style: https://www.python.org/dev/peps/pep-0008/#a-foolish-consistency-is-the-hobgoblin-of-little-
 	
 Feature Engineering:
 	Uni-variate selection: http://blog.datadive.net/selecting-good-features-part-i-univariate-selection/
@@ -91,5 +105,8 @@ Other Readings:
 	recommendation engine: https://neo4j.com/blog/real-time-recommendation-engine-data-science/
 	Indeed Job recommendation algorithm: https://www.oreilly.com/ideas/algorithms-and-architecture-for-job-recommendations
 	Difference between DataFrame and RDD in Spark: https://stackoverflow.com/questions/31508083/difference-between-dataframe-and-rdd-in-spark
-	
+	   Transforming data to be More Normal:
+		https://www.isixsigma.com/tools-templates/normality/making-data-normal-using-box-cox-power-transformation/
+		
+
 	

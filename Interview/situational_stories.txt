@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 Creation-Date: 2017-02-12T11:25:01+00:00
 
-====== behavioral-questions ======
+====== situational stories ======
 Created Sunday 12 February 2017
 
 It's all about you, not your team!
@@ -28,9 +28,4 @@ Points:
 	Conflicts
 	What You'd Do Differently
 
-	
-1. Tell me a time that you went down to a path way too long and then find it might not be useful to your team, what did you do? 
-
-2. Tell me a time when you were ask to handle a big problem, how did you approach it? 
-	Deep-Dive
 

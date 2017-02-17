@@ -1,0 +1,87 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-02-17T10:51:50+00:00
+
+====== 1.2 Django ======
+Created Friday 17 February 2017
+
+Project Process:
+
+	Create a new project:
+		django-admin startproject mysite
+		inner mysite is the Python package; outer mysite is just a container of the project
+		
+	Create an App:
+		python manage.py startapp polls
+		created an app named "polls": the folder "polls" houses the application
+		Week 5^J6 Page 69created an app named "polls": the folder "polls" houses the application
+		Include the App into the project:
+		add a reference to its configuration class in the INSTALLED_APPS section of ProjectFolder/settings.py
+		
+	Create URLConf for your App:
+		modify AppFolder/urls.py
+		point the root URLConf (Project/urs.py) at your new App.urls module (insert an include() in the urlpatterns list)
+
+	Setup Database:
+		python manage.py migrate
+		The migrate command looks at the INSTALLED_APPS setting and creates any necessary database tables
+		according to the database settings in your projectfolder/settings.py file and the database migrations shipped
+		with the app
+		
+	Create/Change and Activate Models: (Models define your database layout)
+	1. modify the ApplicationFolder/models.py
+	2. python manage.py makemigrations polls
+			By running makemigrations, you’re telling Django that you’ve made some changes to your models (in this case,
+			you’ve made new ones) and that you’d like the changes to be stored as a migration.
+			Migration files are stored in directory ApplicationFolder/migrations
+	3. python manage.py migrate (commit your changes on the model tables in your database)
+			before this step you can:
+	a. python manage.py sqlmigrate polls 0001 to see the SQL Django is going to run OR
+	b. python manage.py check
+	
+	Setup Views:
+		A view is a Public Interface, a “type” of Web page in your Django application that generally serves a specific function and has a specific template
+		A view can either:
+			returning an HttpResponse object containing the content for the requested page
+			raise an exception (like 404)
+		Use Django’s template system to separate the design from Python by creating a template that the view can use.
+		
+		Your project’s TEMPLATES setting describes how Django will load and render templates.
+		
+		recommended file system: ProjectFolder/AppFolder/Templates/AppFolder/your templates
+		
+	Setup HTML
+
+	Setup URLs for each method (view) of your App:
+		in AppFolder/urls.py
+		url(r'^(?P<question_id>[0-9]+)/$', views.detail, name='detail')
+		detail is the name of this URL; views.detail is the method associated with this request
+			
+			Best Practice:
+			Use namespacing in App/urls.py to distinguish the Views of different Apps but the same name in your Project:
+				In App.urls add app_name = 'polls'
+			Reference views in the templates (HTML files) by 'app_name : view_name'
+
+	Start your site:
+		python manage.py runserver
+		
+
+Render function:
+	The render() function takes the request object as its first argument, a template name as its second argument and a dictionary as its optional third argument. It returns an HttpResponse object of the given template rendered with the given context.
+	
+	return render(request, 'polls/index.html', context)
+
+Get_Object_or_404 function:
+	The get_object_or_404() function takes a Django model as its first argument and an arbitrary number of keyword arguments, which it passes to the get() function of the model’s manager. It raises Http404 if the object doesn’t exist.
+	question = get_object_or_404(Question, pk=question_id)
+	
+	
+**Resources:**
+	Django: https://docs.djangoproject.com/en/1.10/intro/tutorial01/
+	Run Server: https://docs.djangoproject.com/en/1.10/ref/django-admin/#django-admin-runserver
+	HTML tutorial: http://www.w3schools.com/html/
+	Giphy API: https://github.com/Giphy/GiphyAPI
+	PostgreSQL: https://www.postgresql.org/docs/
+	SQLite: https://www.sqlite.org/docs.html
+	
+

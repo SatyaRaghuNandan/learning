@@ -27,7 +27,7 @@ I worked in Data Analytics team of Chubb Insurance. It was a new initiative from
 
 And for my role, as the team's first data analyst, I was in charge of 70% of the team's ETL processes; applied critical thinking skills to solve problems in reporting & analysis; I made process improvement recommendations, and also acted as leader on various key initiatives like D&B reporting. 
 I spent 40% of time on data engineering and reporting, 30% on relationship building with business people, and the rest 30% on providing ad-hoc analyses; 
-Most of the time I use Netezza SQL & Excel and sometimes visualization tools like QlikView. 
+Most of the time I use Netezza SQL & Excel and sometimes visualization tools like [[QlikView]] and R Shiny.
 
 ****************************************************************************************************************************** 
 

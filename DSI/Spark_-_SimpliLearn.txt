@@ -26,12 +26,12 @@ In-Memory Processing
 Apache Spark
 	open-source cluster computing framework (UC Berkeley AMP Lab, Matei Zaharia in 2009 → Databricks)
 	Components of a Spark Project:
-		Spark Core, RDDs, Spark SQL, Spark Streaming, ML lib, [[GraphX]]
+		Spark Core, RDDs, Spark SQL, Spark Streaming, ML lib, GraphX
 	Language Flexibility:
 		Java, Scala, Python, R, inline functions (lambda function, clusture),  
 	Spark Execution Architecture:
 	1. Spark-submit script
-	2. Spark applications: processes on cluster, coordinated by [[SparkContext]] object
+	2. Spark applications: processes on cluster, coordinated by SparkContext object
 	3. Cluster managers: Standalone, Apache Mesos, Hadoop YARN
 	4. Spark's EC2 launch scripts
 	Advantages of Spark

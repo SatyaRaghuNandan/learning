@@ -1,0 +1,27 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-02-17T10:24:44+00:00
+
+====== 1.1 Visualization ======
+Created Friday 17 February 2017
+
+Visualization Rules
+	 Descriptive without Clutter
+	 Don't do 3-D Pie-chart, or any 3-D chart
+	 Don't use Pie-chart to communicate with technical stakeholders
+Visualization Tools:
+	 matplotlib is the low-level but powerful standard plotting package for python.
+	 seaborn builds on top of matplotlib. It is much easier to use and looks better, but is more
+	restricted in functionality.
+	 plotly is a fancy plotting library with very nice visuals but very different syntax than matplotlib.
+
+Seaborn Regression Plotting Functions:
+	https://seaborn.github.io/tutorial/regression.html
+	
+If you have to explain your Viz, it's not a good one!
+	Let the graph speak for itself
+	Don't put two graphs for the same meaning (people natually tend to compare them)
+
+
+
+
