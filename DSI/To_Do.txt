@@ -36,15 +36,15 @@ Statistics:
 
 Need to Learn:
 	Immediate:
-		AWS: EC2, S3, Redshift, EMR (Amazon Online)
-		Linux Command Line (Online Course)
-		Tableau (Udemy)
-		Time Series (Havard DS)
-		Bayesian Inference (Havard DS)
-		[[MongoDB]] (their website, DSI)
-		A/B Testing (Web Analytics Book, Video)
 		Hadoop (Pig, Hive, Cascading, Cloudera, Hortonworks) (Udacity)
-	
+AWS: EC2, S3, Redshift, EMR (Amazon Online)
+Bash Scripting (Online Course)
+Tableau (Udemy)
+Time Series (Havard DS)
+Bayesian Inference (Havard DS)
+[[MongoDB]] (their website, DSI)
+A/B Testing (Web Analytics Book, Video)
+
 	Later:
 		Java
 		Cloud: Azure, Google Cloud Platform 
@@ -53,12 +53,13 @@ Need to Learn:
 		JavaScript visualization languages (D3, Highcharts, etc.), web-application frameworks (angularJS, Ruby on Rails, etc.), and web design skills (HTML, CSS) 
 		Business: Business Foundations Specialization by Wharton School, Coursera 
 
-
 Projects: 
 1. Imbalanced-Problem with real datasets, try multiple models, deep dive into ROSE, **Fraud Detection**, Cencus Data from data.gov? **(Linear Model)**
 2. Spark project **(Big Data**), SimpliLearn, book examples
 3. 20 real projects bought **(Fraud Detection, Text Mining)**
-4. Slackbot on Craiglist **(Data Engineering, Practical)**
+4. Something Useful/Cool
+5. Sushi Restaurants Sentiment Analysis
+6. Slackbot on Craiglist **(Data Engineering, Practical): **http://www.dataquest.io/blog/apartment-finding-slackbot/
 
 
 Daily work/Study:

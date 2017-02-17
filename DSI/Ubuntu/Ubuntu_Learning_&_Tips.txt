@@ -15,6 +15,10 @@ search for a package/software:
 unzip a file:
 	tar xvf package-name
 
+update apt-get packages:
+	apt-get update
+	apt-get dist-upgrade
+	apt-get autoclean
 
 
 **Lesson**
