@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 Creation-Date: 2017-01-04T17:09:21-08:00
 
-====== 1 1-4 ======
+====== 1 1-4 Descriptive Statistics ======
 Created Wednesday 04 January 2017
 
 Do homework in R markdown file
@@ -64,8 +64,8 @@ Bi-Modality:
 	you can probably tell the multiple modes from PDF (maybe not Histogram), but PDF is sensitive to the TURNING PARAMETERS, so the result maybe not reliable
 
 Skew:
-	Right Skew: mean > median, skewness > 0
-	Left Skew: mean < median, skewness < 0
+	Right Skew: mean > median, skewness > 0, **curvature in qq-line?**
+	Left Skew: mean < median, skewness < 0, **curvature in qq-line?**
 	Is there an R function that calculates it? 
 		- Package "Moments"?
 	
@@ -108,8 +108,6 @@ Transformations:
 Survival Function:
 	e.g.: Kaplan-Meier Estimator
 	
-
-
 
 **Summary - Methods of descriptive statistics**
 

@@ -11,3 +11,19 @@ table(d$elderly,d$male,dnn=c("Elderly","Male"))
 
 na.rm = T  (removes the null values)
 
+with(dataframe, tapply ( column1, column2, function) )
+
+attach(dataframe), then work on its columns
+
+dataframe$column1[which (dataframe$column2%in%value)]
+	e.g. hist(data$fev[which(data$smoke%in%0)],main="Histogram of FEV in Non-Smokers",xlab="FEV in L")
+
+data.frame(output1 = formula1, output2 = formula2, output3 = formula3, ...)
+	e.g. data.frame(phat[1],phat[2],z,p=2*(1-pnorm(abs(z))))
+
+Dot Plot:
+	plot(as.numeric(d$Method),r,axes=F,xlab="Method",ylab="Residual")
+	axis(side=2)  ## y-axis
+	axis(side=1,at=1:4,labels=c("A","B","C","C"))  ##  x-axis
+	
+	

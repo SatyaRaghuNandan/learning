@@ -43,3 +43,7 @@ If you find violation for the Constant Variance assumption, Need not to throw ou
 	Question: when should we use Bonferroni in general?
 	
 
+**Lab 6:**
+	**R^2 = correlation (fev, age) ^2, WHY?**
+	
+

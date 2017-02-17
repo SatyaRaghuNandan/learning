@@ -19,21 +19,18 @@ P35
 Reason 2, why?
 
 
-**What's the theoretical basis for T-test?**
+**What's the theoretical basis for T-test? T-distribution**
 
 **Comparison of Two Population Means with Independent Samples**
 
 Z-statistic
 
 
-If n A and n B are both large, use the standard normal distribution, (e.g., 1.96) for
-α = 0.05.
-If n is small and the population distributions are both normal, then use the
-t n A +n B −2 distribution.
-If n is small and we are not sure if the population distribution is normal then we
-are stuck for now! (see Exact methods later in course)
+If n A and n B are both large, use the standard normal distribution, (e.g., 1.96) for α = 0.05.
+If n is small and the population distributions are both normal, then use the  n A +n B −2 distribution.
+If n is small and we are not sure if the population distribution is normal then we are stuck for now! (see Exact methods later in course)
 
-R uses the “Welch” adjustment to the degrees of freedom
+R uses the “Welch” adjustment to the degrees of freedom **(only for unequal variance?!)**
 
 	unequal variance: when sample sizes are large
 	equal variance: when sample sizes are small and there is theoretical justification for equal variance
