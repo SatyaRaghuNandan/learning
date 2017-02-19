@@ -69,7 +69,7 @@ Skew:
 	Is there an R function that calculates it? 
 		- Package "Moments"?
 	
-Heavy-Tail:
+Tails:
 	47, real vs. best normally approximated distribution
 	Sample Kurtosis is a measure of this (heavy-tailedness realtvie to the normal distribution)
 	P50, 3rd graph, roughly linear but with 2 big outliers....
@@ -79,9 +79,9 @@ Heavy-Tail:
 		y-axis are data values
 		you are looking for a straight line fitting all points; Don't compare x-axis with y-axis; will come back when teaching regression
 		**NPP: **
-			**S-shape: heavy tail**
-				**last few points above the line & first few points below the line: fat tails**
-				**last few points below the line & first few points above the line: short tails**
+			**S-shape: tails**
+				**last few points above the line & first few points below the line: long/heavy tails**
+				**last few points below the line & first few points above the line: short/light tails**
 			**all points below the line: right skewed**
 			**all points above the line: left skewed**
 			

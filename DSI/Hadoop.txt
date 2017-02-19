@@ -5,7 +5,7 @@ Creation-Date: 2017-01-20T19:58:49+00:00
 ====== Hadoop ======
 Created Friday 20 January 2017
 
-https://github.com/ga-students/dsi-sea-week10-1.2
+Install CDH on local machine: https://www.cloudera.com/documentation/enterprise/latest/topics/cm_ig_install_path_a.html#cmig_topic_6_5
 
 Hadoop Eco-System:
 	Core Hadoop: Store data in HDFS, Process data in MapReduce (Both on cluster of machines, locality principle)
@@ -25,8 +25,37 @@ HDFS:
 	Another DAEMON, Name Node is running on another machine, stores the Meta Data (which Nodes contains the parts of which file)
 	
 	Hadoop replicates each block **THREE** times on HDFS (for backup)
-	If the **Meta Data** on Name Node is lost, entire Cluster fails...
+	If the **Meta Data** on **Name Node** is lost, entire Cluster fails...
 		→ Store Meta Data on a remote disk also, using NFS
 		→ Active and Standby (backup)
+		→ Put the **Name Node** on a High-end hardware
 
+[[MapReduce]] Process:
+	Mappers work → shuffle and sort → Reducers work → Final Output
+	Job Tracker (splits works into Mappers and Reducers) vs. Task Tracker (on a slave node)
+	
+	When running a Hadoop job, the output directory must not already exist
+	
+	Remember to specify how many Reducers you want for your job
+		**But Hadoop framework decides which keys get sent to each Reducer, You have no control???**
 
+[[MapReduce]] Problem Patterns:
+	Filtering: dont' change records
+	Summarization: top-level view of data
+	Structured-To-Hierarchical: 
+		when migrating data from RDBMS to Hadoop, 
+		reformat your data in Hadoop
+	Organizational
+	Input/Output
+	
+Combiner:
+	Between Mapper and Reducer
+	Does "Pre-reduction" before sending data from Mapper to Reducer
+	
+Misc:
+	Hadoop Streaming allows you to write your Mappers and Reducers in any language
+	Fist test your [[MapReduce]] job wiht a small dataset, then run them on your entire, huge dataset
+		cat testfile | [[./mapper.py]] | sort | ./reducer.py
+
+Next Steps:
+	Project in Lession 3 and Project Prep

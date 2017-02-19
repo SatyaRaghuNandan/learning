@@ -58,6 +58,7 @@ http://aadrake.com/command-line-tools-can-be-235x-faster-than-your-hadoop-cluste
 	This command line pipeline is much faster than Hadoop as Hadoop spent too much time on the I/O among its nodes
 	xargs can let you parallize jobs
 		
+*******************************************************************************************************************************************
 Virtualbox and Vagrant:
 	https://github.com/ga-students/dsi-gitbook/blob/master/dsi/dsi_10_big_data/VM-installation.md
 	We use VM for this lab so that everybody has exactly the same setup (unlike the Heroku one ☺ )
@@ -67,7 +68,8 @@ Virtualbox and Vagrant:
 	**bigdata_start.sh**
 	
 	**vagrant halt**
-	
+*******************************************************************************************************************************************
+
 AWS:
 	training: https://awstraining.csod.com/LMS/catalog/Welcome.aspx?tab_page_id=-67&tab_id=-1
 
