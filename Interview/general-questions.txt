@@ -13,14 +13,14 @@ Created Sunday 12 February 2017
 		I did my undergrad in Hong Kong, majoring in mathematics and then studied economics in Washington DC. 
 		
 	//Post College & Onwards:// 
-		My previous job was with Chubb Insurance's as a data analyst. Chubb is a major property & casualty insurance company in Philadelphia. It was great 2 and half years working there. I learned a lot about business communicating & project management and also enhanced my data analytical skills. 
+		My previous job was with Chubb Insurance's as a data analyst. Chubb is a major property & casualty insurance company in Philadelphia. It was great 2 and half years working there. I learned a lot about business communication & project management and also enhanced my data analytical skills. 
 
 		And for my role, 
 		I was in charge of 70% of the team's ETL processes, (using SQL Procedures, Python & Unix scripts); (applied critical thinking skills to solve problems in ad-hoc reporting & analysis); 
 		I made process improvement recommendations
 		I also led sereral key initiatives including the Sales Reporting on 6,000 Largest Accounts (using Dunn & Breadstreet data)
 		I spent 40% of time on data engineering and reporting, 30% on relationship building with business people, and the rest 30% on providing ad-hoc analyses; 
-		Most of the time I use Netezza SQL & Excel and sometimes [[QlikView]] and R Shiny for visualization.
+		Most of the time I use Netezza SQL & Excel and sometimes R Shiny for visualization.
 		
 	//Current Role//
 		Currently, I studying part-time at University of Washington's Masters Program in Data Sciecne. I am looking for positions to apply my business sense and technical skills and your company caught my eye. I think I will be a good fit for this role.

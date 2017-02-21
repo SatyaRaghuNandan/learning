@@ -8,7 +8,7 @@ Created Monday 13 February 2017
  
 **Team's Job: **
 
-I worked in Data Analytics team of Chubb Insurance. It was a new initiative from the CEO to make the company more data-driven. We provided high-level reports & analyses to senior management by integrating various data sources across the company. (expanded a lot by acquiring lots of other companies) 
+I worked in Data Analytics team of Chubb Insurance. It was a new initiative in 2014 to make the company more data-driven. We provided high-level reports & analyses to senior management by integrating various data sources across the company. (expanded a lot by acquiring lots of other companies) 
 ****************************************************************************************************************************** 
 
 **Actions:** 
@@ -25,9 +25,11 @@ I worked in Data Analytics team of Chubb Insurance. It was a new initiative from
 ****************************************************************************************************************************** 
 **My focus:** 
 
-And for my role, as the team's first data analyst, I was in charge of 70% of the team's ETL processes; applied critical thinking skills to solve problems in reporting & analysis; I made process improvement recommendations, and also acted as leader on various key initiatives like D&B reporting. 
-I spent 40% of time on data engineering and reporting, 30% on relationship building with business people, and the rest 30% on providing ad-hoc analyses; 
-Most of the time I use Netezza SQL & Excel and sometimes visualization tools like [[QlikView]] and R Shiny.
+		I was in charge of 70% of the team's ETL processes, (using SQL Procedures, Python & Unix scripts); (applied critical thinking skills to solve problems in ad-hoc reporting & analysis); 
+		I made process improvement recommendations
+		I also led sereral key initiatives including the Sales Analysis Reporting on 6,000 Largest Accounts (using Dunn & Breadstreet data)
+		I spent 40% of time on data engineering and reporting, 30% on relationship building with business people, and the rest 30% on providing ad-hoc analyses; 
+		Most of the time I use Netezza SQL & Excel and sometimes R Shiny for visualization.
 
 ****************************************************************************************************************************** 
 
@@ -35,7 +37,9 @@ Most of the time I use Netezza SQL & Excel and sometimes visualization tools lik
 
 	ETL: 
 	 70% of the team's ETL process            
-		Ran a SQL procedure from a Unix Server each night to refresh a combined dataset which the entire team's reports are based upon 
+		Ran a SQL procedure from a Unix Server each night to refresh a combined dataset which the entire team's reports are based upon
+			create tables, do data cleaning, create calcuated columns, indexes, views
+			 
 		Monthly Chubb data integration, flat file of 4 Million Rows, 2.7 Gigabytes 
 		Normalize Broker Pipeline Dataset for broker analysis 
 
@@ -66,10 +70,11 @@ Most of the time I use Netezza SQL & Excel and sometimes visualization tools lik
 Automation of D&B Tree: 
 My example of creating the Automation of the Customized D&B Tree, bypassing IT Team (Problem-Solving, Critical-Thinking), take ownership of results (Take ownership of Results) 
 For the first 3 months I relied on them, they are my dependencies, but there is a two-day window for them to update the D&B Tree with the latest feedback I collected from the business users; 
-Berkshire Hathaway, GEICO, Benjamin Moore 
+
+For instance, we have two account owners, Owner A for Berkshire Hathaway and Owner B for GEICO Insurance. Even though Geico is a subsidiary of Berkshire based on D&B hierarchy, we manage the Geico account seperately since it purchases its own insurance. Onwer B wants to see all subsidiaries and branches of GEICO's domestic ultimate DUNS in his account....  Carve the Geico part of the tree out...
 
 
- D&B data quality issue, I wrote two long emails to my manager, and analyzed that issue in detail: who are the stakeholders? Why it didn't work? How should we change the situation? (Deep Dive) 
+D&B data quality issue, I wrote two long emails to my manager, and analyzed that issue in detail: who are the stakeholders? Why it didn't work? How should we change the situation? (Deep Dive) 
 
 	legacy database, human-error during data-entry, thousands of underwriters manually key-in info, database manager was very reluctant to modify production data, because he doesn't want to be hold responsible for any potential error introduced during the process 
 

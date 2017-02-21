@@ -2,11 +2,9 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 Creation-Date: 2017-02-12T10:43:31+00:00
 
-====== companies ======
+====== Amazon ======
 Created Sunday 12 February 2017
 
-
-******************************************************************************************************************************************************
 **AMAZON:**
  1. what do you know about Amazon?
 	  AWS, FBA, KDP, and Retail; Jeff Bezos founded in 1994; No.4 in terms of Market Capitalization ($380 Billion); world's most customer-centered company, every product or service at Amazon starts from the customers and then work backward 

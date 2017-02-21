@@ -38,9 +38,9 @@ Topics:
 	There is a set of properties known by the acronym ACID that guarantee that database transactions are processed reliably and
 	concurrently:
 	1. Atomicity: all or nothing
-	2. Consistency: all related tables must be updated at the same time you make an update in one table (one reason that NoSQL was invented)
-	3. Isolation: (databases use date-time, timestamp) Imagine you make 8 updates and then a selection right after, you expect to see the updated data!
-	4. Durability: once a change has been committed, it will be saved somewhere all the time
+	2. Consistency: The consistency property ensures that any transaction will bring the database from one valid state to another. All related tables must be updated at the same time you make an update in one table (one reason that NoSQL was invented)
+	3. Isolation:  This property ensures that the concurrent execution of transactions results in a system state that would be obtained if transactions were executed sequentially(databases use date-time, timestamp) Imagine you make 8 updates and then a selection right after, you expect to see the updated data!
+	4. Durability: It ensures that once a transaction has been committed, it will remain so, even in the event of power loss, crashes, or errors (once a change has been committed, it will be saved somewhere all the time).
 		https://en.wikipedia.org/wiki/ACID
 
 **BASE ( NoSQL version of ACID)**
@@ -102,6 +102,7 @@ Topics:
 	Primary (over attributes that include the Primary Key) vs. Secondary 
 	
 	Random reading 1-2% of the file ≈ sequential scanning the entire file;
+	
 	Each new index slows down updates to table
 	
 	**Index Selection Problem** is HARD, done by DBA

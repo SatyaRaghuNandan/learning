@@ -1,0 +1,24 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-02-20T13:13:31+00:00
+
+====== allstate hackathon ======
+Created Monday 20 February 2017
+
+predict the next event based on String ID?
+
+	Team name must start with UW_
+	
+	Individual team
+	
+	due by this Sunday, Noon
+	
+	Private vs. Public Leaderboard?
+	
+	Keep your code clean, cohesive, documented and saved.
+	
+**Shall I use Markov-Chain ? or The Resume project by Corey et. al?**
+Can Bayesian Inference help?
+
+Kaggle Site: https://inclass.kaggle.com/c/allstate-event-prediction-challenge
+

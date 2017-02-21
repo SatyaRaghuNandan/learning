@@ -32,7 +32,7 @@ Palette:
 	https://www.materialpalette.com/
 	
 Nice Portfolio:
-	https://www.linkedin.com/in/duffin22 (Good UX)
+	http://duffin22.com/ 
 	http://www.juliesakalys.com/#!/
 	http://www.public.asu.edu/~ihsiao1/project/dataviz/index.html (Mengying, Political Sentiment Analysis)
 	
