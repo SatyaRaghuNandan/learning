@@ -36,15 +36,15 @@ Statistics:
 
 Need to Learn:
 	Immediate:
-		Hadoop (Pig, Hive, Cascading, Cloudera, Hortonworks) (Udacity)
-		AWS: EC2, S3, Redshift, EMR (Amazon Online)
+	   AWS: EC2, S3, Redshift, RDS, EMR (Harvard DS Course, Amazon Online)
 		Bash Scripting (Online Course)
 		Tableau (Udemy)
 		Time Series (Havard DS)
 		Bayesian Inference (Havard DS)
 		MongoDB (their website, DSI)
 		A/B Testing (Web Analytics Book, Video)
-		Basic Java
+	  Hadoop (Hive, Cascading, Cloudera, Hortonworks) (Udacity Project)
+Basic Java
 
 	Later:
 		Cloud: Azure, Google Cloud Platform 
@@ -55,11 +55,15 @@ Need to Learn:
 
 Projects: 
 1. Imbalanced-Problem with real datasets, try multiple models, deep dive into ROSE, **Fraud Detection**, Cencus Data from data.gov? **(Linear Model)**
-2. Spark project **(Big Data**), SimpliLearn, book examples
-3. 20 real projects bought **(Fraud Detection, Text Mining)**
-4. Something Useful/Cool
-5. Sushi Restaurants Sentiment Analysis
-6. Slackbot on Craiglist **(Data Engineering, Practical): **http://www.dataquest.io/blog/apartment-finding-slackbot/
+	a. two-class boosted decision tree
+	b. R
+	c. Azure ML
+2. an [[AWS]] project, using Redshift, RDS, EC2, S3
+3. Spark project **(Big Data**), SimpliLearn, book examples
+4. 20 real projects bought **(Fraud Detection, Text Mining)**
+5. Something Useful/Cool
+6. Sushi Restaurants Sentiment Analysis
+7. Slackbot on Craiglist **(Data Engineering, Practical): **http://www.dataquest.io/blog/apartment-finding-slackbot/
 
 
 Daily work/Study:

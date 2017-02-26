@@ -24,8 +24,20 @@ When your sample size is small, It's an "Under Sampled Experiment", It has low P
 P42: P-values for blocks are testing whether Block 2 has the same effect as Block 1, Block 3 vs. Block 1, etc....
 
 
-**Observational vs. Experimental Study?**
-
 
 randomization eliminates confounding ☺ 
+
+it's possible that a variable be both a Effect Modifier and Cofounder, although these are two seperate concepts.
+
+
+**Lab 7**
+2, 3: estimates are same, due to the balaced experiment design, but SE are smaller (not becuase there is block effect considerd though)
+10: 7.967 is the effect of N when K is zero (see the first line, End point - Starting Point); -1.633 is the effect of K when N is zero;
+14: good example of confounding (after adding the "Age" factor), and their might e other confounders besieds "Age"
+22: evidence against Constant Variance assumption; We can use GLM to deal with it
+
+**Homework 7**
+For error terms, you can write it out at the end of a formula OR
+E(Y) = formula without error
+
 

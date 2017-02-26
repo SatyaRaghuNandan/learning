@@ -18,21 +18,69 @@ AWS Redshift:
 	performance deep dive: https://www.youtube.com/watch?v=fmy3jCxUliM
 	2016 what's new: https://www.youtube.com/watch?v=OyHhYIUEPQ4
 	
-To Learn:
-	MySQL, PostgreSQL
+**To Learn:**
+	MySQL, SQL Server, RedShift
 	Cloud Analytics solution: AWS RedShift
 	
-Topics:
-	materialized views
+**Topics:**
 	partition key
-	indexing
-	why use a view vs. a table?
+	
 	why use a CTE?
 		CTEs (common table expressions), temp tables by WITH clauses, it allows you to create something somewhat equivilant to a view that only exists during that transaction.
 		Readability is huge when it comes to SQL to ensure its doing the right thing. SQL will almost always tell you an answer, it just may not be to the question you think you’re asking. Ensuring your queries can be reasoned about is critical to ensuring accuracy and CTEs are one great way of accomplishing that.
+	
+	Foreign Key: 
+		one type of CONSTRAINT
+		an attribute that references attributes of another table
+		the referenced attribute in table 2 must be Primary Key
+		values of the foreign key in table 1 must also appear in the referenced attributes in table 2
+		
+	Constraint:
+		Foreign Key
+		Not Null
+		Attribute-Based CHECK  (check the value of an attribute, can use anything that can follow an WHERE clause)
+			checked whenever the attributed is updated/inserted with a new value
+		Tuple-Based CHECK (check a tuple/row, can use anything that can follow an WHERE clause)
+			checked whenever a tuple is updated/inserted
+	
+	Assertions: 
+		a bollean-valued SQL expressin that must be true at all times (can reference all attributes in a table)
+		Must be true when the Assertion is created and remain true thereafter
 
+	Trigger:
+		a series of actions that are associated with certain events, (e.g. insertions into a relation), and thare are performed whenever these events arise.
+		Event occurs → Test a CONDITION → Take the ACTION associated
+	
+	View: 
+		Virtual View
+			tables that are defined by a query over other tables
+			
+		Materialized View
+			views constructed periodically and stored in the database
+			need to be recomputed every time one of its base tables changes in any way
+				**Index** is a type of Materialized View, sole purpose is to speed up data access
+					can think Index as a binary search tree of (Key, Value) pairs; "Key" is a value of an attribute, "Value" is a point to the location of the tuples;
+					
+	   Why use a view vs. a table?
+			provide assess only to the data that specific users are allowed to see
+			create custom views to accommodate different needs
+			hide the complexity of data retrieval operations
+
+	Temp Table: available within the system while the current session is open
+	
+	Table Variable: available within a script while the current batch is executing
+	
+	Derived Table: current statement
+	
+	Cursor
+		a database object that points to a result set. You can use cursor to identify the row to retrieve. (Work with data one row at a time, not the entire relation)
+		avoid using cursor whenever possible: slow and take up more system resources
+		
+		
+	
 **Transactional Integrity**
 	every part of the transaction must be completed before the whole process is done
+	finishes with a Commit Or a Rollback
 	
 **Guaranteeing Transaction Reliability** (often asked during interview)
 	There is a set of properties known by the acronym ACID that guarantee that database transactions are processed reliably and

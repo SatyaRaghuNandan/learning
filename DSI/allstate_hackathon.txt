@@ -18,7 +18,8 @@ predict the next event based on String ID?
 	Keep your code clean, cohesive, documented and saved.
 	
 **Shall I use Markov-Chain ? or The Resume project by Corey et. al?**
-Can Bayesian Inference help?
+Can Bayesian Inference help? PyMC
+http://nbviewer.jupyter.org/github/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers/blob/master/Prologue/Prologue.ipynb
 
 Kaggle Site: https://inclass.kaggle.com/c/allstate-event-prediction-challenge
 

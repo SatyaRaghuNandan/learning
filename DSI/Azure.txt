@@ -1,0 +1,25 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-02-22T14:52:09+00:00
+
+====== Azure ======
+Created Wednesday 22 February 2017
+
+One-Sentence Definition:
+	It allows you to perform any compute or data storage operation by provisioning and scaling the necessary resources on-demand on a pay-as-you-go basis
+	
+	
+Machine Learning:
+	https://courses.edx.org/courses/course-v1:Microsoft+DAT203.2x+1T2017/courseware/786e3fc9eacf4756b3a8091b4a618b4c/fcaade07a489461280939e1429e12380/
+	
+Others:
+	https://azure.microsoft.com/en-us/resources/videos/r-in-ml-studio/
+	https://docs.microsoft.com/en-us/azure/machine-learning/machine-learning-r-quickstart
+	https://powerbi.microsoft.com/en-us/documentation/powerbi-azure-and-power-bi/
+	https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sqlclassic/virtual-machines-windows-classic-ps-sql-bi
+	
+
+
+Azure ML with R:
+	"Execute R Script" Module
+	

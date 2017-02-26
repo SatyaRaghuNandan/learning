@@ -1,0 +1,66 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-02-22T17:08:38+00:00
+
+====== 8 2-22 GLM ======
+Created Wednesday 22 February 2017
+
+GLM:
+	Linear Model but with relaxed requirements, more flexible
+
+Our first linear model is really bad (all three assumptions are violated)
+	But it can probably be cured by using "Robust SE", which don't assume on a specific formula of the errors?
+	
+Poisson Regression is often used in "Count Data" problems, like the Housing problem in the slide; 
+	it can also be used to model continous response variables (like concentration of some chemicals)
+
+GLM's don't use T-Distribution, They are based on Normal Distribution
+
+"Deviance Residuals"
+
+"Fisher Scoring iterations": steps before the result converges
+
+Poisson Regression assumptions (need to be checked of course):
+	**Variance proportional to mean!**
+	conditional independence of observations given covariate
+	Large sample sizes
+
+P19
+	I(SQFT/1000) is called an "I-variable", so that you don't need to define a new variable in the dataframe
+	
+P21
+	negative interaction between SOFT/1000 and LOT_SIZE/1000
+	be aware that some Condo's 
+
+P23
+	A Link function is normally monotone and differentiable
+	The Variance function is also usually monotone
+	
+P28
+	if you don't specify "Family" in GLM, the default is Linear Regression
+	we sometimes "Mix-and-Match" among these 3 most common regressions's link & variance functions
+	
+P32
+	why family = "Binomial"?
+		**Because the Logistic Regression is used to predict "Proportion"?**
+
+P37
+	Odd of failure != Probability of failure
+	
+P38
+	except for Least Squares, most of the algorithms need iteration and are not guaranteed to Converge!
+	
+
+We don't use T-test in GLM a lot, that's only for Linear Model, Small Sample Size, Normally distributed errors
+**All others we use the Z-statistic from the Normal Distribution, and thus requires Large Sample Sizes. How large is large enough?**
+
+P45
+	Pearson residuals should have constant variance by defition
+	
+
+
+Lab8
+	Q1-6: Not a Poisson Regression, instead it's Log(y), not Log(mu).  It's mean of the Log, not the Log of the Mean
+	Notice the results of this "Log-Transformed" Linear Regression is DIFFERENT from that of the Poisson Regression
+	
+	

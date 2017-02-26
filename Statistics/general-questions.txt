@@ -1,0 +1,41 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-02-24T10:58:28+00:00
+
+====== general-questions ======
+Created Friday 24 February 2017
+
+Hypothesis Testing
+	Parameter
+	Statstic
+	
+	P-value
+	Type I error
+	Type II error
+	
+	Significance Level
+	Power
+	Sample Size
+	Effect Size
+
+
+Power Analysis
+	Significance Level
+	Power
+	Sample Size
+	  Effect Size
+	
+	pwr package	
+	
+T test
+	T distribution
+
+Tests of Proportions
+
+ANOVA
+	F distribution
+
+Chi-Square Test
+	assess relationship between two categoricla variables
+
+GLM

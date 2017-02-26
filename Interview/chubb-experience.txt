@@ -19,7 +19,7 @@ I worked in Data Analytics team of Chubb Insurance. It was a new initiative in 2
 		All 10+ broker owners 
 	under great pressure (usually in a 3-day window) 
 
-	Designed Customized reporting package for senior Sales Executives, one example is reports on the 6,000 major accounts using Dunn & Bradstreet (D&B) firmographic data (a Customized D&B Tree in line with the Chubb Reporting of Corporate Hierarchies) 
+	Designed Customized reporting packages for senior Sales Executives, one example is Sales reports on the 6,000 major accounts using Dunn & Bradstreet (D&B) firmographic data (a Customized D&B Tree in line with the Chubb Reporting of Corporate Hierarchies) 
 	Were responsible for data Integration between Legacy ACE & Chubb (largest Merger in the Property & Casualty Insurance industry by that time, $28.3 billion deal), completed several highly visible projects in 3 months 
 
 ****************************************************************************************************************************** 

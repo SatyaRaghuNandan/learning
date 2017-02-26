@@ -5,6 +5,74 @@ Creation-Date: 2017-01-18T17:39:26+00:00
 ====== R code ======
 Created Wednesday 18 January 2017
 
+
+R is an object-oriented, functional 
+Misc:
+	t(matrix), aggregate(x, by, FUN)
+	reshape2: melt, dcastaq
+	
+**Data Types**
+	Atomic Vectors
+		elements are of same data type
+	Generic Vector (or Lists)
+		Lists with dim attribute:
+			1-D vecor, matrix, array
+	
+**EDA**
+	dataframe <- read.csv("xxx.csv")
+	
+	tail(dataframe, 4)
+	str(dataframe): check structure of dataset
+	summary(dataframe)
+	stat.desc(dataframe)
+	describe()
+	describeBy()
+	aggregate(data, by = list, FUN)
+	
+	typeof(variable): integer, double, character...
+	class(variable): numeric, character, factor
+	
+**Factors**
+	a categorical variable in R (non-Numerical variable)
+	R assigns an Identifier (an integer) to each Category, called "Level" or "Factorization Integer"; R deals with Factors in Numerical Sense!
+	
+	Factor Variable Trap (FVT)
+		when you convert a column from Factor to Non-Factor
+		the "Factorization Integer", not the factor value, will be returned if using **as.numeric(factor variable)**
+		correct way: Factor → Character → Numeric: **as.numeric( as.character (factor variable ) )**
+
+**Test of Independence**
+	Chi-square test: check the H0 of independece of row and column variables
+	Fish Exact test: check the H0 of independence of rows and columns in a two-way table
+	Cochran-Mantel-Haenszel test
+	
+**Measures of Association**
+	VCD package (visualizing **Categorical** Data)
+	assocstats( ), kappa()
+
+**Measures of Correlation (for quantitative variables)**
+	Pearson, Spearman, Kendall: cor(x, use = , method = ), cor.test(A, B)
+	Partial: pcor( ), pcor.test(); Others
+
+**T-tests:**
+	Independent: by default assume unequal variance, two-sided
+		t.test(Res ~ Group, data = UScrime, var.equal = TRUE)
+	Dependent: Assumes the difference between groups is normally distr
+		with (data, t.test(col1, col2, paired = TRUE)
+
+**Apply Functions Family:**
+	**apply**: matrix
+	tapply: vector
+	by: data frames
+	eapply: to Environment
+	**lapply**: to elements in a List
+	**sapply**: a version of lapply
+	vapply: pre-specified return value type
+	replicate: random variables
+	mapply: multivariate version of sapply
+	rapply: recursive version of lapply
+	
+**Misc Snippets:**
 bmi$greaterequal65 = ifelse(bmi$age>=65,1,0)
 
 table(d$elderly,d$male,dnn=c("Elderly","Male"))
@@ -25,5 +93,5 @@ Dot Plot:
 	plot(as.numeric(d$Method),r,axes=F,xlab="Method",ylab="Residual")
 	axis(side=2)  ## y-axis
 	axis(side=1,at=1:4,labels=c("A","B","C","C"))  ##  x-axis
-	
-	
+
+

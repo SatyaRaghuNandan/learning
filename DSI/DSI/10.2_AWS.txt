@@ -98,3 +98,15 @@ HIVE is a query language (HiveQL) that queries Hadoop's database, it's NOT SQL!
 	S3 if need frequent access
 	Glacier if don't need frequent access
 
+*******************************************************************
+
+Redshift:
+
+IAM Role:
+	Role Name: myRedshiftRole
+	Role Policies: arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess 
+	Role ARN:  arn:aws:iam::163985896364:role/myRedshiftRole 
+
+
+
+
