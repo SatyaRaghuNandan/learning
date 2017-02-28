@@ -5,9 +5,3 @@ Creation-Date: 2017-01-06T22:44:23-08:00
 ====== Further Readings ======
 Created Friday 06 January 2017
 
-1week:
-	Statistics to Use: http://www.physics.csbsju.edu/stats/
-	Introductory Statistics: https://saylordotorg.github.io/text_introductory-statistics/
-
-
-

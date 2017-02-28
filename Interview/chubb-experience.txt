@@ -110,11 +110,9 @@ So I  drill-down to policy-level, they need to drill down but don't have Power P
 
 	modify my query set  
 
-	some user want to sort the account in a particular way, (say by the account owner's region, margin ratio low to h 
+	some user want to sort the account in a particular way, (say by the account owner's region, margin ratio low to high, by Net Written Premium etc.) but in pivot tables they can't do it. So I wrote a Macro that copies the exhibit into a separate worksheet with the exactly same format, then assigned the Macro to a Button so they can get the new table with a click-of-the-mouse 
 
-	high, by Net Written Premium etc.) but in pivot tables they can't do it. So I wrote a Macro that copies the exhibit into a separate worksheet with the exactly same format, then assigned the Macro to a Button so they can get the new table with a click-of-the-mouse 
-
-	When they double-click, getting the policy-level data,  
+	When they double-click, getting the policy-level data
 
 	I did a Table of Content page at the beginning with many screen shots that explains how to use the workbook. 
 ****************************************************************************************************************************  
@@ -125,7 +123,7 @@ A new initiative from the CEO, to view the performance of each business unit wit
 
 I standardized the Format:  
 
-	fixed number of lines between the exhibits & footnotes,  
+	fixed number of lines between the exhibits & footnotes
 
 	conditional formatting to highlight the negative margin ratios 
 
@@ -177,3 +175,14 @@ Honestly I was not used to his style, but still did my best to show my capabilit
 One time I found a small error in my logic right after returned to my office from our meeting so I called him immediately to correct that.  
  
 ****************************************************************************************************************************
+
+**Misc**
+	Customer Obsession:
+		always add a Table of Content sheet at the beginning of your report
+		always add a "Print Current Page" button and a "Print All" button
+		always store your query in a hidden tab
+		always include year, month, date in the title of your report file
+
+
+
+

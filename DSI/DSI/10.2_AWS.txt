@@ -41,36 +41,36 @@ Spot-Instance: http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-ins
 AMI: an image of your instance
 
 **AWS CLI:**
-install: pip install awscli
-GitHub Repo: https://github.com/aws/aws-cli
-Tutorial: https://aws.amazon.com/getting-started/tutorials/backup-to-s3-cli/
-
-set up access credentials:
-set up IAM user: https://aws.amazon.com/getting-started/tutorials/backup-to-s3-cli/
-Admin2 → Adminy
-Download the CSV credential file (Right after creating the instance, ONLY AVAILABLE AT THIS TIME!!!)
-run "aws configure"
-
-//Check// 
-Pricing: 
-Security Groups: //aws ec2 describe-security-groups --region us-west-2//
-Image: //aws ec2 describe-images --image-ids ami-da2d85ba --region us-west-2//
-
-Launch Spot Instance:
-pay attention to security group
-	use "launch-wizard-1" OR
-	use "default" after adding "SSH" role to it
-result: 172.31.9.23
-
-Access Spot Instance
-ssh -i [[~/.ssh/]] key_name instance_public_dns
-
-Check you instance request:
-aws ec2 describe-spot-instance-requests --region us-west-2
-
-Kill instances:
-//aws ec2 describe-instances --region us-west-2 --output json | grep InstanceId//
-//aws ec2 terminate-instances --instance-ids i-0aa55cd3363b0f187//
+	install: pip install awscli
+	GitHub Repo: https://github.com/aws/aws-cli
+	Tutorial: https://aws.amazon.com/getting-started/tutorials/backup-to-s3-cli/
+	
+	set up access credentials:
+	set up IAM user: https://aws.amazon.com/getting-started/tutorials/backup-to-s3-cli/
+	Admin2 → Adminy
+	Download the CSV credential file (Right after creating the instance, ONLY AVAILABLE AT THIS TIME!!!)
+	run "aws configure"
+	
+	//Check// 
+	Pricing: 
+	Security Groups: //aws ec2 describe-security-groups --region us-west-2//
+	Image: //aws ec2 describe-images --image-ids ami-da2d85ba --region us-west-2//
+	
+	Launch Spot Instance:
+	pay attention to security group
+		use "launch-wizard-1" OR
+		use "default" after adding "SSH" role to it
+	result: 172.31.9.23
+	
+	Access Spot Instance
+	ssh -i [[~/.ssh/]] key_name instance_public_dns
+	
+	Check you instance request:
+	aws ec2 describe-spot-instance-requests --region us-west-2
+	
+	Kill instances:
+	//aws ec2 describe-instances --region us-west-2 --output json | grep InstanceId//
+	//aws ec2 terminate-instances --instance-ids i-0aa55cd3363b0f187//
 
 **EMR (Amazon Elastic Map Reduce)**
 Create Clusters (choose all default settings)
@@ -102,11 +102,29 @@ HIVE is a query language (HiveQL) that queries Hadoop's database, it's NOT SQL!
 
 Redshift:
 
+Getting Started:
+	http://docs.aws.amazon.com/redshift/latest/gsg/getting-started.html
+
+	create IAM Role
+	launch a cluster, with the IAM role attached
+	authorize cluster access: configure security group (inbound)
+	connect to the cluster through JDBC (SQL Workbench)
+	load sample data from S3 or other sources
+	
+	
 IAM Role:
 	Role Name: myRedshiftRole
 	Role Policies: arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess 
 	Role ARN:  arn:aws:iam::163985896364:role/myRedshiftRole 
 
+Cluster:
+	Identifier: fei-sandbox-cluster
+	Database port: 5439
+	Master user name: masteruser
+	Master user Password: Zmbfw1234
 
+Delete:	
+	undo security group configuration
+	delete the cluster w.o. saving a snapshot
 
 

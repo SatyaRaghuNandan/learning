@@ -15,6 +15,11 @@ Created Sunday 12 February 2017
 		most customer-centered company in the world 
 		it's a company that thinks big, with a vision of change the world 
 
+3. What is the most customer-centric product you've ever made?
+4. Give me an example of how you made your customer's life easier.
+5. Have you done anything proud with data?
+
+
 Sample Interview Process:
 	Section 1: warm-up 
 	Section 2: Introduce his team & team members (Technical Evangelist, Business developer, STE, Documentation Developer, Marketing Manager, UX-designer, BI Engineer) 
@@ -22,7 +27,7 @@ Sample Interview Process:
 	Section 4: Miscellaneous questions: 
 		experience with Clickstream, Redshift, Tableau 
 		do you prefer ETL or Data Analysis? 
-		how do you check your data, instead of just go straight pivoting on them? 
+		how do you check your data, instead of just going straight pivoting on them? 
 	Section 5: Situational Questions 
 		Tell me examples in a specific situation. If it has never happened, tell me and I will ask another, take 1-2 minutes to think about your answer. (All there are around the 14 principles) 
 

@@ -16,9 +16,7 @@ Free Tree House:
 GitHub:
 	https://services.github.com/on-demand/github-cli/
 	
-Hadoop & MapReduce:
-	https://www.youtube.com/watch?v=Fyxi0qlyTaQ&list=PLAwxTw4SYaPkXJ6LAV96gH8yxIfGaN3H-&index=2
-	
+
 Python
 	Learn Python the Hard Way
 	Flask for small web project
@@ -33,21 +31,6 @@ AI:
 	Perceptron with Go: https://appliedgo.net/perceptron/
 	Turing Paper: http://www.loebner.net/Prizef/TuringArticle.html
 
-Unix:
-	Bash Scripting proficiency:
-		http://www.tldp.org/LDP/abs/html/
-		http://www.grymoire.com/Unix/Awk.html
-
-Udemy Courses:
-	R, Tableau
-	
-AWS:
-	https://aws.amazon.com/articles/3998
-
-Linux:
-	EDX: https://courses.edx.org/courses/course-v1:LinuxFoundationX+LFS101x+1T2016/info	
-	Programming in Linux: https://linuxprograms.wordpress.com/
-	
 SQL:
 	http://stackoverflow.com/questions/24949676/difference-between-partition-key-composite-key-and-clustering-key-in-cassandra
 	http://sqlzoo.net/wiki/Tutorial_Quizzes
@@ -58,12 +41,7 @@ Mongo DB:
 	https://www.mongodb.com/customers/city-of-chicago
 	https://www.mongodb.com/use-cases/internet-of-things
 	
-Spark:
-	https://github.com/databricks/learning-spark
-	
-Business Analytics:
-	https://www.analyticsvidhya.com/blog/author/sunil-ray/
-	
+
 Data Preprocessing:
 	https://www.analyticsvidhya.com/blog/2016/07/practical-guide-data-preprocessing-python-scikit-learn/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AnalyticsVidhya+%28Analytics+Vidhya%29
 	
@@ -92,6 +70,7 @@ Regression 45 quizzes:
 How to remove the Outliers?
 	https://en.wikipedia.org/wiki/Outlier#Identifying_outliers
 	https://en.wikipedia.org/wiki/Dixon%27s_Q_test
+	
 Confounding Variables
 	https://en.wikipedia.org/wiki/Confounding
 	https://en.wikipedia.org/wiki/Correlation_does_not_imply_causation

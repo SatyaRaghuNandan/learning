@@ -16,6 +16,53 @@ When something failed, just ask "Here's what didn't work, why it didn't work, an
 No matter what job you do, always improve on the processes in ways that ultimately enhance the customer experience and/or lower the cost.  
 
  
+**Dive Deep** 
+no PowerPoint, only essays that forces you to think deeply & thoroughly about your process 
+	e.g. I was tasked to handle the Data Quality Issue of Major Account Reporting
+			why do the policies roll up to accounts incorrectly?  — Incorrect Account DUNS, Incorrect Policy DUNS
+			why are DUNS incorrect? — legacy data issue, incorrect
+			why incorrect? — no DUNS validation, no correction procedure
+			why can't this be changed? 
+				— Operations Team are out of capacity; 
+				— Business Unit don't care about DUNS data quality; 
+				— Tracker was not designed to do reporting; 
+				— Tracker DBA is reluctant to update production data;
+			What should I do? 
+				— get the support from senior management, source of bad data → each underwriter
+				— manually line up policy_no to account_id
+			Wrote 2 long emails to my manager, analyzing the root cause of this issue, different players, why do we stuck, what should we do.....
+
+**Invent and Simplify** (links to Think Big, because simple designs SCALEs much better than complex ones) 
+
+Simple is beautiful; Your design better to be simple, scalable, elastic (scale up, scale down), self-service is the future, provide platform service; capabilities are designed from the user backwards with algorithms, automation, workflow and technology; 
+To scale and improve your business, you need well-defined Process; But avoid Bureaucracy is essential! 
+Leverage on other people's work: Amazon Mechanical Turk (small yet essential and practically endless tasks 
+Leverage on competitor's work: Amazon Auction, Ebay, Amazon Third-Party Selling 
+
+	 e.g. Improved the process of data retrieval for my manager
+		select from Netezza, copy and paste into Excel, do pivot tables on it, need more rows/columns, recreate pivot tables, .....
+		ODBC to Excel Table, create tables for project, Add macros and Buttons to update the "connection sql statement" so he just need to input new table name, self-service data-retrieval tool
+
+
+**Take ownership of Results:** 
+
+Never say "That's not my job". You act on behalf of the entire company, not just your own team. 
+Be ready to speak up and contribute without having to be asked. 
+You Own Your Dependencies: identify and tenaciously manage every potential business-derailing dependency you have. (SLA, rock-solid contracts, penalties in place, continual & active management of communication): 
+
+	whenever  possible, take over the dependencies 
+	if impossible, negotiate  & manage unambiguous and clear commitments from others 
+	Create hedges wherever possible, a fallback plan 
+
+Amazon is a company run by Control Freaks 
+
+
+**Customer Obsession:**  
+客户有什么要求，你如何让客户满意: 
+	e.g. NSL In-Force summary report, line counts, but also want to see policy details; can't use PowerPivot, created dummy column whose sole purpose is to count lines, dedup that column;
+		sort in a different way? Macro to print a sheet and Print button
+
+
 
 
 **Insist on the highest standards** 
@@ -85,39 +132,12 @@ The Regret Minimization Framework --
 
  
 
-**Take ownership of Results:** 
 
-Never say "That's not my job". You act on behalf of the entire company, not just your own team. 
-
-Be ready to speak up and contribute without having to be asked. 
-
-You Own Your Dependencies: identify and tenaciously manage every potential business-derailing dependency you have. (SLA, rock-solid contracts, penalties in place, continual & active management of communication): 
-
-	whenever  possible, take over the dependencies 
-
-	if impossible, negotiate  & manage unambiguous and clear commitments from others 
-
-	Create hedges wherever possible, a fallback plan 
-
-Amazon is a company run by Control Freaks 
 
  
 
-**Invent and Simplify** (links to Think Big, because simple designs SCALEs much better than complex ones) 
-
-Simple is beautiful; Your design better to be simple, scalable, elastic (scale up, scale down), self-service is the future, provide platform service; capabilities are designed from the user backwards with algorithms, automation, workflow and technology; 
-
-To scale and improve your business, you need well-defined Process; But avoid Bureaucracy is essential! 
 
 
-Leverage on other people's work: Amazon Mechanical Turk (small yet essential and practically endless tasks 
-
-Leverage on competitor's work: Amazon Auction, Ebay, Amazon Third-Party Selling 
-
- 
-
-**Dive Deep** 
-no PowerPoint, only essays that forces you to think deeply & thoroughly about your process 
 
  
 **Have Backbone** -- Disagree & Commit 
@@ -131,6 +151,4 @@ robust conversation
 
  
 
-**Customer Obsession:**  
 
-客户有什么要求，你如何让客户满意: 
