@@ -5,8 +5,13 @@ Creation-Date: 2017-02-22T17:08:38+00:00
 ====== 8 2-22 GLM ======
 Created Wednesday 22 February 2017
 
+Inference procedures for both linear and nonlinear regression models in fact assume that the response variable y follows the normal distribution. When this assumption is not met, we can use GLM.
+
 GLM:
 	Linear Model but with relaxed requirements, more flexible
+	It allows us to fit regression models for univariate response variable following a distribution of **Exponential Family (normal, binomial,**
+	**Poisson, geometric, negative binomial, exponential, gamma, and inverse normal distributions)**
+	The usual GLM assumes that the observations are independent
 
 Our first linear model is really bad (all three assumptions are violated)
 	But it can probably be cured by using "Robust SE", which don't assume on a specific formula of the errors?
@@ -56,7 +61,6 @@ We don't use T-test in GLM a lot, that's only for Linear Model, Small Sample Siz
 
 P45
 	Pearson residuals should have constant variance by defition
-	
 
 
 Lab8

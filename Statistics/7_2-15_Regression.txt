@@ -29,6 +29,11 @@ randomization eliminates confounding ☺
 
 it's possible that a variable be both a Effect Modifier and Cofounder, although these are two seperate concepts.
 
+	
+**Adding Interactions of variables will usually increase the model complexity, difficulty to fit, standard errors; **
+**We only add interactions when you feel it makes sense to do that (you know there might be interaction between variables)**
+
+
 
 **Lab 7**
 2, 3: estimates are same, due to the balaced experiment design, but SE are smaller (not becuase there is block effect considerd though)

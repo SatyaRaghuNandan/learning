@@ -29,7 +29,7 @@ questions to ask:
 	4. how many data scientists do you plan to have in 3 months?
 	5. Is this a role you are creating/to be backfilled? Somebody left?
 	6. What's the career trajectory of people work here? Do they view it as a spring-board?
-	7. **What are the biggest challenges for this position? (the interviewer will automatically think and tell you about the last person at this role) Don't ask about the last person directly**
+	7. **What are the biggest challenges for this position? (the interviewer will automatically think and tell you about the last person at this role) Don't ask about the last person directly)**
 
 Question to ask at the end:
 	1. What are the next steps in the process?

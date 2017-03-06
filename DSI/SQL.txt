@@ -105,6 +105,10 @@ AWS Redshift:
 	a. Theorem: If Q is a SELECT-FROM-WHERE query that does not have subqueries, and no aggregates, then it is monotone.
 4. Relation, Tuple, Attribute == Table, Row, Column
 5. file types: Heap (unsorted), Sequential (sorted in someway)
+
+
+
+**Database Management Class at UW**
 ************************************************************************************************************************************************
 **Data Management Concepts**
 	* Data models: how to describe real-world data
@@ -167,4 +171,37 @@ AWS Redshift:
 **Database Design**
 	Starting from scratch, design the database schema: relation, attributes, keys, foreign keys, constraints etc
 	
+[[NoSQL]]
+	Motivation: Single Server DBMS is too small for web data
+					   Hard to scale out entire functionality of a DBMS
+					  [[NoSQL]] reduces functionality for easier Scale-Up: simpler data model, simpler transactions
+					
+	Two approaches:
+		partitioning
+			fits in main memory; queries spread across machines; easy to write but hard to read
+		replication
+			easy to read but hard to write
+
+	Data Models:
+		Key-Value
+		Document: MongoDB, CouchBase, SimpleDB
+		Extensible Record: HBase, Cassandra...
+		
+	JSON:
+		self-describing; tree; semi-structured; good for exchange, bad for performance; 
+		
+	Data Exchange Formats:
+		XML: SQL Server
+		JSON: CouchBase, MongoDB
+		Protobuf: Dremel (BigQuery)
+		They differ in how they handle structure: Open vs. Closed, Ordered vs. Unordered
+		
+	[[AsterixDB]] and SQL++
+		Index: B-Tree, R-Tree, Keyword
+				  cannot index inside of a nested collection
+				  
+	Conclusion:
+		Semistructured data best suited for data exchange
+		For quick, ad-hoc data analysis, use a native query language: SQL++, or AQL, or XQuery
+		For long term data analysis: spend the time and effort to normalize it, then store in a RDBMS
 

@@ -1,0 +1,24 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-03-06T09:12:59-08:00
+
+====== docathon ======
+Created Monday 06 March 2017
+
+Sphinx: auto documentation for packages
+
+Example Altair
+	https://github.com/altair-viz/altair
+	https://altair-viz.github.io/
+	raw code: https://github.com/altair-viz/altair/blob/master/doc/index.rst
+					https://raw.githubusercontent.com/altair-viz/altair/master/doc/index.rst
+	
+	not png, but Vega Plot (interactive)
+	customized plotting example: https://raw.githubusercontent.com/altair-viz/altair/master/doc/index.rst
+	
+	
+
+
+
+
+

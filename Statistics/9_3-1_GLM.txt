@@ -1,0 +1,70 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-03-01T17:19:10-08:00
+
+====== 9 3-1 GLM ======
+Created Wednesday 01 March 2017
+
+MLE can be applied in All kinds of Parametric models (which assumes distribution)
+	Non-parametric (models have a variable that's based not on a distribution but maybe a hidden function)
+
+P6:
+	Logit Link function was discovered when calculating the MLE:)
+	if we use the Possion Regression, the link function will be the log function, that's why we use Log Link function in Possion Regression
+	**Try it!**
+	
+P7:
+	the Iterated Weighted Least squares almost always converge for Linear, Poisson, Logistic regressions
+
+10:
+	You can still do Least Square Linear Regression when Normality of Errors is not met, But in that case Least Squares is not equivalent to the MLE
+	When LS = MLE, we don't need an iterative process to find the best estimators, one matrix operation will do the work (nice)
+	
+11:
+	we are only insteresed in the Difference between two Residual Deviances (which cancel's the first term)
+
+12:
+	Fisher Scoring: another name for this Iterated Weighted Least Square algorithm
+	
+14
+	We have a small sample size in this case, so the Contour plot is quite extreme (decreases rapidly away from the maximum)
+	Slope-Intercept tradeoff in the Contour plot... **(What's the Slope here?)**
+	
+15
+	Treat the Deviances as the "Residual Sum of Squares"
+	
+16
+	The Null model just has to be smaller than the Full Model (doesn't have to only contain the intercept)
+	**GLM and LRT both assumes large sample size!!**
+
+20
+	pay attention to the Missing Values!!! The full model may have to use a subset only, but the reduced model can use the full set
+	
+21
+	when change the "Reference Group for Income" from "> $50K" to "< $11K", results changed a lot!
+	BUT LRT result remain the same! (Different Parametrization should have no effect)
+	Good Practice: choose the Group with the Biggest sample size as the "Reference Group"
+	
+**When degree of freedom goes up, the Power of your test will be diluted, why?**
+
+
+27
+	Remember that In Linear Regression we have the Sigma-Square, In Logistic Regresssion we don't have that
+	
+35
+	**"Satuarated Model": enough datapoints to estimate the same number of parameters?**
+	**In a multiple-variable GLM model, if their P-values are all > 0.05, it doesn't mean they are all non-significant, We need to do further testing; If we parametrize the model in a different way, some may become significant; **
+	
+41
+	Overdispersion almost ALWAYS happen!!
+	
+45
+	Poisson Regression: we assumes the Variance is equal to the Mean, just like in Poisson Distribution
+	
+46-49
+	**Tell GLM what the Disperson Parameter explicitly**, the resulting Z-value dropped dramatically
+	always look for dispersion
+
+
+
+
