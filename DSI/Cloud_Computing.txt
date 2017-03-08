@@ -5,3 +5,6 @@ Creation-Date: 2017-02-28T01:49:08+00:00
 ====== Cloud Computing ======
 Created Tuesday 28 February 2017
 
+What is Cloud Computing
+
+Cloud Deployment Models

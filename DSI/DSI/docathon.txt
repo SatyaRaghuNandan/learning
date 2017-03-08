@@ -5,8 +5,18 @@ Creation-Date: 2017-03-06T09:12:59-08:00
 ====== docathon ======
 Created Monday 06 March 2017
 
-Sphinx: auto documentation for packages
+Youtube video:
+	https://www.youtube.com/watch?v=ikT_xnTFHC0
+	
+Docathon Hosts:
+	https://bids.github.io/docathon/pages/hosts.html
 
+Resources:
+	https://bids.github.io/docathon/pages/resources.html
+	
+Sphinx: auto documentation for packages
+	http://www.sphinx-doc.org/en/stable/
+	
 Example Altair
 	https://github.com/altair-viz/altair
 	https://altair-viz.github.io/
@@ -16,9 +26,11 @@ Example Altair
 	not png, but Vega Plot (interactive)
 	customized plotting example: https://raw.githubusercontent.com/altair-viz/altair/master/doc/index.rst
 	
+Misc:
+	travis
+	reStructuredText
 	
-
-
-
+	
+	
 
 

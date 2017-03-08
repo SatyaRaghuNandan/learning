@@ -18,7 +18,7 @@ Created Sunday 12 February 2017
 3. What is the most customer-centric product you've ever made?
 4. Give me an example of how you made your customer's life easier.
 5. Have you done anything proud with data?
-
+6. What if your reporting process need to scale up 100 times? What type of tool (AWS) would you use?
 
 Sample Interview Process:
 	Section 1: warm-up 

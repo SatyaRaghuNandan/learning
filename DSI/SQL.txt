@@ -78,25 +78,6 @@ AWS Redshift:
 		
 		
 	
-**Transactional Integrity**
-	every part of the transaction must be completed before the whole process is done
-	finishes with a Commit Or a Rollback
-	
-**Guaranteeing Transaction Reliability** (often asked during interview)
-	There is a set of properties known by the acronym ACID that guarantee that database transactions are processed reliably and
-	concurrently:
-	1. Atomicity: all or nothing
-	2. Consistency: The consistency property ensures that any transaction will bring the database from one valid state to another. All related tables must be updated at the same time you make an update in one table (one reason that NoSQL was invented)
-	3. Isolation:  This property ensures that the concurrent execution of transactions results in a system state that would be obtained if transactions were executed sequentially(databases use date-time, timestamp) Imagine you make 8 updates and then a selection right after, you expect to see the updated data!
-	4. Durability: It ensures that once a transaction has been committed, it will remain so, even in the event of power loss, crashes, or errors (once a change has been committed, it will be saved somewhere all the time).
-		https://en.wikipedia.org/wiki/ACID
-
-**BASE ( NoSQL version of ACID)**
-	1. Basically available indicates that the system does guarantee availability. (multiple threads can write at the same time for NoSQL; but for SQL, all threads has to merge before they can write in the destination 
-	2. Soft state indicates that the state of the system may change over time, even without input.???
-	3. Eventual consistency indicates that the system will become consistent over time, given that the system doesn't receive input during that time. (Don't care when a transaction will happen, given knowing it will be there eventually)	
-
-	Main concept: get rid of locks, allow everyone to write, worry about consistency later; writes faster
 
 **Misc:**
 1. Whenever possible, don’t use a nested queries
@@ -204,4 +185,81 @@ AWS Redshift:
 		Semistructured data best suited for data exchange
 		For quick, ad-hoc data analysis, use a native query language: SQL++, or AQL, or XQuery
 		For long term data analysis: spend the time and effort to normalize it, then store in a RDBMS
+
+**Transactions**
+
+	**Transactional Integrity**
+		every part of the transaction must be completed before the whole process is done
+		finishes with a Commit Or a Rollback
+	
+		Integrity constraints govern how values in tables are related to each other: 
+			Can be enforced by the DBMS (for atomicity and isolation), or ensured by the app
+		
+	**Guaranteeing Transaction Reliability** (often asked during interview)
+		There is a set of properties known by the acronym ACID that guarantee that database transactions are processed reliably and
+		concurrently:  https://en.wikipedia.org/wiki/ACID
+
+	**Isolation Levels:** (from most to least stringent)
+		Serializable (ACID)
+		Repeatable-Read
+		Read-Committed
+	  Read-Uncommitted (Dirty reads)
+	
+	**ACID:**
+	1. Atomicity: A transaction is ATOMIC if all its updates must happen or not at all
+ 
+	2. Consistency: 
+		a. App Programmer ensures that: any transaction will bring the database from one valid (satisfying not only all constraints of the database schema, but also the implicit constraints from the DBA) state to another. For instance, all related tables must be updated at the same time you make an update in one table (one reason that NoSQL was invented)
+		b. DB ensures that transactions are executed atomically
+ 
+	3. Isolation: the effect of each transaction is as if it were the only transaction running on the system.
+ 
+	4. Durability: It ensures that once a transaction has been committed, it will remain so, even in the event of power loss, crashes, or errors (once a change has been committed, it will be saved somewhere all the time).
+				By writing to the disk
+	
+	 **How to achieve Isolation?** use **Schedulers**
+		Serial Schedule: a sequence of transactions that are executed one after another, in sequential order
+		Serializable Schedule: a schedule that's equivalent to a Serial Schedule
+		Scheduler (Concurrency Control Manager): the module that schedules the transaction’s actions, ensuring serializability
+	
+	**How to implement Scheduler?**
+		Locking (SQLite, SQL Server, DB2)
+			To enforce "Conflict-Serializabilty", need "2 Phase Locking":
+				In every transaction, all lock requests must procede all unlock requests
+				
+		Multiversion Concurrency Control (Postgres, Oracle)
+		
+	**How to avoid Non-recoverable Schedule?**
+		Strict 2PL: All locks are held until the transaction commits or aborts
+		
+	Strict 2PL → Confilct-Serializable & Recoverable
+	
+	**How to solve Dead Locks?**
+		SQL Server: checks periodically for deadlocks and aborts one transaction
+		SQLite: No deadlock due to its simple design
+		
+	**How to avoid Phantom Problem? **
+		a tuple that is invisible during part of a transaction execution but not invisible during the entire execution
+		HARD.... lock the entire table / lock the index / use predicate locks
+		
+	**Attention!!!**
+		In commercial DBMSs:
+	* Default level is often NOT serializable
+	* Default level differs between DBMSs
+	* Some engines support subset of levels!
+	* Serializable may not be exactly ACID
+			–  Locking ensures isolation, not atomicity
+	* Also, some DBMSs do NOT use locking and
+		different isolation levels can lead to different pbs
+	* Bottom line: Read the doc for your DBMS!
+
+
+
+
+**BASE ( NoSQL version of ACID)**
+	1. Basically available indicates that the system does guarantee availability. (multiple threads can write at the same time for NoSQL; but for SQL, all threads has to merge before they can write in the destination 
+	2. Soft state indicates that the state of the system may change over time, even without input.???
+	3. Eventual consistency indicates that the system will become consistent over time, given that the system doesn't receive input during that time. (Don't care when a transaction will happen, given knowing it will be there eventually)	
+		Main concept: get rid of locks, allow everyone to write, worry about consistency later; writes faster
+
 

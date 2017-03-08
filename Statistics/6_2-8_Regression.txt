@@ -21,7 +21,7 @@ Regression & Correlation
 **Regression vs. ANOVA?**
 	ANOVA and regression will not always agree. We don't know which one will be more statistically significant..
 
-When comparing only 2 groups, ANOVA & Regression are both same as the Equal-Variance T-test for 2 groups
+**When comparing only 2 groups, ANOVA & Regression are both same as the Equal-Variance T-test for 2 groups**
 
 Some statisticians argue that T-test, ANOVA, Correlation are all actually Regression!
 	e.g. You can recreate ANOVA using Regression with the help of dummy variables
