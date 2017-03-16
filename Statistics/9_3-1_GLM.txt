@@ -65,6 +65,17 @@ P7:
 	**Tell GLM what the Disperson Parameter explicitly**, the resulting Z-value dropped dramatically
 	always look for dispersion
 
+**Lab 9**
+Q13:
+	two samples are a little different
+	+ Another reason
+	
+16:
+	both models do not use records that SQFT is Null
+	GLM default is to ignore those Null records
+
+
+
 
 
 

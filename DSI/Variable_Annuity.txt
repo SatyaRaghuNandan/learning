@@ -1,0 +1,58 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-03-10T11:49:20-08:00
+
+====== Variable Annuity ======
+Created Friday 10 March 2017
+
+
+Advantage:
+	periodic payment
+	death benefit
+	tax-deferred
+	
+	
+accumulation phase
+	 if you withdraw money from your account during the early years of the accumulation phase, you may have to pay "surrender charges," 
+	 you may have to pay a 10% federal tax penalty if you withdraw money before the age of 59½.
+	
+	
+payout phase
+	you may receive your purchase payments plus investment income and gains (if any) as a lump-sum payment, or you may choose to receive them as a stream of payments at regular intervals 
+	
+	you can choose between receiving payments that are fixed in amount or payments that vary based on the performance of mutual fund investment options
+	
+	some annuities do not allow you to withdraw money from your account once you have started receiving regular annuity payments.
+	
+	**immediate annuities**, which means that there is no accumulation phase and you will start receiving annuity payments right after you purchase the annuity.
+	
+Death Benefit
+	If you die, the beneficiary will receive the Greater of:
+	(i) all the money in your account, or (ii) some guaranteed minimum (such as all purchase payments minus prior withdrawals).
+	
+Charges
+	Surrender Charges
+		Generally, the surrender charge is a percentage of the amount withdrawn, and declines gradually over a period of several years, known as the "surrender period."
+		Often, contracts will allow you to withdraw part of your account value each year – 10% or 15% of your account value, for example – without paying a surrender charge.
+		
+	Morality and expense risk charge
+		This charge is equal to a certain percentage of your account value, typically in the range of 1.25% per year.
+		
+	Admin Fee
+		charged as a flat account maintenance fee (perhaps $25 or $30 per year) or as a percentage of your account value (typically in the range of 0.15% per year).
+		
+GLWB
+	just because the annuity might not have been ideal in the first place doesn’t mean it should be cancelled now, especially if the benefit base is in fact significantly higher than the current cash value; in fact, taking ongoing withdrawals from the benefit base may actually be the best course of action at this point!
+	
+	For contracts that are up – meaning the cash value is equal to or higher than the benefit base – or where the contract is still in the blackout period (where withdrawals or annuitization can’t begin yet), there is often a decision about whether to begin withdrawals at all, or just get rid of the contract.
+	the best strategy is to either liquidate the contract entirely, or begin withdrawals immediately – even if they’re not needed yet – but not to just hold the contract and wait.
+	if the value of the rider is to guarantee a floor while taking withdrawals, then the goal should be taking withdrawals to try to hit the floor… and the older the client, the better it works!
+
+
+MLR tutorial: https://www.analyticsvidhya.com/blog/2016/08/practicing-machine-learning-techniques-in-r-with-mlr-package/
+MLR doc: https://mlr-org.github.io/mlr-tutorial/release/html/create_filter/index.html
+Mengying Li: https://github.com/MengyingLi/RScripts
+KNN in R: https://rpubs.com/njvijay/16444
+
+try: get_dummies for all cats → R → SMOTE → KNN
+

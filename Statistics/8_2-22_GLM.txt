@@ -68,3 +68,5 @@ Lab8
 	Notice the results of this "Log-Transformed" Linear Regression is DIFFERENT from that of the Poisson Regression
 	
 	
+**Hard Questions in Homework 8 are all about Confounding Effect!**
+

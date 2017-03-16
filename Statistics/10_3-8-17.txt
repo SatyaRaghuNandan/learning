@@ -1,0 +1,31 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-03-08T18:05:50-08:00
+
+====== 10 3-8-17 ======
+Created Wednesday 08 March 2017
+
+Fisher's Exact Method
+	The Chi-Square test will give you a warning if your sample size is really really small.
+	
+	The result is random, since it involves random sampling
+	
+Part II
+	All three methods help with misspecified variance situation
+	
+	P40:
+		if this histogram is highly skewed, we would not use the estimated SD * 1.96 to estimate the Confidence Interval, like we did in the slides
+		We will use the "Bootstrap Confidence Interval" instead
+	
+	Jackknife was invented in the 50's; Bootscrap in 60-70's
+	
+	Jackknife is usually slow, since it spits out 1 value at a time; You can also do a "Random Jackknife", which is faster
+	
+	vcovHC: variance-covariance matrix & heteroscedasticity consistent
+	
+	Wald-Statistic is the square of the Z-statistic
+	
+Lab10
+	Since we need to do Linear Regression, specify "Family = Gaussian" or omit that as it's the default in R's GLM
+
+
