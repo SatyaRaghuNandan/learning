@@ -72,6 +72,42 @@ Misc:
 	mapply: multivariate version of sapply
 	rapply: recursive version of lapply
 	
+Sub & GSUB functions
+	find and replace: sub - first match; gsub - all matches
+	to replace a $: add an **Escape Sequence**: "\\$"
+	GSUB can also be applied directly on Factor variable, it will automatically do Factor -> Char conversion
+	
+Missing Data
+	How to handel?
+	1. predict missing data with 100% accuracy
+	2. leave the record as it is
+	3. remove the row
+	4. fill with Mean or Median (Median is preferred as it's less affected by outliers)
+	5. fill by exploring correlations and similarities
+	6. introduce dummy variable for "Missingness"
+
+	NA (missing value)
+		It's a Logical Constant (like TRUE and FALSE)
+		"NA == TRUE" : NA
+		"NA == NA" : NA
+		If a Factor column has missing value: <NA>    (R is helping us by adding <>)
+		Otherwise: NA
+	
+	How to locate them?
+		complete.cases(df) : returnes whether each row is "complete"
+		df[ !complete.cases(df), ]
+		
+		What if there are "Blanks"? they are not "NA".... Do the trick when importing data: 
+			read.csv( "filename.csv", na.strings = c("", "  ", "New York") )
+
+
+
+
+
+
+
+
+	
 **Misc Snippets:**
 bmi$greaterequal65 = ifelse(bmi$age>=65,1,0)
 
@@ -93,5 +129,4 @@ Dot Plot:
 	plot(as.numeric(d$Method),r,axes=F,xlab="Method",ylab="Residual")
 	axis(side=2)  ## y-axis
 	axis(side=1,at=1:4,labels=c("A","B","C","C"))  ##  x-axis
-
 

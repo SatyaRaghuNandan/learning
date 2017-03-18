@@ -38,8 +38,18 @@ Created Sunday 12 February 2017
 		d. **WHY can we do this?**
 	3. missing not at random (pattern): collect more data or irgnore that column
 		Resampling:
+		
+		to check:
+			is that feature important?
+			if it's necessary to include in the model:
+				how many rows are missing?
+				Can you predict it with high confidence?
+			Is it a numerical or categorical (year) feature?
+What pattern is it missing?
+
 		 
 4. **How do you do feature enginerring?**
+5. **How would you use existing features to add new features?**
 		......
 	
 5. **What are the major classification algorithms and what are the pros and cons of them?**
@@ -50,4 +60,6 @@ Created Sunday 12 February 2017
 
 7. **Tell me about your experience with Machine Learning?**
 		dfdfdfd
+
+8. Tell me about an ML algorithm
 
