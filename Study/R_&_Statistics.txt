@@ -1,10 +1,9 @@
 Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
-Creation-Date: 2017-01-18T17:39:26+00:00
+Creation-Date: 2017-03-19T12:21:29-07:00
 
-====== R code ======
-Created Wednesday 18 January 2017
-
+====== R coding ======
+Created Sunday 19 March 2017
 
 R is an object-oriented, functional 
 Misc:
@@ -20,7 +19,7 @@ Misc:
 	
 **EDA**
 	dataframe <- read.csv("xxx.csv")
-	
+	  load("xxx.rda")
 	tail(dataframe, 4)
 	str(dataframe): check structure of dataset
 	summary(dataframe)
@@ -32,6 +31,8 @@ Misc:
 	typeof(variable): integer, double, character...
 	class(variable): numeric, character, factor
 	
+	Visualizing Results: packages vcd, ca
+	
 **Factors**
 	a categorical variable in R (non-Numerical variable)
 	R assigns an Identifier (an integer) to each Category, called "Level" or "Factorization Integer"; R deals with Factors in Numerical Sense!
@@ -41,24 +42,46 @@ Misc:
 		the "Factorization Integer", not the factor value, will be returned if using **as.numeric(factor variable)**
 		correct way: Factor → Character → Numeric: **as.numeric( as.character (factor variable ) )**
 
-**Test of Independence**
-	Chi-square test: check the H0 of independece of row and column variables
-	Fish Exact test: check the H0 of independence of rows and columns in a two-way table
-	Cochran-Mantel-Haenszel test
-	
+**Table**
+	table is like a matrix
+	with(df, table(col) )
+	Two-way tables: xtabs(~ colA + colB, data = df )
+	margin.table( tableA ), margin.table(A, 1), margin(A, 2)
+	prop.table( A ), prop.table (A, 1), prop.table(A, 2)
+	addmargins ( mytable ), addmargins( prop.table(mytable) )
+	addmargins (prop.table(A, 1), 2)
+
 **Measures of Association**
 	VCD package (visualizing **Categorical** Data)
 	assocstats( ), kappa()
 
-**Measures of Correlation (for quantitative variables)**
-	Pearson, Spearman, Kendall: cor(x, use = , method = ), cor.test(A, B)
-	Partial: pcor( ), pcor.test(); Others
+**Test of Independence (for Discrete Data)**
+	Chi-square test: check the H0 of independece of row and column variables
+	Fish Exact test: check the H0 of independence of rows and columns in a two-way table
+	 Cochran-Mantel-Haenszel test
+
+**Measures of Correlation (for Continuous Data)**
+	Covariance-Matrix: cov(colA, colB)
+	Correlation: cor(x, use = , method = ): Pearson, Spearman, Kendall correlations
+	 Partial Correlation: pcor(u, S)
+
+**Testing correlations for significance**
+	cor.test(x, y, alternative = , method = )
+		alternative: two.side, less, greater
+		method: pearson, kendall, spearman
+	pcor.test(r, q, n)
+	r.test()
 
 **T-tests:**
 	Independent: by default assume unequal variance, two-sided
 		t.test(Res ~ Group, data = UScrime, var.equal = TRUE)
 	Dependent: Assumes the difference between groups is normally distr
 		with (data, t.test(col1, col2, paired = TRUE)
+	More than two groups:
+		ANOVA
+	If parametric assumptions for T-test and ANOVA are not met:
+		wilcox.test, Jruskal-Wallis test, Friedman test
+
 
 **Apply Functions Family:**
 	**apply**: matrix
@@ -72,12 +95,12 @@ Misc:
 	mapply: multivariate version of sapply
 	rapply: recursive version of lapply
 	
-Sub & GSUB functions
+**Sub & GSUB functions**
 	find and replace: sub - first match; gsub - all matches
 	to replace a $: add an **Escape Sequence**: "\\$"
 	GSUB can also be applied directly on Factor variable, it will automatically do Factor -> Char conversion
 	
-Missing Data
+**Missing Data**
 	How to handel?
 	1. predict missing data with 100% accuracy
 	2. leave the record as it is
@@ -104,7 +127,11 @@ Missing Data
 
 
 
-
+**Resources:**
+	MLR tutorial: https://www.analyticsvidhya.com/blog/2016/08/practicing-machine-learning-techniques-in-r-with-mlr-package/
+	MLR doc: https://mlr-org.github.io/mlr-tutorial/release/html/create_filter/index.html
+	Mengying Li: https://github.com/MengyingLi/RScripts
+	KNN in R: https://rpubs.com/njvijay/16444
 
 
 	

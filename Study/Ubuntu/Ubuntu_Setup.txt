@@ -40,9 +40,6 @@ Created Wednesday 23 November 2016
 	Disable CUPS-browsed  service (speed up shutdown time)
 		sudo systemctl stop cups-browsed.service
 		
-	Virtual Environments
-		GraphLabGreate, Py35, ENV all in Anaconda2
-	
 	Install and Setup Go
 		https://golang.org/
 		https://tour.golang.org/welcome/1
@@ -79,9 +76,14 @@ Created Wednesday 23 November 2016
 		https://help.ubuntu.com/community/EnvironmentVariables
 		
 	Network Connection Issue:
-		http://int32bit.me/2016/04/18/Linux网络故障排查总结/
+		http://int32bit.me/2016/04/18/Linux%E7%BD%91%E7%BB%9C%E6%95%85%E9%9A%9C%E6%8E%92%E6%9F%A5%E6%80%BB%E7%BB%93/
 		
 	Install LumaQQ:
 		http://www.it610.com/article/1533421.htm
 
-
+	Good Apps to have
+		GParted, Pinta, QOwnNotes, KeePassX, Conky, PDFChain, QwinFF, RedShift, 
+		Terminix: https://gnunn1.github.io/tilix-web/manual/vteconfig/
+		WMail
+		Syncthing
+		

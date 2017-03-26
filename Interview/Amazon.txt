@@ -19,6 +19,12 @@ Created Sunday 12 February 2017
 4. Give me an example of how you made your customer's life easier.
 5. Have you done anything proud with data?
 6. What if your reporting process need to scale up 100 times? What type of tool (AWS) would you use?
+7. tell me about a time when you didn`t meet a date, or when you failed on a goal.  
+8. If we want to know whether people like a product, is there any statistical problems you can see when the analysis is based on their behaviors on the websites?
+9. How do you combine text information into our recommendation system?
+10. How do you compare models by data visualization? 
+11. Tell me about a time when you took a big risk at work.
+12. what is the most challenging analytical project you have ever completed in your life.
 
 Sample Interview Process:
 	Section 1: warm-up 

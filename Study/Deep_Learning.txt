@@ -1,0 +1,119 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-03-18T20:46:52-07:00
+
+====== Deep Learning ======
+Created Saturday 18 March 2017
+
+Resources:
+	Microsoft:
+		Deep Enforcement Learning & Chatbot
+			http://venturebeat.com/2016/08/01/how-deep-reinforcement-learning-can-help-chatbots/
+		Bot Framework:
+			https://dev.botframework.com/
+		CNTK:
+			https://www.microsoft.com/en-us/research/product/cognitive-toolkit/
+		Customer Speech Service:
+			https://www.cris.ai/
+
+	Huawei:
+		Key Strategy: Data + AI + Cloud integration
+		
+		Managed big data cloud service
+			Huawei [[MapReduce]] Service
+			
+		Serverless big data service 
+			Data Ingestion Service ( a gateway to Huawei Cloud)
+			Data Pipeline Service
+
+		Cloud native big data service
+		
+		Intelligent data cloud service
+			Intelligent data services (AI help with better resouce allocation for Cloud Computing)
+			intelligence as a service (Cloud computing helps AI)
+
+**Machine Learning**
+ML is a step forward from the hardcoded models (human define parameters)
+ML is nothing but a software that is more dynamic and can self-tune based on date (without you writing all IF statements)
+
+ML Virtuous Cycle:
+	Identify a problem → Prepare Data → Model Data → Get Insight → A/B Test a Solution ↔ Evaluate → Deploy → Monitor → Identify a problem
+
+Model monitoring and management can be crucial at enterprise level
+	your data trend may change, need to constantly retrain the model to keep the performance above your accuracy benchmark
+	
+
+
+**Deep Learning** 
+Pros:
+	better than traditional ML or Human in certain fields:
+		Immage recognition/classification/object detection/OCR (Optical Character Recognition)
+		Vocie recognition/classification
+		NLP/Translation
+		Super long sequence pattern recognition
+	require few feature engineering
+	More data = better results
+	More data + Deeper Network = Even Better Results
+	Easy to get reasonably good results
+	
+Cons:	
+	requires large volume of training data
+	Labeled data can be expensive to acquire
+	Training takes long time, even on expensive hardware (GPU)
+	**Model Serving Performance** can be 10 - 100 X slower than a traditional ML model
+	Little theory guidance — Luck + Experience
+	No good way yet to defend **adversarial attack**
+	Difficult to build an in-house enterprise-level service (Open source frmeworks are mainly designed for individuals)
+
+**Suggestions for Building ML/DL Enterprise Solutions**
+	
+	Leadership, Vision and Purpose
+		Be a believer
+		Make proper investment
+		Understand limitation and risks
+		Ask questions
+		Do it NOW — customers won't ask for it (Of course they only ask for even better service, which requires ML/DL nowadays)
+		
+	Skillsets
+		Domain knowledge
+		Understand Data
+		Understand ML best practice
+		Turn solution into Product
+		
+	Roles
+		Resercher / Applied Scientist
+		Data Scientist 
+		Data Engineer
+		ML Software Engineer
+		
+	Cloud
+		Google Cloud — Tensorflow
+		Amazon AWS — MXNet
+		Microsoft Azure — CNTK
+	In-house
+		[[SparkML]]
+		
+	Common Use Cases
+		Churn prediction/Customer Clustering/Product Recommendation/Budget Optimization/ETA/Sales Prediction/Pricing Model
+		
+	Does you business need Deep Learning?
+		A/B Testing to generate labeled data
+	
+	Start small and simple
+		Start with a human assistance tool than a replacement of human
+		Start with small sampled data sets (can lead to overfitting, but at least it can tell you whether your model is gonna work)
+		Start with linear regression, random forest and Boosted Tree and then try Deep Learning
+		
+	Integrated Platform (The Best ML/DL Strategy for your company)
+		**Integration with A/B Testing is key to manage risks**
+		An integrated platform speeds up innovation iteration 10X
+		Feature store removes duplicated data process and improves data quality
+			It's the most crucial part of your data. Calculate it once, store it well and use it again & again during your training
+		Models are assets
+			protect your proved pre-trained and optimized models and share them internally only
+		ML as a service
+			turn a model into a service with one click
+
+
+
+

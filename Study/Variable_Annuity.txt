@@ -49,10 +49,6 @@ GLWB
 	if the value of the rider is to guarantee a floor while taking withdrawals, then the goal should be taking withdrawals to try to hit the floor… and the older the client, the better it works!
 
 
-MLR tutorial: https://www.analyticsvidhya.com/blog/2016/08/practicing-machine-learning-techniques-in-r-with-mlr-package/
-MLR doc: https://mlr-org.github.io/mlr-tutorial/release/html/create_filter/index.html
-Mengying Li: https://github.com/MengyingLi/RScripts
-KNN in R: https://rpubs.com/njvijay/16444
 
 try: get_dummies for all cats → R → SMOTE → KNN
 

@@ -18,12 +18,39 @@ AWS Redshift:
 	performance deep dive: https://www.youtube.com/watch?v=fmy3jCxUliM
 	2016 what's new: https://www.youtube.com/watch?v=OyHhYIUEPQ4
 	
+
 **To Learn:**
 	MySQL, SQL Server, RedShift
 	Cloud Analytics solution: AWS RedShift
 	
 **Topics:**
 	partition key
+	
+	Best Practices for Query Optimization
+		Use EXPLAIN keyword to see the execution plan for the query:
+			check the index usage
+			check rows scanned
+		Try to Convert <> operator to = operator (which increases the chance for indices to be used)
+		Avoid using SELECT * (unless it's necessary)
+			Forces full table scan (ignores the indices)
+			Waste network bandwidth
+		Split big DELETE, UPDATE or INSERT query into multiple smaller queries
+			  Better performance, better control over data movement
+		**MySQL query cache is case and space sensitive**
+			**Use same query case for repeat queries**
+		Index columns in the WHERE clause
+		Index columns used in JOIN
+		Index columns used in ORDER BY
+		Use UNION ALL instead of UNION if duplicate data is permissible in result set
+		Use LIMIT clause to implement **pagination logic**
+			better performance, less network traffic between database & client applications
+
+
+
+
+	
+	Window Function 
+		https://www.simple-talk.com/sql/t-sql-programming/window-functions-in-sql/
 	
 	why use a CTE?
 		CTEs (common table expressions), temp tables by WITH clauses, it allows you to create something somewhat equivilant to a view that only exists during that transaction.
@@ -77,7 +104,6 @@ AWS Redshift:
 		avoid using cursor whenever possible: slow and take up more system resources
 		
 		
-	
 
 **Misc:**
 1. Whenever possible, don’t use a nested queries
@@ -203,7 +229,7 @@ AWS Redshift:
 		Serializable (ACID)
 		Repeatable-Read
 		Read-Committed
-	  Read-Uncommitted (Dirty reads)
+		Read-Uncommitted (Dirty reads)
 	
 	**ACID:**
 	1. Atomicity: A transaction is ATOMIC if all its updates must happen or not at all

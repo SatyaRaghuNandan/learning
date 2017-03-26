@@ -5,6 +5,9 @@ Creation-Date: 2016-11-23T19:35:31-08:00
 ====== Ubuntu Learning & Tips ======
 Created Wednesday 23 November 2016
 
+Apps:
+
+
 
 update booting order:
 	sudo efibootmgr

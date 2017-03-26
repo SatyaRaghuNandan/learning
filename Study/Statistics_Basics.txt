@@ -1,0 +1,40 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-03-19T15:57:51-07:00
+
+====== Statistics Basics ======
+Created Sunday 19 March 2017
+
+**Hypothesis Testing**
+	Parameter	
+	Statstic
+	P-value
+	Type I error
+	Type II error
+	
+	Significance Level
+	Power
+	Sample Size
+	Effect Size
+
+
+
+**Power Analysis**
+	Significance Level
+	Power
+	Sample Size
+	Effect Size
+	pwr package	
+	
+**T test**
+	T distribution
+
+**Tests of Proportions**
+
+**ANOVA**
+	F distribution
+
+**Chi-Square Test**
+	assess relationship between two categorical variables
+
+**GLM**
