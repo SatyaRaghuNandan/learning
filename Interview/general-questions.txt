@@ -6,7 +6,12 @@ Creation-Date: 2017-02-12T10:21:23+00:00
 Created Sunday 12 February 2017
 
 1. **Tell me about yourself? (This is a pitch, drop in shows of success)**
-	//Current Role:// 
+	//Current Role//
+		Currently, I studying part-time at University of Washington's Masters Program in Data Sciecne. I am looking for positions to apply my business sense and technical skills and your company caught my eye. I think I will be a good fit for this role.
+	
+		I am also working as a business system analyst at Microsoft's 3D Experience team
+			Implement Kibana dashboards using Elasticsearch and R to analyze usage of Microsoft’s 3D model website called remix3d.com
+			
 		I am a recent graduate from a Data Science Immersive Program by General Assembly, during which I studied on data analysis using Python and  machine learning techniques, and my focus was on classfication problems with highly-imbalanced distribution.
 		
 	//College:// 
@@ -24,9 +29,6 @@ Created Sunday 12 February 2017
 	
 		It was great 2 and half years working there. I learned a lot about business communication & project management and also enhanced my data analytical skills. 
 		
-	//Current Role//
-		Currently, I studying part-time at University of Washington's Masters Program in Data Sciecne. I am looking for positions to apply my business sense and technical skills and your company caught my eye. I think I will be a good fit for this role.
-		
 	//Outside of Work//
 	//Wrap Up//
 	
@@ -40,9 +42,10 @@ Machine Learning: 1 year
 2. **What are your weaknesses?** 
 	I tend to pay too much attention to detail. While that's good because it lets me find limitations of the data at early stage, it also means that I sometimes can't execute quickly enough. Because of that, I make sure to always have a time-table to control the cadence of my work. Also, I normally set a deadline to myself one day prior to the real deadline, so I have some extra time to fine-tune my work.	
 
-	Hard to handle ambiguity, sometimes overwelmed by various choices and learning resources.
-	Spent too much time on perfecting the solution; can't figure out how much to put in given customer's need and time & resources I have.
-	Not a quick person. But I think over and over. 
+	Real but don't say them:
+		//Hard to handle ambiguity, sometimes overwelmed by various choices and learning resources.//
+		//Spent too much time on perfecting the solution; can't figure out how much to put in given customer's need and time & resources I have.//
+		//Not a quick person. But I think over and over.// 
 
 3. **Why do you choose to move from Philadelphia to Seattle?** / **Why did you leave your last job?** 
 	I want to bring my career to the next level by adding more "Science" and "Innovation" elements into it. 
@@ -51,16 +54,15 @@ Machine Learning: 1 year
 	To learn more advanced data skills, I applied for master's program in Data Science at University of Washington and got admitted. Also, Seattle has a great Tech community. So I moved here.
 
 4. **Why did you study at GA?**
-	a. To expedite my career path in data science
+	a. To expedite my career path in the data science field
 	b. GA has a very well-designed corriculum, covering all aspects of data science; it's project-based; and the instructor is from Microsoft with 8-years industry experience;
 	c. it offers lots of resources: networking events, seminars, connection with alumnis; helping me becoming part of the Seattle Tech community.
 
 5. **Are you studying part-time? How would you handle study and work? Will travel be a problem for your study?**
 	Yes, I am studying part-time, with one evening class per week. Actually most of my classmates are full-time workers studying part-time. I went back to graduate school to advance my career, so I will always prioritize work over study if there is a conflict.  Actually, when needed, suspending the study for one or several quarters is always an option in this progrom.
 
-
 6. **Why did you study International Economics?** 
-		I like to think big and cared about the issues that have bigger impacts, so I majored in International Affairs,  not engineering or quantitative finance that are more practical and easier to land on a job. My goal was to work at the UN or World Bank. But later I found public sector is not that exciting to me…. They are doing very important work, but the pace is quite slow.  
+		I like to think big and cared about the issues that have bigger impacts, so I majored in International Affairs,  not engineering or quantitative finance that are more practical and easier to land on a job. My goal was to work at the UN or World Bank. But later I found public sector is not that exciting to me…. They are doing very important work, but with a slow pace and sometime not as effective as the private sector
 
 7. **What's your ETL experience?** 
 	Unix Server Job of Loading Data File of 3 million rows, all pre-bind underwriting data 
@@ -84,13 +86,6 @@ Machine Learning: 1 year
 	c. communication skills
 	d. fast learner
 	e. organizational skill
-	f. attention-to-detail
+	f. attention-to-details
 
-
-NLP skills
-
-Compensation industry, 
-sell subscriptions 2-3 yrs long
-got list of all employees, job descriptions
-how much to pay and not overpay
 

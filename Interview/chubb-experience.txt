@@ -25,9 +25,9 @@ I worked in Data Analytics team of Chubb Insurance. It was a new initiative in 2
 ****************************************************************************************************************************** 
 **My focus:** 
 
-		I was in charge of 70% of the team's ETL processes, (using SQL Procedures, Python & Unix scripts); (applied critical thinking skills to solve problems in ad-hoc reporting & analysis); 
+		I was in charge of 2/3 of the team's ETL processes, (using SQL Procedures, Python & Unix scripts); (applied critical thinking skills to solve problems in ad-hoc reporting & analysis); 
 		I made process improvement recommendations
-		I also led sereral key initiatives including the Sales Analysis Reporting on 6,000 Largest Accounts (using Dunn & Breadstreet data)
+		I also led several key initiatives including the Sales Analysis Reporting on 6,000 Largest Accounts (using Dunn & Breadstreet data)
 		I spent 40% of time on data engineering and reporting, 30% on relationship building with business people, and the rest 30% on providing ad-hoc analyses; 
 		Most of the time I use Netezza SQL & Excel and sometimes R Shiny for visualization.
 
@@ -36,7 +36,7 @@ I worked in Data Analytics team of Chubb Insurance. It was a new initiative in 2
 **Summary of my work:** 
 
 	ETL: 
-	 70% of the team's ETL process            
+	 2/3 of the team's ETL process            
 		Ran a SQL procedure from a Unix Server each night to refresh a combined dataset which the entire team's reports are based upon
 			create tables, do data cleaning, create calcuated columns, indexes, views
 			 

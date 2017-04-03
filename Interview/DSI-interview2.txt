@@ -36,12 +36,6 @@ Question to ask at the end:
 	2. Who should I follow up with? (Get a specific name, email/phone)
 
 
-**Mock Interview Application (By weekend)**
-https://docs.google.com/forms/d/e/1FAIpQLSc0UEQRpUSB2GMXZMrkQM6LueEwIuf1UvxmPMrZV8bah6yX4A/viewform
-	1. **Resume should be plain text, left indented**
-	2. **Print out the JD and bring it with you on mock interview**
-	3. **Also do your GA profile, as much as it can help**
-	
 	**GA:**
 1. **a Washington state Licensed school, not an accreditted school**
 2**.  a global education company, not a bootcamp:)**

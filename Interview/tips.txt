@@ -55,8 +55,7 @@ Created Sunday 12 February 2017
 		what's your superpower?
 		What's your current project/work?
 
-
-**Phone Screning** (http://collabedit.com)
+**Phone Screning Online Code Editor **(http://collabedit.com)
 
 **Basic Skills:**
 	data savviness (**SQL**, data join, Metrcis)
@@ -77,7 +76,7 @@ Created Sunday 12 February 2017
 	5. demonstrate your sense, strength, weakness (honesty)
 
 	ask how much time do I have for this question? how deep should I go?
-	always clarify the questions and knwo how you will be evaluated
+	always clarify the questions and know how you will be evaluated
 		do you like quick solution? high-quality solution? many solutions? my best solution only?
 
 	when you stuck, talk it though creatively, why you are stuck and ask for help, "am I on the right track?"

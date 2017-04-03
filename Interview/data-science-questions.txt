@@ -59,7 +59,10 @@ What pattern is it missing?
 		Spark
 
 7. **Tell me about your experience with Machine Learning?**
-		dfdfdfd
 
 8. Tell me about an ML algorithm
 
+9. what is the most challenging analytical project you have ever completed in your life.
+10. Have you done anything proud with data?
+11. do you prefer ETL or Data Analysis? 
+12. how do you check your data, instead of just going straight pivoting on them? 

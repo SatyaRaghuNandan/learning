@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-03-26T14:57:50-07:00
+
+====== Statistical Learning ======
+Created Sunday 26 March 2017
+
+Chapter 3 Linear Regression
+
+

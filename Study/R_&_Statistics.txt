@@ -19,7 +19,7 @@ Misc:
 	
 **EDA**
 	dataframe <- read.csv("xxx.csv")
-	  load("xxx.rda")
+	 load("xxx.rda")
 	tail(dataframe, 4)
 	str(dataframe): check structure of dataset
 	summary(dataframe)
@@ -32,6 +32,19 @@ Misc:
 	class(variable): numeric, character, factor
 	
 	Visualizing Results: packages vcd, ca
+	
+	pairs(Auto) # Produce scatterplots for a subset of the variables
+	pairs(~ mpg + displacement + horsepower + weight + acceleration, Auto) 
+	
+	identify(Auto$horsepower,Auto$mpg,name)
+	
+	contour(x,y,f,nlevels=45, add=T)
+	
+	3-D plots:
+	image(x,y,fa)
+	persp(x,y,fa)
+	persp(x,y,fa,theta=30)
+	persp(x,y,fa,theta=30,phi=20)
 	
 **Factors**
 	a categorical variable in R (non-Numerical variable)
@@ -123,16 +136,11 @@ Misc:
 		What if there are "Blanks"? they are not "NA".... Do the trick when importing data: 
 			read.csv( "filename.csv", na.strings = c("", "  ", "New York") )
 
-
-
-
-
 **Resources:**
 	MLR tutorial: https://www.analyticsvidhya.com/blog/2016/08/practicing-machine-learning-techniques-in-r-with-mlr-package/
 	MLR doc: https://mlr-org.github.io/mlr-tutorial/release/html/create_filter/index.html
 	Mengying Li: https://github.com/MengyingLi/RScripts
 	KNN in R: https://rpubs.com/njvijay/16444
-
 
 	
 **Misc Snippets:**
@@ -157,3 +165,8 @@ Dot Plot:
 	axis(side=2)  ## y-axis
 	axis(side=1,at=1:4,labels=c("A","B","C","C"))  ##  x-axis
 
+Exit Rstudio:
+	If we want to save all of the variables that are currently in the workspace, we can do that with
+	save.image() or, alternatively, we can do it when prompted when we exit RStudio. If we want to
+	save a history of the commands used in the session, we can use savehistory(). Later we can load
+	them using loadhistory().
