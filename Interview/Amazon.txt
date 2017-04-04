@@ -35,9 +35,19 @@ Sample Interview Process:
 	Section 5: Situational Questions 
 		Tell me examples in a specific situation. If it has never happened, tell me and I will ask another, take 1-2 minutes to think about your answer. (All there are around the 14 principles) 
 
- Take-way: 
+Take-way: 
 	Each situational question is geared toward a Leadership Principle (Don't answer immediately, take some time to determine which Principle is being tested) 
 	Amazon has old Oracle database that's now transiting into Redshift. Get familiar with Redshift! 
 	Be more prepared with JD requirements, prepare some examples for each line 
 	
 ******************************************************************************************************************************************************
+
+resources
+back-end infrastructure, 
+quick solutions, 
+disconnections of back-end infrastrcture
+
+build the comprehensive infrastructure
+BIE position
+
+shakt
