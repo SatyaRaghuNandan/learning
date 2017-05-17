@@ -6,10 +6,29 @@ Creation-Date: 2017-03-19T12:21:29-07:00
 Created Sunday 19 March 2017
 
 R is an object-oriented, functional 
-Misc:
-	t(matrix), aggregate(x, by, FUN)
+
+**Misc:**
+	t(matrix)
+	
+	aggregate(x, by, FUN)
+	
 	reshape2: melt, dcastaq
 	
+	for functions 
+		you can have Default Arguments
+		 you don't need to write "return", just write the name of the variable to be returned
+     
+	Remember to backup your dataset frequently:
+		df_backup <- df
+	
+	When filter/impute by a column's mean/median, save the value into a new variable first, because after the update the mean/median will change
+	
+	To remove a column:
+		df$col <- NULL
+	
+	Rearrange the columns of a dataframe:
+		util <- util[, c(4, 1, 2, 3)]
+
 **Data Types**
 	Atomic Vectors
 		elements are of same data type
@@ -71,7 +90,7 @@ Misc:
 **Test of Independence (for Discrete Data)**
 	Chi-square test: check the H0 of independece of row and column variables
 	Fish Exact test: check the H0 of independence of rows and columns in a two-way table
-	 Cochran-Mantel-Haenszel test
+	Cochran-Mantel-Haenszel test
 
 **Measures of Correlation (for Continuous Data)**
 	Covariance-Matrix: cov(colA, colB)
@@ -112,29 +131,86 @@ Misc:
 	find and replace: sub - first match; gsub - all matches
 	to replace a $: add an **Escape Sequence**: "\\$"
 	GSUB can also be applied directly on Factor variable, it will automatically do Factor -> Char conversion
+		e.g. 
+		fin$Expenses <- gsub(",", "", fin$Expenses)
+		fin$Revenue <-gsub("\\$", "", fin$Revenue)
 	
-**Missing Data**
+**Missing Data (NA)**
 	How to handel?
 	1. predict missing data with 100% accuracy
 	2. leave the record as it is
 	3. remove the row
-	4. fill with Mean or Median (Median is preferred as it's less affected by outliers)
+	4. fill with Mean or Median (**Median is preferred as it's less affected by outliers**)
 	5. fill by exploring correlations and similarities
 	6. introduce dummy variable for "Missingness"
 
-	NA (missing value)
-		It's a Logical Constant (like TRUE and FALSE)
+	**NA** (missing value)
+		It's the third Logical Constant (like TRUE and FALSE)
 		"NA == TRUE" : NA
 		"NA == NA" : NA
+		"5 == NA": NA
 		If a Factor column has missing value: <NA>    (R is helping us by adding <>)
 		Otherwise: NA
 	
-	How to locate them?
+	**How to locate them?**
 		complete.cases(df) : returnes whether each row is "complete"
 		df[ !complete.cases(df), ]
 		
+		sum(is.na(df$col)) — number of rows with missing values in a column
+		
 		What if there are "Blanks"? they are not "NA".... Do the trick when importing data: 
 			read.csv( "filename.csv", na.strings = c("", "  ", "New York") )
+	
+	**Filtering**
+		**using which() for non-missing data**
+			which(condition expression) will only return the rows with TRUE value
+			(condition experssion) will bring back rows with TRUE and NA values
+		**using is.na() for missing data**
+			is.na(colname)
+	
+	**Reseting dataframe index (in R, index numbers don't auto-reset like in Excel)**
+		rownames(fin) <- NULL
+
+**Date-Time**
+	which format? American or European?
+		Convert it to POSIXct  (calender time), the Unix time format!
+			as.POSIXct(df%col, format = "%d%m%Y %H:%M" )
+
+**List**
+	set names of components:
+		name(listA) <- c("X", "Y", "Z")
+	
+	two ways to extract components of a list:
+		: returns the actual object (**size depends on the object content**),  is for accessing a **Single** **Component** of a list
+		$: returns the actual object, prettier format 
+		
+	numeration shifting
+		when removing components, the "index" of the remaining components automatically shifts, unlike [[DataFrame]]
+	
+	subsetting:
+		[]: returns a list
+			listName[1]
+			listName[ c(1, 3, 4)]
+			listName[ c("A", "C", "D") ]
+
+**Plotting**
+	# scatter plot
+	p <- ggplot(data = fin)
+	p + geom_point(aes(x=Revenue, y=Expenses, 
+					   colour=Industry, size=Profit))
+	
+	# scatter plot with industry trends
+	d <- ggplot(data = fin, aes(x=Revenue, y=Expenses,
+								colour = Industry))
+	d + geom_point() + 
+		geom_smooth(fill=NA, size=1)
+	
+	# Boxplot for Growth per Industry
+	f <- ggplot(data = fin, aes(x=Industry, y=Growth,
+								colour = Industry))
+	f + geom_jitter() +
+	  geom_boxplot(size = 1, alpha = 0.5, outlier.color = NA)
+	
 
 **Resources:**
 	MLR tutorial: https://www.analyticsvidhya.com/blog/2016/08/practicing-machine-learning-techniques-in-r-with-mlr-package/

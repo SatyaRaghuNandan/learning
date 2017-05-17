@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-04-26T21:01:36-07:00
+
+====== 5th ======
+Created Wednesday 26 April 2017
+
+Debugger for Jupyter
+	http://stackoverflow.com/questions/16867347/step-by-step-debugging-with-ipython
+	
+	Pdb commands:
+		http://web.stanford.edu/class/physics91si/2013/handouts/Pdb_Commands.pdf
+
+
+

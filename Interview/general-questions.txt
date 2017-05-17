@@ -88,4 +88,12 @@ Machine Learning: 1 year
 	e. organizational skill
 	f. attention-to-details
 
+11. What was the coolest thing you have learned that helped you do your job better?
+	a. Pathos, Ethos, Logos
+	b. Vim
 
+12. How to you do BI work to make your customer's life easier?
+		always add a Table of Content sheet at the beginning of your report
+		always add a "Print Current Page" button and a "Print All" button
+		always store your query in a hidden tab
+	  always include year, month, date in the title of your report file

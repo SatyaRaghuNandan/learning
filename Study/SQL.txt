@@ -20,16 +20,17 @@ AWS Redshift:
 	
 
 **To Learn:**
-	MySQL, SQL Server, RedShift
+	MySQL, Oracle, RedShift
 	Cloud Analytics solution: AWS RedShift
 	
 **Topics:**
 	partition key
 	
 	Best Practices for Query Optimization
-		Use EXPLAIN keyword to see the execution plan for the query:
-			check the index usage
-			check rows scanned
+		Execution Plan
+			Use EXPLAIN keyword to see the execution plan for the query:
+				check the index usage
+				check rows scanned
 		Try to Convert <> operator to = operator (which increases the chance for indices to be used)
 		Avoid using SELECT * (unless it's necessary)
 			Forces full table scan (ignores the indices)
@@ -44,7 +45,8 @@ AWS Redshift:
 		Use UNION ALL instead of UNION if duplicate data is permissible in result set
 		Use LIMIT clause to implement **pagination logic**
 			better performance, less network traffic between database & client applications
-
+		
+		Don't confuse the Query Optimizer with inaccurate Object Statistics by writing "WHERE city == 'Seattle' and state == 'Washington' "
 
 
 
@@ -103,7 +105,81 @@ AWS Redshift:
 		a database object that points to a result set. You can use cursor to identify the row to retrieve. (Work with data one row at a time, not the entire relation)
 		avoid using cursor whenever possible: slow and take up more system resources
 		
+	**Execution Plan (Oracle)**
+		Can be generated from SQL Plus, SQL Developer, etc.
+		store in the memory of the database server
+		syntax check → semantic check (you have access to the requested tables, requested columns are valid ones, col def'n, security previliages ...)
+		→ check in memoy pool (has this query been run before?) → If yes, use the plan, If not, produce a new plan ( one out of many ) → 
 		
+	1. Read from 
+			inside → out (start with the furthest indented to the right)
+			top → down (for those with same indentation)
+	2. Check the Plan and think about why optimizer choose this plan
+		b. Look for:
+			1. **Full Table Scan**
+				a. Is it acceptable?
+					1. entire table is read up to the High Water Mark (highest block of table that ever had data written to it)
+					2. Delete won't release the space (mean # of rows reduces, # of blocks remains the same), Truncate will 
+					3. How to lower the HWM? 
+						a. ALTER table enable row movement; 
+						b. ALTER table shrink space; 
+					4. Might be a problem for a Large Table
+					5. Are Index available? Create one? Why don't use the existing indices?
+			2. **Join methods** (Nested Loop, Hash, Sort Merge, Cartesian; each has Pros & Cons, ), Join Order
+				a. **Nested Loop Join**: outer/driving table(usually the smaller of the two sources), inner table (larger); full-scan for the outer; indexed-ranged scan on the inner (index on the FK column that you join on)
+					1. Good for joining **smaller** row sources (table != row source, row source might be a filtered table)
+					2. Good when the outer source is small and inner source is indexed (small row sources ~ <= 100K rows)
+					3. Best for: When you want the **first matched rows back quickest** (may not finish retrieving all the matched rows yet) 
+				b. **Hash Join**: smallest row source is chosen to build a hash table in memory and a bitmap; the 2nd row source is hashed and checked against the hash table looking for joins; the bitmap is used as a quick lookup to check if rows are in the hash tabe; Hash table is stored in PGA (Process Global Area) in Memory; 
+					1. Good for joining **larger** row sources (scanning a bitmap is faster than a full table)
+					2. Needs PGA memory (If PGA is not large enough, the Optimizer may choose Nested Loop Join instead)
+				c. **Sort Merge Join**: sort both row sources with the same sort key, then merge the results together; sorting are done in the PGA or on Disk (if PGA is small); 
+					1. Not typically what we're looking for! Unless both row sources are small
+				d. Cartesian
+					1. Avoid it! Result of Poorly written query!
+			3. **Index Access Methods**
+				a. types:
+					1. range scan: read one block at one time
+					2. unique scan
+					3. full scan: read one block at one time
+					4. fast full scan: a little better than full-table scan
+					5. skip scan
+				b. why is it not using the existing index? 
+ 
+	4. Filters (WHERE clause)
+		a. when is it applied (Before any Join or After?)
+		b. Optimizer will try to filter rows before performing joins and this is the goal
+ 
+	5. Parallel Operations
+		a. Why is it not using Parallel operation? Do I need to provide any hint to the Optimizer?
+		b. samples in the Plan:
+			1. PX COORDINATOR (PX ~ parallel transaction)
+			2. PX BLOCK ITERATOR (breaking the data into smaller pieces)
+			3. PX SEND (merge pieces back)
+			4. PX RECEIVE
+	6. **Partition Processing** (A very Common practice)
+		a. Table Partitioning (A single HEAP table divided into partitions, like multiple small tables, if table volume is high)
+		b. Eg: Partition the table by Date Range; List Partition, Range Partition, Hash Partition...; 
+		c. Optimizer is Partition-Smart
+		d. samples in the Plan:
+			1. PARTITION LIST SINGLE (reading only one partition)
+			2. PARTITION LIST ALL (Optimizer feels it need to access all partition of the table)
+		e. When each partition is too small, INSERT performance may be affected but not the SELECT performance
+		f. Index can be within or across partitions (Local Partition Index vs. Global Partition Index)
+	7. **Dynamic Statistics**
+		a. Object Statistics is generated your DBA (# of rows in a table, # of blocks the rows make up, # of distinct values in an index etc.)
+		b. **Check** whether Object Statistics is used or not 
+		c. Or does the optimizer has to do **Dynamic Sampling** to find Statistics On-the-Fly for your query (slower, may not be good sampling → bad plan)
+		d. **Better to make Object Statistics Available and Accurate!! Avoid "dynamic statistics used"**
+	8. Cost (IO, CPU, Network Resource etc.)
+		a. used to compare different plans for the same query
+	9. Eg: why full-table scan? why don't use index? Trying to select large % of the table so a full scan is faster?
+	
+	c. Adjust parameters of my database?
+	d. Adjust the size of memory structure?
+	e. Rewrite my query?
+	f. Redesign my index?
+	
 
 **Misc:**
 1. Whenever possible, don’t use a nested queries
@@ -144,6 +220,7 @@ AWS Redshift:
 		–  select count(*) from R is not monotone!
 
 **Relational Algebra (How to get the data we want)**
+	Key for RA: **PUSH the SELECTIONs DOWN**
 	Relational algebra expression is also called the **“logical query plan"**
 	A **Physical Query Plan**: a logical query plan annotated with physical implementation details
 	
@@ -178,10 +255,10 @@ AWS Redshift:
 **Database Design**
 	Starting from scratch, design the database schema: relation, attributes, keys, foreign keys, constraints etc
 	
-[[NoSQL]]
+NoSQL
 	Motivation: Single Server DBMS is too small for web data
 					   Hard to scale out entire functionality of a DBMS
-					  [[NoSQL]] reduces functionality for easier Scale-Up: simpler data model, simpler transactions
+					  NoSQL reduces functionality for easier Scale-Up: simpler data model, simpler transactions
 					
 	Two approaches:
 		partitioning
@@ -203,7 +280,7 @@ AWS Redshift:
 		Protobuf: Dremel (BigQuery)
 		They differ in how they handle structure: Open vs. Closed, Ordered vs. Unordered
 		
-	[[AsterixDB]] and SQL++
+	AsterixDB and SQL++
 		Index: B-Tree, R-Tree, Keyword
 				  cannot index inside of a nested collection
 				  

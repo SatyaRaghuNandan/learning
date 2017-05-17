@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-04-23T20:39:50-07:00
+
+====== resources ======
+Created Sunday 23 April 2017
+
+Best Practice for Scientific Computing:
+http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745
+
+
+

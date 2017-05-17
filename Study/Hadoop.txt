@@ -30,7 +30,7 @@ HDFS:
 		→ Active and Standby (backup)
 		→ Put the **Name Node** on a High-end hardware
 
-[[MapReduce]] Process:
+MapReduce Process:
 	Mappers work → shuffle and sort → Reducers work → Final Output
 	Job Tracker (splits works into Mappers and Reducers) vs. Task Tracker (on a slave node)
 	
@@ -39,7 +39,7 @@ HDFS:
 	Remember to specify how many Reducers you want for your job
 		**But Hadoop framework decides which keys get sent to each Reducer, You have no control???**
 
-[[MapReduce]] Problem Patterns:
+MapReduce Problem Patterns:
 	Filtering: dont' change records
 	Summarization: top-level view of data
 	Structured-To-Hierarchical: 
@@ -54,7 +54,7 @@ Combiner:
 	
 Misc:
 	Hadoop Streaming allows you to write your Mappers and Reducers in any language
-	Fist test your [[MapReduce]] job wiht a small dataset, then run them on your entire, huge dataset
+	Fist test your MapReduce job wiht a small dataset, then run them on your entire, huge dataset
 		cat testfile | [[./mapper.py]] | sort | ./reducer.py
 
 Next Steps:

@@ -1,0 +1,31 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-05-07T11:36:06-07:00
+
+====== AWS ======
+Created Sunday 07 May 2017
+
+AMI:
+	Deep Learning AMI Ubuntu Linux - 1.3_Apr2017
+	
+Spot Instance
+
+SSH:
+	ssh -i [[./ssh/oregon_uw.pem]] tmpaws
+
+Run Jupyter Notebook:
+	http://www.datasciencebytes.com/bytes/2015/12/18/using-jupyter-notebooks-securely-on-remote-linux-machines/
+	1. install Anaconda
+		a. https://www.continuum.io/downloads
+		b. bash file.sh
+	2. tmux (on Remote Machine)
+	3. start Juypter Notebook: 
+		a. jupyter notebook --no-browser  (in Tmux)
+	4. SSH tunnelling
+		a. ssh -i /path/to/ssh/key -NL 8157:localhost:8888 ubuntu@your-remote-machine-public-dns  (on local machine)
+	5. Sync your notebook every 30 seconds
+		a. while true; do \
+			rsync -avz --include='*.ipynb' --exclude='*' tmpaws:/path/to/notebooks/ /path/to/local/dir/; \
+			sleep 30; \
+			done
+

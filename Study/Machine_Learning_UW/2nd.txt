@@ -1,0 +1,46 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-04-19T19:01:04-07:00
+
+====== 2nd ======
+Created Wednesday 19 April 2017
+
+Lec 2
+	always do three things:
+	  1. handle missing values
+	  2. standardize variables (no need to worry about categorical variables though....)
+		   glmnet does standardization by default ()
+	  3. always include a baseline model (that you can compare your result to)
+	  
+	cross-validation is like the JackKnife of Machine Learning
+	
+	only works when your training set is of reasonable size (not huge, not too small)
+	  where is the 10?
+	
+	Elastic Net?
+
+Lab 2
+	Constant Step Size: Lipschitz gradient
+	Backtracking Line Search (in practice, alpha is between (0, 0.5], beta in [0.5, 1] , we can use 1/2, 1/2 )
+		if the condition is not met, why not make a even bigger step, why beta has to be smaller than 1?
+			if beta is larger than 1, you risk of **Bouncing**, not converging at all....
+			if beta is smaller than 1, you make take many steps, but you are more likely to converge...
+	
+	Ridge Regression:
+		we penalize all coefficients but the intercept
+		**Constant Step Size** is more complicated than **Backtracking Line Search**
+		
+		Constant Step Size:
+			2 * max_EigenValue of X_transpose * X, use the **RSpectra** package
+			**In this code, don't forget to standardize the data, check this**
+
+	Note the last sentence in the Lab6 code. Professor said: Only stop your algorithm when the result on **Test** dataset is small enough!
+
+Read:
+	https://en.wikipedia.org/wiki/Backtracking_line_search
+	https://en.wikipedia.org/wiki/Stochastic_gradient_descent
+	
+	glmnet package:
+		https://web.stanford.edu/~hastie/glmnet/glmnet_alpha.html#intro
+		https://www.rdocumentation.org/packages/glmnet/versions/2.0-5/topics/glmnet
+	

@@ -20,7 +20,7 @@ Resources:
 		Key Strategy: Data + AI + Cloud integration
 		
 		Managed big data cloud service
-			Huawei [[MapReduce]] Service
+			Huawei MapReduce Service
 			
 		Serverless big data service 
 			Data Ingestion Service ( a gateway to Huawei Cloud)

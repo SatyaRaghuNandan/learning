@@ -2,16 +2,13 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 Creation-Date: 2017-02-12T10:20:32+00:00
 
-====== amazon-leadership ======
+====== Amazon Principles Notes ======
 Created Sunday 12 February 2017
 
 14 leadership principles: 
 
-
 In general: encourages every employee to act & think like leaders 
-
 When something failed, just ask "Here's what didn't work, why it didn't work, and how we're going to change." 
-
 No matter what job you do, always improve on the processes in ways that ultimately enhance the customer experience and/or lower the cost.  
 
 **Dive Deep** 
@@ -21,7 +18,7 @@ no PowerPoint, only essays that forces you to think deeply & thoroughly about yo
 
 Simple is beautiful; Your design better to be simple, scalable, elastic (scale up, scale down), self-service is the future, provide platform service; capabilities are designed from the user backwards with algorithms, automation, workflow and technology; 
 To scale and improve your business, you need well-defined Process; But avoid Bureaucracy is essential! 
-Leverage on other people's work: Amazon Mechanical Turk (small yet essential and practically endless tasks 
+Leverage on other people's work: Amazon Mechanical Turk (small yet essential and practically endless tasks)
 Leverage on competitor's work: Amazon Auction, Ebay, Amazon Third-Party Selling 
 
 **Take ownership of Results:** 
@@ -29,23 +26,19 @@ Never say "That's not my job". You act on behalf of the entire company, not just
 Be ready to speak up and contribute without having to be asked. 
 You Own Your Dependencies: identify and tenaciously manage every potential business-derailing dependency you have (SLA, rock-solid contracts, penalties in place, continual & active management of communication):
 
-	whenever  possible, take over the dependencies 
-	if impossible, negotiate  & manage unambiguous and clear commitments from others 
-	Create hedges wherever possible, a fallback plan 
-	
+Whenever  possible, take over the dependencies 
+If impossible, negotiate  & manage unambiguous and clear commitments from others 
+Create hedges wherever possible, a fallback plan 
 Amazon is a company run by Control Freaks 
 
 
 **Customer Obsession:**  
-客户有什么要求，你如何让客户满意: 
+
 
 **Insist on the highest standards** 
-SLA: service level agreement is a contract that specifies the precise standards to which a particular service will be held. (inputs, outputs, metrics to define acceptable quality and performance) 
-
+SLA: Service Level Agreement is a contract that specifies the precise standards to which a particular service will be held. (inputs, outputs, metrics to define acceptable quality and performance) 
 Jeff expects all people to function as both leader & owner 
-
 Amazon is a huge company that runs like a start-up: you are required to do excellent work at a frenetic, breakneck pace while still adhering to time-consuming processes:  
-
  
 **Have a Bias for Action** ( team is like a start-up; leaned new skills C++, Python, Actuarial Exams; Example of Geo Map of Major Accounts before the Kick-Off meeting on Christmas Eve) 
 
@@ -58,8 +51,6 @@ It encourages decision-making based on gut instinct
 You balance the bias for action with the ability to be right a lot BY developing & monitoring the metrics!! 
 
 Amazon awards system recognizes people who develop new skills or attributes 
-
-快速有效地做工作，不要太拖拉 
 
  
 
@@ -79,8 +70,7 @@ Amazon awards system recognizes people who develop new skills or attributes
 
 Amazon has small 8-10 Two-Pizza Teams, operates independently and with agility; autonomous; it works because of the trust among Amazon people 
 
-完成自己的任务先，得到别人的信任 
-
+First your own job first, Earn trust from others
  
 
 **Think Big:** 
@@ -93,14 +83,11 @@ The Regret Minimization Framework --
 
 "I wanted to project myself to age 80 and say, 'Okay, now I'm looking back on my life. I want to have minimized the number of regrets I have. I knew that when I was 80 I was not going to regret having tried this."  
 
-创新的看法, it's an important principle for your promotion 
+Innovative thought, it's an important principle for your promotion 
 
- 
+
 
 **Deliver Result:**  
-遇到哪些困难，如何克服的 
-
-
 
 
  
@@ -108,10 +95,8 @@ The Regret Minimization Framework --
 robust conversation 
 
  
-
 **Focus on Details:** 
 
-具体是怎么做的: 
 
  
 

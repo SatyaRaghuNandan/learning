@@ -1,0 +1,34 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-05-03T20:10:08-07:00
+
+====== 6th ======
+Created Wednesday 03 May 2017
+
+PCA, Spectral Clustering, SVM won't be tested on Mid-term
+
+Lab 6:
+		
+	For Fast Gradient Descent with Backtracting, Objective Function may go up and down
+	For Gradient Descent & Coordinate Descent, Objective Function will decrease monotonically
+	
+	For LASSO, shall we standardize the training data first?
+			Yes!
+					If you standardize, all features will be punished equally
+	
+	For PCA, shall we always standardize the training data?
+		**TA said it depends.... Let check!**
+		If you feed raw data into SK_Learn's PCA, it will do the centering by default. **How about dividing by SD?**
+			— Yes, better to standardize, as features may not be on the same scale
+		
+	K-means ++: 
+		choose an arbitrary point as one centroid, pick the next centroid based on its distance from the previous one;
+			⇒ Better initialized centroids
+		It's an option in Scikit-Learn!!!
+		
+		http://stackoverflow.com/questions/5466323/how-exactly-does-k-means-work
+		http://ilpubs.stanford.edu:8090/778/1/2006-13.pdf
+		
+
+
+

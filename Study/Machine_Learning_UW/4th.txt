@@ -1,0 +1,100 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-04-19T19:01:57-07:00
+
+====== 4th ======
+Created Wednesday 19 April 2017
+
+Lec 4
+	
+	**How to do Feature Selection with LASSO**
+		//When you have LOTS of features, we need to make many of them EXACTLY ZERO (keyword: Sparse)//
+		Gradient descent with adaptive step-size
+			get the initial t, which is calculated from eigenvalues
+			backtracking with t
+		Fast Gradient Method
+			extrapolation
+		Accelerated Gradient Method
+		
+		P19: when adjusting Shrinkage Factor s, the first feature that becomes non-zero is the most important feature, and so on
+			— feature importance
+		
+		coefficients from LASSO might not predict well
+			LASSO coefficients's multitude is not statistically informative (Although not every research agree); It's good at determine +/- signs, but not the multitude
+			In practice: train with LASSO, get the non-zero features, RETRAIN the model with Ridge, get your final model!!!
+
+		To understand how LASSO work:
+			Famous Picture: tells us that L1 can have coefficient zero, L2 can't
+			
+			Mathematical Proof?
+				proof by "sub-gradient" P28 - 31
+					beta = beta+ - beta_, then apply Gradient Descent
+				
+				**Coordinate Descent Method** (usually bad algorithm, but VERY Effective for LASSO problems)
+					each iteration, choose a coordinate of beta (j), fix all others, optimize beta_j
+					P34, C_j is basically the residual
+					P36, see the proof in ESL (one step is enough)
+			
+			If there is colinearity, LASSO will be confused. BUT YOU CAN'T DO MUCH, EXCEPT FOR traditional Gradient Descent
+			
+			
+		**Unsupervised Learning**
+			**Clustering**
+				Maybe your first-thing to do in EDA ☺
+				Distance Types:
+					Cosine Similarity (Popular in NLP)
+					Eculidean
+					Manhaten
+					
+				K-Means:
+					know the clusters vs. know the means (chicken and egg problem ☺ )
+					non-convext Objective, NP-hard in general (https://en.wikipedia.org/wiki/NP-hardness)
+					How to determine K?
+						Know your data
+						Try different K's, see which one gives the "Good" clustering (well-separated across clusters, balanced within clusters)
+					P44, if converges quickly, probably your problem is very hard to be solved via K-Means
+					P45 "online version": useful for K-Means on large dataset, uses SGD
+					 
+			**Dimensionality Reduction**
+				PCA
+					Principle components explain most of the variances of the points, i.e. the spread of projected points on this PC director is largest
+					Steps:
+						Empirical Mean → Empirical Covariance → Variance of Proj_w(x_j)  (prove this equality yourself, maybe on Mid-Term)→ 
+						Iteratively find w_i's, each one should maximize the Rayleigh Quotient & is Orthogonal to ALL previous w's. 
+						
+						Actually w_i's are first c eigen-vectors of the Covariance Matrix
+						They are directions on which the "spread of prejected points" are in the Top n's
+						
+					Scikit-Learn is actually efficient for PCA
+					
+					Alternative algorithm:
+						Normalized Oja Algorithm — see Lab  (related to SGD)
+						
+					Application:
+						Face Recognition (from low-resolution images)
+						
+
+
+				Canonical Correlation Analysis
+					Summary: join PCA on two views of the same dataset
+					Steps:
+						Empirical corss-covariance matrix
+						Find pairs of vectors maximizes ....
+						
+					Application:
+						.....
+						
+				
+				Spectral Clustering (von Luxburg, 2007)
+					recent, extremely successful!!
+					theory behind it is very advanced!!
+					
+					Think about Not the Centroids, but the Cuts (the cut of least amount of edges & separating equal # of points in the Similarity Graph)
+					
+					Much more stable than K-means (no training process, just pure matrix computation), and often more efficient
+
+				Application
+					PhotoShop's image segmentation
+					PhotoShop's GrabCut
+					
+******************************************************************************************************************************

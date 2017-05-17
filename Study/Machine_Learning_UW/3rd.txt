@@ -1,0 +1,54 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-04-19T19:01:42-07:00
+
+====== 3rd ======
+Created Wednesday 19 April 2017
+
+Lec 3
+	We adjust lambda to optimize Bias-Variacne Tradeoff
+	In Linear Models, If you standardize the y's first and then train, the resulting Intercept will be Zero
+	
+	In both Math derivation / Programming, try use matrix product or vector product, not loops!!
+	
+	**P18: class-imbalance, intercept**
+	P19: d -> dim of X, k -> dim of y, n -> size of dataset ; Big Data → n, d or k is large  ;  A Very General Formula (maybe the most)
+	 
+	Gradient Descent: 
+		Do standardize your data, otherwise your gradient (and thus step size) will depend on the scale of your data
+			computer wants numbers between (0, 1)!!!
+
+	Fast Gradient Descent:
+		iterate both B and Theta (80's, Russian, Needs tedious proofs)
+		
+	Large-Scale Supervised Learning:
+		Leverage the smallest of n, d, k
+			canonical example: ImageNet dataset (random web images, have people to label them via Amazon Mechanical Turk)
+				largest dataset for **Image Classification **in Computer Vision
+				paradigm shift: smart people + carefully selected data → less informative people, crowd sourcing, normal datasets
+		
+		Divide-and-Conqure
+			Decomposition
+				over examples: SGD → deal one data point one time
+												good for streaming (data coming in bit by bit)
+										requirements:
+											shuffle your data (so they are not correlated)
+											perform several passes, in different orders
+				over classes:
+				over features:
+				over set of image transformations: **Create artifical Datapoints!!**
+				
+		P68: SGD is much faster and reaches the same performance
+		P82: an example of large number of classes but small number of data points per class
+			You can create enough artificial data points by taking transformations (like tweak the position of the bird in a picture)
+			Nowadays, companies are using VR to simulate rare images in the world.... (Computer Graphics) Tons of Open Source packages available!
+
+Lab 3:
+	Create a budget
+	Create a key-pair, download the *.pem file, chmod 400 *.pem
+	Remember to Launch an instance with GPU on it. 
+	
+	There are different way to write Ridge Regression function..... e.g. Scikit-Learn, R, professor use different versions
+	
+**small dataset: Fast GD**
+**large dataset: Stochastic GD**

@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-04-23T18:32:29-07:00
+
+====== questions ======
+Created Sunday 23 April 2017
+
+Loss function for Logistic Regression, Week 2, why this form?
+

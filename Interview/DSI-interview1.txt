@@ -63,10 +63,5 @@ Technical Interview Tips:
 		1. What project are you working on? What tools are you using? How many people are involved?
 		2. Can you give me some feedback about my answers?
 
-To Check:
-1. https://github.com/Mithers/Portfolio
-2. http://partiallyderivative.com/
-3. https://www.datacamp.com/community/tutorials/data-science-industry-infographic#gs.uRk=VAc
-
 
 
