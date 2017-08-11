@@ -1,0 +1,28 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-07-23T17:31:08-07:00
+
+====== Misc ======
+Created Sunday 23 July 2017
+
+Website Acquisition Strategies:  SEO, PPC, DM and so on
+
+Path Analysis?
+
+Need to find for remix3d.com:
+	pages/visit
+	
+
+General Website Performance Metrics:
+	Time on Site, Bounce Rate, Pages/Visit ...
+
+
+Ideas:
+	conversion rate of the users who searched vs. no-search
+	all visits during MSFT 2017 event days (5/2 - 5/17)
+	  distribution of referral domains 
+		average time on site
+		pages/visit
+		
+	Top Search Queries Report from Google's Webmaster Tools (zqi.me/googwmt)
+

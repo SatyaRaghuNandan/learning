@@ -1,0 +1,64 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-07-23T10:06:30-07:00
+
+====== 3. Metrics ======
+Created Sunday 23 July 2017
+
+Misc:
+Ajax, Flash, Video-driven sites → page views metric becomes useless?
+Check the relationship between Discover Page loading time & Bounce Rate?
+
+
+**Metrics:**
+	General Rule:
+	1. If you must overlay your own opinoins and interpretations to understand the metric, it's a bad metric!
+	2. What are great metrics?
+				uncomplex, relevant, timely, instantly useful
+	3. Lessons:
+		a. Perfection Is... the Enemy of Good Enough (If 90% confidence in the data, then make a decision)
+		b. Critical Few, Baby, Critical Few! (key metrics)
+		c. Web Metrics Lifecycle Process Is Your Friend! (Define -> Measure -> Analyze -> Action -> Improve or Eliminate)
+	4. Key strategies:
+		a. Diagnosing Root Cause of a Metric's Performance ( brainstorm with PM's -> cost-benefit analysis for each factor -> make action)
+		b. Leverageing Custom Reporting (within mature Web Analytics tools)
+		c. Starting with Macro Insights (don't dive into specific metrics quickly...) by asking:
+			1. How many Visitors are comming to my website?
+			2. where are Visitors comining from? (referring URLs and Search (non-branded) Keywords  https://www.google.com/webmasters/f)
+			3. What do I want visitors do? 
+			4. What did visitors realy do?
+				a. Top entry pages (don't obssess with the Home Page anymore!)
+				b. Top viewed pages
+				c. Site overlay (click density) analysis
+				d. Abandonment analysis
+	
+	Time on Page & Time on Site: 
+		no easy way to know when the visitor left a page/site
+	
+	Bounce Rate:
+		at least 2 levels: aggregated entired site level, top landing pages (Top Entry Pages report)
+		mesaure BR for your website's top referrers
+		measure BR for your search keywords
+		For blog, measure the BR only for New Visitors (you want them to subscribe to your RSS feed, readh your About page etc.)
+		
+	Exit Rate:
+		where do people exit after they start their session?
+			% of people who entered anywhere on the site but exited from a particular page
+			How to tell "good/neutral exits" from "bad exits"? — Bounce Rate of that page
+	
+	Abandonment Rate:
+		when user exit a "structured experience" (e.g. signing up for an email, completing a closed mulitpage process etc.)
+		
+	Conversion Rate:
+		Outcomes / (Unique Visitors or Visits): depends on your business goal but ususally "Unique Visitors" is better
+		
+	Engagement:
+		It's qualitative at its core; But Web Analytics (quantitative data) can only measure the Degree of Engagement, not the Kind.
+			visit IBM websites many times due to bad search result or looking for their new products
+		Even with high engagement metric, ask "What's the outcome for the business"
+		Ways to get "kind of engagement":
+			inline/on-exit surverys, likilihood to recommend, primary market research, customer retention over time
+
+
+
+

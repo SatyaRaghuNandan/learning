@@ -7,3 +7,15 @@ Created Sunday 23 April 2017
 
 Loss function for Logistic Regression, Week 2, why this form?
 
+Is Precision/Recall the best performance metric? In particular, the imbalanced case?
+
+Why does Zaid's weighting strategy for imbalanced classification work? Lab 8
+
+Validation Based Early Stopping:
+	https://en.wikipedia.org/wiki/Early_stopping#Validation-based_early_stopping
+	
+Bag of Features idea:
+	https://arxiv.org/pdf/1101.3354.pdf
+	
+
+

@@ -1,0 +1,74 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-07-22T17:03:25-07:00
+
+====== DS Interview ======
+Created Saturday 22 July 2017
+
+Misc:
+Attribution Modeling: the science of determining what media are driving purchases (then assigning resources accordingly)
+SRE: site reliability engineer (dev works on ops to get ultra-scalable & highly reliable)
+HMM (Hidden Markov Model), RNN (recurrent neural network)
+RSU (restricted stock units — need to be vetted)
+Analytics, A/B Testing, ML, Engineering
+
+Why DS?
+
+Base+Equity (RSU/Option)
+	more senior, base salary % decreases, Equity% increases
+	
+Titles:
+	DA/BA: SQL + Viz (Excel or Tableau)
+	DS Generalist: Statiscal testing /AB Test/ DOE / modeling
+	ML Eng/ DS
+	
+公司, track  不同, level 不同, pay 也不同
+
+entry level: fresh grad, level 3 (DA1, DS1), manager checks your progress ~3 times a week
+second level: still don't drive entire product (DA2, DS2), manager checks your progress ~1 time a week,  fresh master or Master with 1 or 2 year's (2-3 years with good records becomes L5)
+L5: 独当一面 (company want more L5 (from L3, L4 grows into), and let them stop here)
+also called M0: manager of entry levels
+L6: M1
+
+
+7. search ranking problem: usually DS + Engineer collaborate
+	production development: design and test new features
+	
+8. Continuum of DS (SRE: work with DS in Anomalty detection | Testing: DS generalist | Analytics: EDA, answer business question, design metric, build dashboard | ML Engineer: Alogrithm and data ETL, scalability | Data Engineer: pipeline running, open source high-level scabaility - depend on company
+
+11. how to prepare interview? prepare at Company+Position level (e.g. Facebook cares more about product sense, not algorithm or high statistics)
+12. Company Size Diff (small: jack of all trades, you have to have prior-relevance skills, hands-on skills; big: you can go deep in one domain, high statistics are preferred by big companies like Google, review your textbooks | Airbnb cares about "culture" ☺ )
+
+13. DS interview (**most of the time they test Critical Thinking + Problem Solving**) : gap between school and realworld problems.... (school: class + test in one subject; business scenairos → find the best tool from your skill set, e.g. "We have a product like this, you would you improve it?"  be very familiar with your tools, seen many examples, have the capability to **blend** them all together)
+14. Core Skills: ML Engineer still need to master Leetcode problems...(it's one kind of engineer) | DS: Excel , SQL , Tableau, Python, R, no Scala, little Java, Leetcode easy/medium → Interviewer don't care much about your tools, but how you solve her problem with your skills
+15. Onsite: they want 1/3 of the candidates to get hired | DS headcount is much less than Engineers (1/10) (面试机会来之不易啊)| more practice, more project → better interview skills, not better resume
+16. If you do self-project, better get inputs from friends/teachers (**easily get into wrong direction if working alone**) |  Have a Master resume, then tail each position | enough buzz words to pass screening
+17. Take-home challenge: expand your skillset, not all problems are nails of your hammer (**Don't limit the problem to your background only**) | Kaggle only has ML problem, no A/B testing, no definite yes/no, you may get an "Okay" score with a bad algorithm 
+18. TPS/On-site (TPS: a team member will provide a real business case)
+19. DS interview checks: Qualification + Fit , not just Qualification | 1/2 - 1/3 companies (especially small companies, you can write personal email to interviewers, be 诚恳) would provide feedback, always seek feedback! 
+20. Action Items: 2) know the company & product, at least try it before the interview, **networking**, think about what user action/telemetry the company would collect? | 3) know the interviewer's background, guess the intent of her question? 
+21. Foundation: Best way → **Apprenticeship (learn from upperclassman/senior colleague)!!!** + Feedback & Discussion
+22. For Fresh Grad ( Cracking the PM interview: develop your product sense) | events (see what questions people think about in the industry: e.g. in multi-side business models like Uber, Airbnb, how to do A/B Testing? )
+23. E-commerce App - how to measure the success of your App? (Conversion Rate + Cancellation Rate + ....) | how to show the Time To Arrival in Uber (design both short term and long term metrics) → how to measure your metric? (A/B Testing) → how accurate should be the metric and how to calculate it? (ML) | Facebook video, is it a good app? (user stay on the platform, user engagement)
+24. Cross-Functional interview (with PM and Engineer) How to explain "P-value" in plain English to a PM? 
+25. Insight Mining: more monthly user, why? (all possible situations, all possible wrong situations: seasonality + company compaign + etc. many many other factors) 
+26. A/B Test (assumptions of T-test? mostly asked: independence assumption; If violated, what's the consequence?)
+27. Senior Level Hires: How to lead a larger effort, manage relationshoip, how to mentor others, product roadmap vission, how to do performance management, how to hire/recruit, how to design an end-to-end product
+28. Quote
+
+
+Questions:
+	1. Don't take SAS certificates
+	2. Don't only know R (can't solve some problems...), at least know Python as well
+	3. [[PhD]] is better than Master ( even if fresh grad freezes, they may still hire [[PhD]] → because they've got solid Critical Thinking training!!!)
+		a. [[PhD]] tend to ask herself: anything I didn't consider? are the assumptions met? 
+		b. Like BioStat, the experience with DOE is a big plus!
+	4. 刷题, medium level 即可 (e.g. write Binary Tree in Python)
+	5. ML == optimize a loss function 
+	6. Google likes to test theoretical problems (like derivation of formula)
+	7. Facebook's DS don't require lots of coding
+	8. ML engineer: need to know NLP
+	9. If asked about prior project, you can say your efforts, what did they solve; you can say No if it's confidential
+
+
+

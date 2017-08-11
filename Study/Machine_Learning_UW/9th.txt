@@ -1,0 +1,68 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-05-24T20:19:02-07:00
+
+====== 9th ======
+Created Wednesday 24 May 2017
+
+NNMF:
+	TF-IDF: 
+		L2 norm or L1 norm for each data point (row) ?
+
+What if your D matrix is incomplete?
+	You can still estimate the W and T matrices, then estimate the missing values in D using the prodoct of W and T
+	
+Part 2:
+	
+	**normalization term of the objective function?**
+	
+	our features are actually histograms — reason why we choose Hellinger Kernel
+	
+	you choose an appropriate kernel, then you may or may not get an explicit form of the phi function (e.g. Hellinger kernel's phi is easy)
+	
+	feature generation:
+		26 features for each time stamp of a song
+		collect 1000 **songs**
+		collect all 26 Dimension features at each point of each song (T points)
+		stack all together, (1000 * T) X 26 matrix
+
+		center, scale features, run PCA and transform them
+		
+		run k-means each row is one point (K =  1024 based on trial-and-error)
+		keep the estimated cluster centers
+		centroids represent the clusters (**this clustering process is meant to create the "Bag of Words" features**)
+		
+		
+		
+		For a new song, get the (1 * T) X 26 matrix
+		use the PCA above to transform it into 20 D
+		transpose the matrix into 20 * T
+			To calculate means at each timestamp, you need to create synthetic vectors for 0 and T points by "mirroring"
+			
+		For each 5-second interval 
+			For each segment
+				Find nearest cluster center from the K-means above, Add count to matrix
+				
+		New Matrix:
+						cluster1  cluster2  cluster3 .... 
+		interval 1
+		interval 2
+		...
+		interval 
+
+		Normalize this new matrix using L1 norm, so each row represents a histogram, a histogram represents one type of music
+		
+		
+Try with another song:
+	find trackID of a spotify song
+	use spotify API
+	get the cURL
+	download it to a file (JSON format)
+	run generate_h5 to change into H5 format
+	run the long process to generate features
+	
+Try with images:
+	get the "SIFT" features of the images: https://en.wikipedia.org/wiki/Scale-invariant_feature_transform
+	follow the same process without the "mirroring" part
+	each image will be converted into a histogram
+	

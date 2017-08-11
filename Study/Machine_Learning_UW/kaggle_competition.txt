@@ -1,0 +1,41 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-05-17T20:34:03-07:00
+
+====== kaggle competition ======
+Created Wednesday 17 May 2017
+
+paper:
+	thought process is more important than your result
+	write what extra work you did (compared to the requirements in homeworks), why you did that, how was the result, how did you improve it ...
+
+Requirement:
+	complete each Milestone part in homeworks up till HW 7 at least
+	
+Questions to consider:
+	cross-validation to pick best hyper-parameter (lambda e.g.): what if different hold-out dataset yield different lambda? Majority vote?
+		Read the textbook/Ask Corine
+
+
+Info to read:
+	parallel computing:
+		https://canvas.uw.edu/courses/1135131/discussion_topics/3834220
+	Import customized functions to python:
+		https://canvas.uw.edu/courses/1135131/discussion_topics/3834259
+
+
+
+
+Image Augmentation:
+	use logistic regression, cross-validation, found the best is color + mirror, predict, .73...
+	tried using all transforms: .75
+	
+PCA:
+	try it
+	
+SVM: 
+	linear SVM: ovo  HW7
+	non-linear SVM: ovo  HW8
+	
+Ensemble Method
+

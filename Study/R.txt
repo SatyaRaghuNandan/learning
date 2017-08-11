@@ -37,7 +37,7 @@ R is an object-oriented, functional
 			1-D vecor, matrix, array
 	
 **EDA**
-	dataframe <- read.csv("xxx.csv")
+	dataframe <- read.csv("xxx.csv", row.names = 1)  — take the row names from the first column
 	 load("xxx.rda")
 	tail(dataframe, 4)
 	str(dataframe): check structure of dataset
@@ -46,6 +46,10 @@ R is an object-oriented, functional
 	describe()
 	describeBy()
 	aggregate(data, by = list, FUN)
+	is.data.frame(XXX)  
+	as.matrix(XXX) — when data frame format is not necessary 
+	which.max()
+	which.min()
 	
 	typeof(variable): integer, double, character...
 	class(variable): numeric, character, factor
@@ -104,26 +108,38 @@ R is an object-oriented, functional
 	pcor.test(r, q, n)
 	r.test()
 
-**T-tests:**
-	Independent: by default assume unequal variance, two-sided
-		t.test(Res ~ Group, data = UScrime, var.equal = TRUE)
-	Dependent: Assumes the difference between groups is normally distr
-		with (data, t.test(col1, col2, paired = TRUE)
-	More than two groups:
-		ANOVA
-	If parametric assumptions for T-test and ANOVA are not met:
-		wilcox.test, Jruskal-Wallis test, Friedman test
-
 
 **Apply Functions Family:**
+	apply a function to an object in R ( matrix, list, vector ...)
+	shortcut for loops
+	
 	**apply**: matrix
-	tapply: vector
+		apply(object, 1, fun) — work on each row
+			apply(M, 1, mean) == rowMeans(M)
+		apply(object, 2, fun) — work on each column
+	  apply(object, c(1, 2), fun) — work on each row and each column
+
+	tapply: vector — to extract subgroups and apply a function to them
 	by: data frames
 	eapply: to Environment
-	**lapply**: to elements in a List
-	**sapply**: a version of lapply
+	
+	**lapply**: to elements in a List; returns a list
+		lapply(ListName, FunctionName, Fun Arg1, Fun Arg2, ...)
+			lapply(ListName, apply, 1, max) — find the row maximums of each matrix in the List
+		lapply(ListName, rowMeans) --- calculate the row means for each matrix in a list
+		
+		Combining lapply with [] operator:  
+			lapply(ListName, "[", 1,) — list of all the first row of the elements in the list
+				same as lapply(ListName, function(x) x[1,])
+		lapply(ListName, "[", ,1) — list of all the first column of the elements in the list
+
+
+
+	**sapply**: simply the output of a Lapply function into a matrix/vector if possible
+		sapply(Obj, Fun, simplify = FALSE) ⇔ lapply(Obj, Fun)
+		
 	vapply: pre-specified return value type
-	replicate: random variables
+	replicate: run a function several times; used with generation of random variables
 	mapply: multivariate version of sapply
 	rapply: recursive version of lapply
 	
@@ -211,6 +227,7 @@ R is an object-oriented, functional
 	f + geom_jitter() +
 	  geom_boxplot(size = 1, alpha = 0.5, outlier.color = NA)
 	
+
 
 **Resources:**
 	MLR tutorial: https://www.analyticsvidhya.com/blog/2016/08/practicing-machine-learning-techniques-in-r-with-mlr-package/

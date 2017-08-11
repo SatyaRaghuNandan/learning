@@ -10,16 +10,16 @@ AMI:
 	
 Spot Instance
 
+Update Config file with new public DNS
+
 SSH:
 	ssh -i [[./ssh/oregon_uw.pem]] tmpaws
 
+
 Run Jupyter Notebook:
 	http://www.datasciencebytes.com/bytes/2015/12/18/using-jupyter-notebooks-securely-on-remote-linux-machines/
-	1. install Anaconda
-		a. https://www.continuum.io/downloads
-		b. bash file.sh
-	2. tmux (on Remote Machine)
-	3. start Juypter Notebook: 
+
+	3. start Juypter Notebook from Pre-Installed Anaconda3: 
 		a. jupyter notebook --no-browser  (in Tmux)
 	4. SSH tunnelling
 		a. ssh -i /path/to/ssh/key -NL 8157:localhost:8888 ubuntu@your-remote-machine-public-dns  (on local machine)
@@ -28,4 +28,22 @@ Run Jupyter Notebook:
 			rsync -avz --include='*.ipynb' --exclude='*' tmpaws:/path/to/notebooks/ /path/to/local/dir/; \
 			sleep 30; \
 			done
+			
+Copy File from local to EC2:
+	scp -i [[~/.ssh/oregon_uw.pem]] filename tmpaws:~/
+
+Copy File from S3 to EC2: 
+	wget https://s3-us-west-2.amazonaws.com/feiwang-uw/kaggle_data.zip
+	
+Copy Files from EC2 to S3:
+	aws s3 sync . s3://bucket/folder
+	
+Zip files:
+	zip -r foo.zip .
+	
+Clone [[TensorFlow]] codes:
+	git clone https://github.com/tensorflow/models.git
+
+
+
 

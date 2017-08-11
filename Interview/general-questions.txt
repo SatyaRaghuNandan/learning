@@ -9,8 +9,10 @@ Created Sunday 12 February 2017
 	//Current Role//
 		Currently, I studying part-time at University of Washington's Masters Program in Data Sciecne. I am looking for positions to apply my business sense and technical skills and your company caught my eye. I think I will be a good fit for this role.
 	
-		I am also working as a business system analyst at Microsoft's 3D Experience team
-			Implement Kibana dashboards using Elasticsearch and R to analyze usage of Microsoft’s 3D model website called remix3d.com
+	user search patterns, trusted catalog dashboard, website loading perf
+	
+		I am also working as a business systems analyst at Microsoft's 3D Experiences team
+			Implement Kibana dashboards using Elasticsearch and R to analyze usage of remix3d.com, which is Microsoft’s first online 3D model community
 			
 		I am a recent graduate from a Data Science Immersive Program by General Assembly, during which I studied on data analysis using Python and  machine learning techniques, and my focus was on classfication problems with highly-imbalanced distribution.
 		

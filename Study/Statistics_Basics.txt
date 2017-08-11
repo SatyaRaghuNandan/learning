@@ -5,6 +5,26 @@ Creation-Date: 2017-03-19T15:57:51-07:00
 ====== Statistics Basics ======
 Created Sunday 19 March 2017
 
+
+**Group Difference:**
+	Independent: by default assume unequal variance, two-sided
+		t.test(Res ~ Group, data = UScrime, var.equal = TRUE)
+	Dependent: Assumes the difference between groups is normally distr
+		with (data, t.test(col1, col2, paired = TRUE)
+	More than two groups:
+		ANOVA
+	If parametric assumptions for T-test and ANOVA are not met:
+		wilcox.test, Jruskal-Wallis test, Friedman test
+		
+		**Non-parametric tests of group differences:**
+			regular T-test: Wilcoxon rank sum test (Mann-Whitney U test)  — wilcox.test(y ~ x, data)
+			paired T-test: Wilcoxon signed rank test — wilcox.test(U1, U2, paired=TRUE)
+			one-way ANOVA: Kruskal-Wallis test + pairwise comparison with Wilconxon rank sum test
+
+**Studentized Residuals**
+	The fact that the variances of the residuals differ, even though the variances of the true errors are all equal to each other, is the principal reason for the need for studentization.
+
+
 **Hypothesis Testing**
 	Parameter	
 	Statstic
@@ -16,8 +36,6 @@ Created Sunday 19 March 2017
 	Power
 	Sample Size
 	Effect Size
-
-
 
 **Power Analysis**
 	Significance Level

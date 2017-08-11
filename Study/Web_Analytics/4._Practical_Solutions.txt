@@ -1,0 +1,45 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-07-23T17:29:25-07:00
+
+====== 4. Practical Solutions ======
+Created Sunday 23 July 2017
+
+Basics:
+	1. primitive indicators: visits, bounce rate, page views, pages/visit, avg. time on site, % of new visits
+	2. where are your visits from? Direct Traffic, Referring Sites, Search Engines, Other (email compaigns etc.)
+	3. Fixing stuff: Top Entry Pages and bounce rate for each
+	4. Click Density Analysis: (Site Overlay) focus on a few key pages you want to improve/check
+		a. clusters of heavy clicks
+		b. links driving high conversions
+		c. average time to this page
+		d. many more....
+	5. measuring Visits to Purchase
+
+Best Web Analytics Report
+	"Outcomes by All Traffic Sources"
+	
+Functional Analyticsl Strategies
+	1. Segmentation (e.g. by traffic source)
+	2. Focus on Customer Behavior, Not Aggregates
+
+Clickstream Analyses
+	Internal Site Search Analysis
+		Site Search Usage
+		Measuring Site Search Quality
+		Segmenting and Measuring Impact
+	Search Engine Optimization Analysis
+		Performance: Traffic from Organic Search
+		content Coverage: Indexing by Search Engines
+		Keyword Performance: Search Engine Results
+		Outcomes: Goals, Revenue, and ROI
+	Pay Per Click/Paid Search Analysis
+	Direct Traffic Analysis
+	Email Compaign Analysis
+	Rich Experience Analysis: Flash, Video, and Widgets
+	
+	
+Others:
+	how effectively does my home page engage visitors? How was my first impression?
+		Distirbution of "Page Depth per Visit" for the visits started from the Home Page
+

@@ -1,0 +1,46 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-05-17T20:38:24-07:00
+
+====== 8th ======
+Created Wednesday 17 May 2017
+
+Lecture: 
+	https://en.wikipedia.org/wiki/Reproducing_kernel_Hilbert_space
+	
+	
+Lab:
+	tranform images to histograms via Kmeans
+	Normalize the histograms with L-2 (you can also do L1 norm)
+	
+	imbalanced classification:
+		Natural Reweighting: HW3 reading, a paper Zaid wrote
+		**Is the SKLearn's class_weight='balanced' same as Zaid's Natural reweighting?**
+		**Corinne: sometime it's not optimal to use  class_weight='balanced', Figure out the details**
+		**Also draw the ROC curve for each round**
+		
+	SVM:
+		misclassified vectors are also the "Support Vector"'s
+		the fitted separator is always a Hypterplane. So in 2D case it's always a line
+		 **A useful rule of thumb is that better performance is obtained if the vectors that are ultimately fed to a linear SVM (after any intermediate processing) are L2 normalized. Why?**
+
+	One-vs-One:
+		for each data point, predict with all models, vote the class label and assign the one with highest votes
+		
+	One-vs-Rest:
+	  for each data point, predict with all models, get a score (not necessarily probability) for each class label, assign the one with the highest score
+	
+	Vary the Image Representation:
+		Change to L1 norm: add "ord = 1"
+		
+	Kernel:
+		transform two data points into some new feature spaces (often of high dimensions or infinite dimensions), then calculate the inner product
+		**Kernel Trick means you don't have to know the transformation of feature space, you just need to know the kernel function**
+		**But sometimes it's easier to calcuate the Kernel Matrix, Sometime it's easier to calculate the New Features, Choose accordingly**
+		**In this lab, we calculate the new features to reduce computation need**
+			
+For homework, Cross-Validation
+	Zaid said: use the same lambda for all your 1-vs-rest models (140 something in our case), but you try different lambdas for all of them and then pick the best one
+	
+      
+	

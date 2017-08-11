@@ -1,0 +1,53 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-08-08T21:23:25-07:00
+
+====== Web Perf Optimization ======
+Created Tuesday 08 August 2017
+
+Event types:
+	loading, scripting, rendering, painting
+
+Critical Rendering Path
+	DOM → CSSOM → Render Tree → Layout → Paint
+
+DOM:
+	Browser receives HTML file, process it, build the DOM (Document Object Model)
+		processing: HTML characters → Tokens → Nodes → DOM (DOM is a Tree of Nodes, also containing Nodes' properties) 
+	DOM captures the content of the page
+	we can use Partial DOM tree to make the page load faster (Incremental HTML Delivery)
+	
+
+CSSOM:
+	Browser receives CSS, process it, build CSSOM
+		processing: characters → tokens → nodes → CSSOM 
+		cascading style sheet (child node inherits its parent's style), cascading rules
+	CSSOM captures the style of the page
+	We can't use a partial CSSOM tree ("CSS is render blocking!")
+	== The browser blocks page rendering until we received and processed all of the CSS!
+	It also blocking executing of [[JavaScirpt]] engine, and thus constructing the DOM
+
+Render Tree
+	It only captures visible contents
+	combining both DOM and CSSOM
+	
+Layout
+	determins the location and size of the Render Tree elements
+	everytime you update the Render Tree, you might need to rerun the layout file
+	rule of thumb: do batch updates, avoid multiple layout events
+	
+Painting
+	everytime you update the Render Tree, you might need to redo the painting work
+		
+
+Entire Process:
+	send HTML request, receive response header and data
+	parse HTML, request CSS files, parse CSS files, construct CSSOM, DOM
+	compute the Render Tree ("Recalculate Style" event)
+	Paint event
+	
+	
+	
+	
+	
+	

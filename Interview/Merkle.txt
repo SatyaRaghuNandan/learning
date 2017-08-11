@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-07-18T09:21:24-07:00
+
+====== Merkle ======
+Created Tuesday 18 July 2017
+
+Add to resume:
+	plotly, telemetry-design, 
+	
+attribution modeling, (bayesian modeling, Markov Chain)
+
+tableau, python, SAS, R
+Digital Marketing experience
+Google Analytics
+Google's DCM ()
+
+
+42/hour
+80K - 95K
+

@@ -1,0 +1,50 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2017-08-02T23:00:17-07:00
+
+====== study plan 8-2-17 ======
+Created Wednesday 02 August 2017
+
+Product Sense:
+	Web Analytics + Cracking PM Interview
+	
+SQL:
+	Mode Community: https://community.modeanalytics.com/
+
+AB Testing:
+	3 online courses:
+	https://vwo.com/ab-testing/
+	https://www.udacity.com/course/ab-testing--ud979
+	http://edu.bigdatadigest.cn/liveOpenCourse/toLiveroom/4753?content=343735332c687474703a2f2f79756e64756f6b6574616e672e67656e7365652e636f6d2f747261696e696e672f736974652f762f39343336373639302c322c6261636b05d7620c
+
+Prob & Stat:
+	  hypothesis testing, point/interval estimation
+	  pvalue, power, (type 1/2 error)
+	  clt, delta method, derive coef and var(coef) etc
+	  t-test: assumptions, remedy. 适用问题范围basics listed above 请看这个课 http://onlinestatbook.com/2/index.html
+	  glm (lm, logistic regression, anova etc):asssumptions, model selection and validation, diagnostics, remedy 适用问题范围
+	
+	 summary on T-test & ANOVA, Linear Regression: 
+		http://onlinestatbook.com/2/index.html
+		my 3 stat books
+		
+	 Design of Experiments
+		my book
+
+Web Development & Software Engineering:
+	Basic: https://www.codecademy.com/learn
+	JavaScript: https://www.udacity.com/course/intro-to-javascript--ud803
+	Perf Optimization: https://classroom.udacity.com/courses/ud884
+	Software Dev Basic: https://classroom.udacity.com/courses/ud805
+	Web Dev Nano Degree: https://www.udacity.com/course/full-stack-web-developer-nanodegree--nd004
+	
+
+ML:
+	Review UW class, Intro to Statistical Learning, Logistic Regression inside out
+	
+Algorithm & Data Structure
+	Using Python: http://interactivepython.org/courselib/static/pythonds/index.html
+	Java: https://people.eecs.berkeley.edu/~jrs/61b/
+	Cracking Coding Interview
+	
+	

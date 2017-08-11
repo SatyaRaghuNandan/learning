@@ -17,7 +17,6 @@ Lec 2
 	only works when your training set is of reasonable size (not huge, not too small)
 	  where is the 10?
 	
-	Elastic Net?
 
 Lab 2
 	Constant Step Size: Lipschitz gradient

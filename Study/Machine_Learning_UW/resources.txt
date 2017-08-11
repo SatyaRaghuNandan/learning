@@ -8,5 +8,8 @@ Created Sunday 23 April 2017
 Best Practice for Scientific Computing:
 http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745
 
+ML by Murphy:
+https://mitpress.mit.edu/books/machine-learning-0
+
 
 
